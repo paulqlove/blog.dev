@@ -13,5 +13,43 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return 'Hello Codeup';
+});
+
+Route::get('parks',function(){
+	return 'Here are some national parks';
+});
+
+Route::get('say-hello/{name}', function($name) {
+	if ($name == 'Ben') {
+		return Redirect::to('http://google.com');
+	}  else {
+
+		return "Hello $name!";
+		
+	}
+});
+Route::get('say-hello/{name}/{age}', function($name,$age) {
+	return "Hello $name! I hear you're $age years old";
+});
+
+Route::get('/resume',function(){
+	return "This is my resume page";
+});
+
+
+Route::get('/portfolio',function(){
+	return "This is my portfolio page";
+});
+
+Route::get('/rolldice/{guess}', function(){
+		$rand = rand(1,6);
+		if ('guess' == $rand) {
+			return "You guessed correctly! ";
+		} else {
+
+	return View::make('rolldice')->with('anything', $rand);
+		}
+		
+	
 });
