@@ -42,13 +42,13 @@ Route::get('/portfolio',function(){
 	return "This is my portfolio page";
 });
 
-Route::get('/rolldice/{guess}', function(){
-		$rand = rand(1,6);
-		if ('guess' == $rand) {
+Route::get('/rolldice/{guess}', function($guess){
+		$roll = rand(1,6);
+		if ($roll == $guess) {
 			return "You guessed correctly! ";
 		} else {
 
-	return View::make('rolldice')->with('anything', $rand);
+		return View::make('rolldice')->with('a', $roll);
 		}
 		
 	

@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<h1>Roll Dice</h1>
-		<h3> <?= $anything ?> </h3>
+		<h3> <?= $a ?> </h3>
 		
 		
 	</body>
