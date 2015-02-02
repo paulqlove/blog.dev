@@ -15,41 +15,32 @@ Route::get('/', function()
 {
 	return 'Hello Codeup';
 });
-
-Route::get('parks',function(){
-	return 'Here are some national parks';
-});
-
-Route::get('say-hello/{name}', function($name) {
-	if ($name == 'Ben') {
-		return Redirect::to('http://google.com');
-	}  else {
-
-		return "Hello $name!";
-		
-	}
-});
-Route::get('say-hello/{name}/{age}', function($name,$age) {
-	return "Hello $name! I hear you're $age years old";
-});
-
-Route::get('/resume',function(){
-	return "This is my resume page";
-});
-
-
-Route::get('/portfolio',function(){
-	return "This is my portfolio page";
-});
-
-Route::get('/rolldice/{guess}', function($guess){
-		$roll = rand(1,6);
-		if ($roll == $guess) {
-			return "You guessed correctly! ";
-		} else {
-
-		return View::make('rolldice')->with('a', $roll);
-		}
-		
+// Route::get('/', 'HomeController@showWelcome');
 	
-});
+Route::get('parks', 'HomeController@parks');
+
+// Route::get('say-hello/{name}', function($name) {
+// 	if ($name == 'Ben') {
+// 		return Redirect::to('http://google.com');
+// 	}  else {
+
+// 		return "Hello $name!";
+		
+// 	}
+// });
+Route::get('say-hello/{name}/{age}', 'HomeController@showNameAge' );
+
+
+Route::get('/rolldice/{guess}', 'HomeController@rollDice');
+
+Route::get('resume/{name}','HomeController@showResume');
+
+Route::get('portfolio/{name}', 'HomeController@showPortfolio');
+
+
+Route::resource('posts', 'PostsController');
+
+
+
+
+
