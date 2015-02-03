@@ -1,8 +1,11 @@
 @extends('layouts.master')
 
-@section('contents')
+@section('content')
 
-	<h1>Show one</h1>
+		<p>{{ $posts->title }}</p>
+		<p>{{ $posts->body }}</p>
 
+
+<a href="{{{ action('PostsController@index') }}}">Go Back</a>
 
 @stop

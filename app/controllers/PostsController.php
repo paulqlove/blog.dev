@@ -34,24 +34,11 @@ class PostsController extends \BaseController {
 	 */
 	public function store()
 	{
-		$validator = Validator::make(Input::all(), Post::$rules);
+			//create new post		
+			$post = new Post();
+			return $this->savePost($post);
 		
-		if ($validator->fails()) {
-			return Redirect::back()->withInput()->withErrors($validator);
-		} else {
-		//create new post		
-		$post = new Post();
-		
-		//create title and body
-		$post->title = Input::get('title');
-		$post->body = Input::get('body');
-		//save it 
-		$post->save();
-		//redirect to the index action of post controller
-		return  Redirect::action('PostsController@index');
 	}
-
-}
 	/**
 	 * Display the specified resource.
 	 *
@@ -62,7 +49,8 @@ class PostsController extends \BaseController {
 	{
 		// return "should show a specific post that user wants. ";
 		
-		return $post;
+		$posts = Post::findorFail($id);
+		return View::make('posts.show')->with('posts', $posts);
 	}
 
 
@@ -74,7 +62,8 @@ class PostsController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		return "Should be able to edit a specific post by finding it by its id";
+		$posts = Post::findOrFail($id);
+		return View::make('posts.edit')->with('posts', $posts);
 	}
 
 
@@ -86,10 +75,10 @@ class PostsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		return "Update the post that was edited";
-		//find a given post
-		//set the input
-		//save it 
+		
+		$post = Post::findOrFail($id);
+		return $this->savePost($post);
+
 	}
 
 
@@ -104,5 +93,24 @@ class PostsController extends \BaseController {
 		return "delete the specified post and find it by id";
 	}
 
+	protected function savePost($post)
+	{
+
+		$validator = Validator::make(Input::all(), Post::$rules);
+		
+		if ($validator->fails()) {
+			Session::flash('errorMessage', ' Failed to save your post!');
+			return Redirect::back()->withInput()->withErrors($validator);
+		} else {
+			Session::flash('successMessage', 'Filed saved!');
+			//create title and body
+			$post->title = Input::get('title');
+			$post->body = Input::get('body');
+			//save it 
+			$post->save();
+			//redirect to the index action of post controller
+			return  Redirect::action('PostsController@index');
+		}
+	}
 
 }
