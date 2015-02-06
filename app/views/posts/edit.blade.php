@@ -4,7 +4,7 @@
 	<div class="container">
 		<div class="page-header "><H1>My blog</H1></div>
 				
-			{{ Form::model($posts, array('action' => array('PostsController@update', $posts->id), 'method' => 'put')) }}
+			{{ Form::model($posts, array('action' => array('PostsController@update', $posts->id), 'method' => 'put','files' => 'true')) }}
 			
 			
 			@include('posts.form')

@@ -22,6 +22,21 @@ ClassLoader::addDirectories(array(
 
 /*
 |--------------------------------------------------------------------------
+| Custom 404 Error Handler 
+|--------------------------------------------------------------------------
+|This is a custom Error message 
+|
+*/
+App::error(function(Illuminate\Database\Eloquent\ModelNotFoundException $e){
+	return Response::view('errors.missing',array(), 404);
+});
+
+App::missing(function($exception)
+{
+	return Response::view('errors.missing', array(), 404);
+});
+/*
+|--------------------------------------------------------------------------
 | Application Error Logger
 |--------------------------------------------------------------------------
 |

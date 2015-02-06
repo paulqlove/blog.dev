@@ -1,7 +1,13 @@
 <?php
 
-class PostsController extends \BaseController {
+class PostsController extends \BaseController 
+{
+	public function __construct()
+	{
+		parent:: __construct();
 
+		$this->beforeFilter('auth',array('except' => array('index','show')));
+	}
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -9,8 +15,29 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{	
-		$posts = Post::paginate(4);
+		$query = Post::with('user');
+		
+		if(Input::has('search')){
+			$query = Post::with('user');
+
+			$search = Input::get('search');
+			$query->where('title', 'like', '%' . $search . '%');
+
+			// $query->orWhere('created_at', 'like', '%' . $search . '%');
+
+			$query->orWhereHas('user', function($q){
+				$search = Input::get('search');
+				$q->where('email', 'like', '%' . $search . '%');
+			});
+			
+			$posts = $query->orderBy('created_at', 'desc')->paginate(2);
+			return View::make('posts.index')->with('posts', $posts);
+		}
+
+		$posts = Post::with('user')->paginate(4);
+		// $posts = Post::paginate(4);
 		return View::make('posts.index')->with('posts', $posts);
+
 		// return "Navigating to http://blog.dev/posts should return an index of every blog post";
 	}
 
@@ -22,8 +49,12 @@ class PostsController extends \BaseController {
 	 */
 	public function create()
 	{	
+
+		$post = new Post();
+		$post->user_id = Auth::id();
 		return View::make('posts.create');
 		// return "Navigating to http://blog.dev/posts/create should show a form for creating a posts";
+		
 	}
 
 
@@ -36,6 +67,9 @@ class PostsController extends \BaseController {
 	{
 			//create new post		
 			$post = new Post();
+
+			$post->user_id = Auth::id();
+			
 			return $this->savePost($post);
 		
 	}
@@ -90,7 +124,20 @@ class PostsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		return "delete the specified post and find it by id";
+		try {
+			$post = Post::findOrFail($id);
+
+		} catch (ModelNotFoundException $e) {
+			Log::warning("user made a bad PostsController request", array('id' => $id));
+			App::abort(404);
+
+		}
+
+		$post->delete();
+
+		Session::flash('successMessage', 'Post Deleted');
+
+		return Redirect::action('PostsController@index');
 	}
 
 	protected function savePost($post)
@@ -108,6 +155,10 @@ class PostsController extends \BaseController {
 			$post->body = Input::get('body');
 			//save it 
 			$post->save();
+
+			if(Input::hasFile('image')) {
+				$post->uploadFile(Input::file('image'));
+			}
 			//redirect to the index action of post controller
 			return  Redirect::action('PostsController@index');
 		}

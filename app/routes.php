@@ -11,10 +11,8 @@
 |
 */
 
-Route::get('/', function()
-{
-	return 'Hello Codeup';
-});
+Route::get('/', 'HomeController@showLanding');
+
 // Route::get('/', 'HomeController@showWelcome');
 	
 Route::get('parks', 'HomeController@parks');
@@ -40,7 +38,21 @@ Route::get('portfolio/{name}', 'HomeController@showPortfolio');
 
 Route::resource('posts', 'PostsController');
 
+Route::get('login','HomeController@showLogin');
+
+Route::post('login','HomeController@doLogin');
+
+Route::get('logout','HomeController@doLogout');
 
 
+// Route::get('search', function(){
+// 	$search = Input::get('search');
+
+// 	$query = Post::with('user');
+
+
+
+	
+// });
 
 
