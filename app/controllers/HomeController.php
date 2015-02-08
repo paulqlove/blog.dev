@@ -45,9 +45,9 @@ class HomeController extends BaseController {
 		return View::make('rolldice')->with('a', $roll);
 		}	
 	}
-	public function showPortfolio($name)
+	public function showPortfolio()
 	{
-		return View::make('portfolio')->with('name', $name);
+		return View::make('portfolio');
 	}
 	public function showLogin()
 	{

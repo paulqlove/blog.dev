@@ -29,7 +29,7 @@ class Post extends BaseModel
 	{
 		return $this->belongsTo('User');
 	}
-	public function is_uploaded_file($file)
+	public function uploadFile($file)
 		{
 
 			if (Input::hasFile('image')) {

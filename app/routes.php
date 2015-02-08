@@ -33,7 +33,7 @@ Route::get('/rolldice/{guess}', 'HomeController@rollDice');
 
 Route::get('resume/{name}','HomeController@showResume');
 
-Route::get('portfolio/{name}', 'HomeController@showPortfolio');
+Route::get('portfolio', 'HomeController@showPortfolio');
 
 
 Route::resource('posts', 'PostsController');

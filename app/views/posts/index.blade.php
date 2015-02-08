@@ -6,15 +6,27 @@
 @endif
 	
 	<div class="container indexcontainer">
-		<form class="navbar-form navbar-left" role="search" action="{{{ action('PostsController@index') }}}" method="get">
+		<nav class="navbar navbar-default">
+			<form class="navbar-form " role="search" action="{{{ action('PostsController@index') }}}" method="get">
 
-		  <div class="form-group">
-		    <input name="search" type="text" class="form-control" placeholder="search">
-		  </div>
-		  
-		  <button type="submit" class="btn btn-default">Submit</button>
+			  <div class="form-group">
+
+			  
+					<ul class="nav nav-tabs" id="menucontrol">
+						<li role="presentation" class="active text-right"><a href="">Work I've Done</a></li>
+						<li role="presentation" class="active text-right"><a href="#">Who I Am</a></li>
+						<li role="presentation" class="active text-right"><a href="#">What I Do</a></li>
+						<li role="presentation" class="active text-right"><a href="{{{ action('PostsController@index')}}}">My Blog</a></li>
+					    <li><input name="search" type="text" class="form-control movesearchbar" placeholder="search"></li>
+						<li><button type="submit" class="btn btn-default movesearchbar">Submit</button></li>
+					 	
+					</ul>
+			  </div>
+						
+			</form>
+		</nav><!-- navbar default -->
 		
-		</form>
+
 		<div class="page-header text-center ">
 			<div class="row">
 				<div class="col-sm-12">
@@ -54,7 +66,7 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-4 col-sm-offset-4">
-					<a class="btn btn-primary " href="{{{ action('PostsController@create')}}}">Add New</a>
+					<a class="btn btn-primary " href="{{{ action('PostsController@create')}}}">Home</a>
 				</div>
 			</div>
 
@@ -73,7 +85,7 @@
 				</div>
 			</div>
 		</div> <!-- Container -->
-	</div>
+	</div><!-- Index Container -->
 
 
 
