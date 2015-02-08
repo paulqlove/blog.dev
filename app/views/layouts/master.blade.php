@@ -6,6 +6,7 @@
 		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 		
 		<link rel="stylesheet" type="text/css" href="/css/custom.css">
+		<script src="/js/jquery.min.js"></script>
 	</head>
 	
 	<body>
@@ -17,7 +18,7 @@
 			@endif
 		<!--	@yield('posts') -->
 			@yield('content')
-		
+		<script type="text/javascript" src="/js/my_blog.js"></script>
 	</body>
 </html>
 

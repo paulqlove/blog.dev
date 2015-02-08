@@ -143,6 +143,8 @@ ul {
 #deletepadding {
 	padding-left: 0px;
 }
+/*black overlay on each project*/
+/*****************************/
 #hideproject1 {
 	position: relative;
 	background-color: #000;
@@ -167,11 +169,27 @@ ul {
 	width: 100%;
 	opacity: .9;
 }
-
+/*****************************/
+/*****************************/
 #logo {
 	position: absolute;
 	right: 25px;
 	bottom: 80px;
+}
+/*Button for sliding the sidebar back out*/
+#menuRecall {
+	outline-style: none;
+	position: absolute;
+	top: 350px;
+	left: 20px;
+	height: 100px;
+	width: 100px;
+	background-color: transparent;
+	border-radius: 50%;
+	border-style: none;
+	z-index: 1;
+	box-shadow: 10px;
+	box-shadow: 5px 0px 5px #888888;
 }
 #pic2 {
 	margin-top: 440px;
