@@ -24,14 +24,6 @@
 			   	  		<h5>Week 4</h5>
 			   	   	</section>	
 			    			<img class="boxes" id="pic2" src="/images/todolist_small.png"> 
-			    		
-			   	   		
 			    	
-			   	  
-			   	
-			
-		 
-	   
-   
 @stop
 

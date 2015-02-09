@@ -2,31 +2,28 @@
 
 	padding: 0px;
 	margin: 0px;
-	list-style: none;
-	box-sizing: border-box;
-	font-family: helvetica;
+	
+	
+	
+
 }
-#logobody { 
-  background: url('/images/hero.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 a {
 	
-	width: 150px;
+	
 	text-decoration: none;
 	color: #50D9FF;
 
 }
-
+html, body {
+	height: 100%;
+}
 
 body{
 	
 	border: 1px solid transparent;
 	font-family: helvetica;
-	background-color: transparent;
+	
 	overflow-x: hidden;
 
 	/*overflow-x: hidden;*/
@@ -65,17 +62,34 @@ nav {
 	background: transparent;
 }
 
+
 table {
-
+	position: relative;
+	left: 260px;
+	top: 55px;
+	height: 400px;
 	color: #a5adb0;
+	padding: 5px;
+	border-spacing: 0px;
 }
-
+td {
+	padding: 5px;
+}
+tr:nth-child(even){
+	background-color: #F2F2F2;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #F2F2F2;
+}
 ul {
 	position: fixed;
+	
+
 	text-transform: uppercase;
-	clear: both;
-	width: 250px;
+	list-style: none;
+	display: inline;
 	color: #aee3ba;
+
 }
 
 /*****************************/
@@ -106,6 +120,7 @@ ul {
 .container {
 	overflow-x: hidden;
 	margin: 0px;
+	overflow: auto;
   	/*width: 200%;*/
 }
 
@@ -129,7 +144,82 @@ ul {
 
 
 .movesearchbar {
-	margin-left: 2.5em;
+	background-color: #fff;
+	width: 235px;
+	height: 36px;
+	margin-top: 5px;
+	padding: 10px 5px;
+	text-align: right;
+	border-radius: 2px;
+	text-transform: uppercase;
+	border-style: none;
+	font-family: helvetica;
+}
+.pagination {
+	position: relative;
+	display: inline-block;
+	padding-top: 10px;
+	/*margin: 20px 0;*/
+	border-radius: 4px;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+}
+.pagination > li {
+	display: inline;
+}
+.pagination > li > a,
+.pagination > li > span {
+	position: relative;
+/*	float: left;*/
+	padding:  6px 12px;
+	margin-left: -1px;
+	/*line-height: 1.42867143; */
+	text-decoration: none;
+	background-color: #fff;
+
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+	margin-left: 0;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: #50D9FF;
+  background-color: #eee;
+  border-color: #ddd;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  z-index: 1;
+  color: #fff;
+  
+  background-color: #50D9FF;
+
+}
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+  color: #50D9FF;
+  
+  background-color: #fff;
+  border-color: #ddd;
 }
 
 .submitButton:hover {
@@ -171,6 +261,14 @@ ul {
 }
 /*****************************/
 /*****************************/
+body#logobody { 
+  background: url('/images/hero.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
 #logo {
 	position: absolute;
 	right: 25px;
@@ -201,17 +299,20 @@ ul {
 	right: 25%;
 }
 #secondsection {
+	position: relative;
+	top: 20px;	
 	text-transform: uppercase;
 	background-color: #fff;
 	margin-right: 0px;
 	margin-left: 0px;
 	width: 100%;
 	padding: 15px;
-	background-color: #50D9FF;
+	background-color: #F2F2F2;
 	/*position: absolute;*/
 	/*overflow-x: hidden;*/
 }
-
+/*Menus for the each page go here*/
+/*****************************/
 ul#portmenu {
 	position: fixed;
 	padding-top: 100px;
@@ -225,7 +326,19 @@ ul#portmenu {
 	box-shadow: 5px 0px 34px #888888;
 	z-index: 1;
 }
-
+ul#indexmenu {
+	position: fixed;
+	padding-top: 100px;
+	border-right: solid;
+	border-width: 0px;
+	padding-bottom: 50%;
+	background-color: #F2F2F2;
+	text-transform: uppercase;
+	clear: both;
+	width: 250px;
+	box-shadow: 5px 0px 34px #888888;
+	z-index: 1;
+}
 
 
 

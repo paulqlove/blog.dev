@@ -22,6 +22,3 @@ $('#menuRecall').click(function(){
 
 
 });
-// $( "button" ).click(function() {
-//   $( "p" ).slideToggle( "slow" );
-// });

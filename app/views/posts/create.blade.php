@@ -6,9 +6,9 @@
 	<!-- 	<div id="bg">
 			<img src="/images/hero.jpg">
 		</div> -->
-			<div>
+			
 				<img src="/images/logo2.png" id="logo">
-			</div><!-- Image Div -->
+			
 		
 			
 				
