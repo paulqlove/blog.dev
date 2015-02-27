@@ -55,7 +55,7 @@ class HomeController extends BaseController {
 	}
 	public function showLanding()
 	{
-		return View::make('posts.create');
+		return View::make('posts.landing');
 	}
 	public function doLogin()
 	{	

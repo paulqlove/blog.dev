@@ -52,7 +52,7 @@ class PostsController extends \BaseController
 
 		$post = new Post();
 		$post->user_id = Auth::id();
-		return View::make('posts.create');
+		return View::make('posts.landing');
 		// return "Navigating to http://blog.dev/posts/create should show a form for creating a posts";
 		
 	}

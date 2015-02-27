@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-	   
+	   <div class="page">
 	    	 <h1>Portfolio</h1>
 	    
 				<button id="menuRecall">MENU</button>
@@ -25,5 +25,6 @@
 			   	   	</section>	
 			    			<img class="boxes" id="pic2" src="/images/todolist_small.png"> 
 			    	
+		</div><!-- End Container-->
 @stop
 
