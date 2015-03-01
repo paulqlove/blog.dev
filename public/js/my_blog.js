@@ -1,14 +1,14 @@
 $(document).ready(function(){
 
 //click on menu to slide over
-$('ul#portmenu').animate({left: '-=250'},3200);
+// $('ul#portmenu').animate({left: '-=250'},3200);
 
 
 
 
 
 $('#menuRecall').click(function(){
-	$('ul#portmenu').animate({left: '+=250'},1200);
+	$('ul#portmenu').animate({left: '+=250'},200);
 });
 
 //click on project to make the black overlay fade out

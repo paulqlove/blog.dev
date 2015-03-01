@@ -2,49 +2,42 @@
 
 	padding: 0px;
 	margin: 0px;
-	
-	
-	
 
 }
 
 a {
-	
-	
 	text-decoration: none;
 	color: #50D9FF;
 
 }
-html, body {
+
+html,body {
 	height: 100%;
 }
-
 body{
 	
 	border: 1px solid transparent;
 	font-family: helvetica;
-	
+	background-color: #eee;
 	overflow-x: hidden;
-
-	/*overflow-x: hidden;*/
-	/*overflow-y: scroll;*/
+	
+	
+	
 }
 
 
 h1 {
-	position: relative;
+	
 	float: right;
 	right: 5px;
 }
-/*img {
-	visibility: hidden;
-}*/
+
 li.landingpage {
 	
 	box-shadow: 1px 2px 1px #888888;
 	background-color: #fff;
 	list-style: none;
-	width: 233px;
+
 	margin-top: 5px;
 	padding: 10px 5px;
 	text-align: right;
@@ -82,8 +75,6 @@ tr:nth-child(even){
 	border-color: #F2F2F2;
 }
 ul {
-	position: fixed;
-	
 
 	text-transform: uppercase;
 	list-style: none;
@@ -97,11 +88,7 @@ ul {
 /*****************************/
 /*****************************/
 
-/*.nav>li>a:focus, .nav>li>a:hover{
-	background-color: #aee3ba;
-	color: #fff;
 
-}*/
  .boxes{
 	position: absolute;
 	left: 25%;
@@ -118,10 +105,11 @@ ul {
 	margin-left: 25%;
 }
 .container {
-	overflow-x: hidden;
+	
 	margin: 0px;
-	overflow: auto;
-  	/*width: 200%;*/
+	
+  	width: 100%;
+  
 }
 
 
@@ -140,8 +128,13 @@ ul {
 	font-family: inherit;
 	margin: 5px 0 0 25px;
 }
-
-
+.highlight { 
+	
+}
+.img-size {
+	max-width: 717px;
+	margin-bottom: 30px;
+}
 
 .movesearchbar {
 	background-color: #fff;
@@ -259,36 +252,30 @@ ul {
 	width: 100%;
 	opacity: .9;
 }
+
 /*****************************/
 /*****************************/
-body#logobody { 
+#landingpageBG 	{ 
   background: url('/images/hero.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
+ height: 100%;
 }
 #logo {
-	position: absolute;
-	right: 25px;
-	bottom: 80px;
-}
+	max-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	}
 /*Button for sliding the sidebar back out*/
 #menuRecall {
-	outline-style: none;
-	position: absolute;
-	top: 350px;
-	left: 20px;
-	height: 100px;
-	width: 100px;
-	background-color: transparent;
-	border-radius: 50%;
-	border-style: none;
-	z-index: 1;
-	box-shadow: 10px;
-	box-shadow: 5px 0px 5px #888888;
+	
 }
+#page {
+  clear: both;
+}
+
 #pic2 {
 	margin-top: 440px;
 }
@@ -313,9 +300,10 @@ body#logobody {
 }
 /*Menus for the each page go here*/
 /*****************************/
-ul#portmenu {
+#portmenu {
 	position: fixed;
 	padding-top: 100px;
+	left: -250px;
 	border-right: solid;
 	border-width: 0px;
 	padding-bottom: 50%;
@@ -323,7 +311,7 @@ ul#portmenu {
 	text-transform: uppercase;
 	clear: both;
 	width: 250px;
-	box-shadow: 5px 0px 34px #888888;
+	box-shadow: 1px 0px 13px #888888;
 	z-index: 1;
 }
 ul#indexmenu {
@@ -340,9 +328,29 @@ ul#indexmenu {
 	z-index: 1;
 }
 
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+/*Desktop size screen */
+@media  (min-width: 992px){
+
+#fixtoBottem {
+	margin-top: 10%;
+}
+
+#logo {
+	max-width: 460px;
+	margin-left: auto;
+	margin-right: auto;
+	}
 
 
+}
 
+/*Desktop size screen */
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
 
+@media (min-width: 768px){
+	
 
-
+}

@@ -1,30 +1,39 @@
 @extends('layouts.master')
 
 @section('content')
-	   <div class="page">
-	    	 <h1>Portfolio</h1>
-	    
-				<button id="menuRecall">MENU</button>
+	    	 
+					<div id="my-panel">
+						<nav>
+							<ul class="mainmenu" id="portmenu">
+								<li class="landingpage"><a href="{{{ action('HomeController@showPortfolio')}}}">Work I've Done</li></a>
+								<li class="landingpage"><a href="{{{ action('HomeController@showResume')}}}">Who I Am</li></a>
+								<li class="landingpage"><a href="#">What I Do</li></a>
+								<li class="landingpage"><a href="{{{ action('PostsController@index')}}}">My Blog</li></a>
+							</ul>
+						</nav>
+					</div>
+	   
+	   <div class="container">
 
-					<ul class="mainmenu" id="portmenu">
-						<li class="landingpage"><a href="{{{ action('HomeController@showPortfolio')}}}">Work I've Done</li></a>
-						<li class="landingpage"><a href="{{{ action('HomeController@showResume')}}}">Who I Am</li></a>
-						<li class="landingpage"><a href="#">What I Do</li></a>
-						<li class="landingpage"><a href="{{{ action('PostsController@index')}}}">My Blog</li></a>
-					</ul>
-			
-		    	
-			   	  	<section id="hideproject1">
-			   	  		<h2>Duck Hunt</h2>
-			   	  		<h5>Week 5</h5>
-			   	  	</section>
-			   	   		<img class="boxes"  src="/images/duckhunt_small.png"> 
-			    	<section id="hideproject2">
-			    		<h2>ToDo List</h2>
-			   	  		<h5>Week 4</h5>
-			   	   	</section>	
-			    			<img class="boxes" id="pic2" src="/images/todolist_small.png"> 
-			    	
+			   	  	<div class="col-md-12">
+						
+						<div class=" col-md-2">
+							<a id="menuRecall" href="#"><h3>Menu</h3></a>
+						</div>
+			   	  		
+			    		<div class="col-md-offset-3 col-md-9 embed-responsive-4by3">
+			    			<img class="img-size" src="/images/servesearch.png">
+			    		</div>
+			   	  		
+			   	  		<div class="col-md-offset-3 col-md-9 embed-responsive-4by3">
+			   	   			<img  class="img-size"  src="/images/duckhunt_small.png"> 
+			   	  		</div>
+			    		
+			    		<div class="col-md-offset-3 col-md-9 embed-responsive-4by3">
+			    			<img  class="img-size" src="/images/todolist_small.png"> 
+			    		</div>
+			   	  	</div>
+			  	
 		</div><!-- End Container-->
 @stop
 
