@@ -9,11 +9,11 @@
 			
 				<div class="col-md-4">
 					<nav class="col-md-12">
-						<ul>
-							<li class="landingpage"><a href="{{{ action('HomeController@showPortfolio')}}}">Work I've Done</li></a>
-							<li class="landingpage"><a href="#">Who I Am</li></a>
-							<li class="landingpage"><a href="#">What I Do</li></a>
-							<li class="landingpage"><a href="{{{ action('PostsController@index')}}}">My Blog</li></a>
+						<ul class="landing-ul">
+							<li class="landingpage"><a href="{{{ action('HomeController@showPortfolio')}}}"><p id="text-port">Work I've Done</p></li></a>
+							<li class="landingpage"><a href="#"><p id="text-resume">Who I Am</p></li></a>
+							<li class="landingpage"><a href="#"><p>What I Do</p></li></a>
+							<li class="landingpage"><a href="{{{ action('PostsController@index')}}}"><p id="text-blog">My Blog</p></li></a>
 						</ul>
 					</nav>
 				</div>

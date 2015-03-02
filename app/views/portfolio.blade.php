@@ -5,33 +5,77 @@
 					<div id="my-panel">
 						<nav>
 							<ul class="mainmenu" id="portmenu">
-								<li class="landingpage"><a href="{{{ action('HomeController@showPortfolio')}}}">Work I've Done</li></a>
-								<li class="landingpage"><a href="{{{ action('HomeController@showResume')}}}">Who I Am</li></a>
-								<li class="landingpage"><a href="#">What I Do</li></a>
-								<li class="landingpage"><a href="{{{ action('PostsController@index')}}}">My Blog</li></a>
+								<a href="{{{ action('HomeController@showPortfolio')}}}"><li class="port-page"><p id="text-port">Work I've Done</p></li></a>
+								<a href="{{{ action('HomeController@showResume')}}}"><li class="port-page"><p id="text-resume">Who I Am</p></li></a>
+								<a href="#"><li class="port-page"><p>What I Do</p></li></a>
+								<a href="{{{ action('PostsController@index')}}}"><li class="port-page"><p id="text-blog">My Blog</p></li></a>
 							</ul>
 						</nav>
 					</div>
 	   
-	   <div class="container">
+	   <div class="container no-gutters">
 
-			   	  	<div class="col-md-12">
+			   	  	<div class="no-gutters col-md-12">
 						
-						<div class=" col-md-2">
-							<a id="menuRecall" href="#"><h3>Menu</h3></a>
+						<div class=" col-md-12">
+							<h3><a id="menuRecall" href="#">Menu</h3></a>
 						</div>
-			   	  		
-			    		<div class="col-md-offset-3 col-md-9 embed-responsive-4by3">
-			    			<img class="img-size" src="/images/servesearch.png">
-			    		</div>
-			   	  		
-			   	  		<div class="col-md-offset-3 col-md-9 embed-responsive-4by3">
-			   	   			<img  class="img-size"  src="/images/duckhunt_small.png"> 
-			   	  		</div>
-			    		
-			    		<div class="col-md-offset-3 col-md-9 embed-responsive-4by3">
-			    			<img  class="img-size" src="/images/todolist_small.png"> 
-			    		</div>
+			   	  		<ul class="img-list">
+			   	  			<li>
+					    		<div class="col-md-9 embed-responsive-4by3">
+					    			<img class="img-size col-md-offset-4" src="/images/servesearch.png">
+					    			<span class="no-gutters text-content">
+					    				<h5>Serve Search</h5><br>
+					    				<p>Feb 21st 2015</p>
+					    			</span>
+					    		</div>
+					    		<div class="col-md-3">
+					    			
+					    			<p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					    		</div>
+			   	  			</li>
+				    		<li>
+					    		<div class=" col-md-9 embed-responsive-4by3">
+					    			<img  class="img-size col-md-offset-4" src="/images/todolist_small.png"> 
+					    			<span class="text-content">
+					    				<h5>Todo List</h5><br>
+					    				<p>Dec 10th 2014</p>
+					    			</span>
+					    		</div>
+					    		<div class="col-md-3">
+					    			
+					    			<p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					    			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					    			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					    			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					    			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					    			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					    		</div>
+				    		</li>
+				   	  		<li>
+					   	  		<div class=" col-md-9 embed-responsive-4by3">
+					   	   			<img  class="img-size col-md-offset-4"  src="/images/duckhunt_small.png"> 
+					   	   			<span class="text-content">
+					   	   				<h5>Duck Hunt</h5><br>
+					   	   				<p>Jan 10th 2015</p>
+					   	   			</span>
+					   	  		</div>
+					   	  		<div class="col-md-3">
+					   	  			
+					   	  			<p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					   	  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					   	  			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					   	  			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					   	  			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					   	  			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					   	  		</div>
+				   	  		</li>
+			   	  		</ul>
 			   	  	</div>
 			  	
 		</div><!-- End Container-->
