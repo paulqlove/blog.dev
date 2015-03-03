@@ -8,12 +8,13 @@
 <div class="post-body">	
 	<p>{{ $posts->body }}</p>
 	@if (Auth::check())
+		<a  href="{{{ action('PostsController@edit', $posts->id)}}}">Edit</a>
 		
 		<a href="{{{ action('PostsController@index') }}}">Go Back</a>
-
 		{{ Form::open(array('action' => array('PostsController@destroy', $posts->id), 'method' => 'delete')) }}
 			{{ Form::submit('Delete Post', array('class' ,'btn btn-danger')) }}
 		{{ Form::close() }}
+
 	@endif
 	
 	@if (Auth::guest())

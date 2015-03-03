@@ -5,10 +5,10 @@
 					<div id="my-panel">
 						<nav>
 							<ul class="mainmenu" id="portmenu">
-								<a href="{{{ action('HomeController@showPortfolio')}}}"><li class="port-page"><p id="text-port">Work I've Done</p></li></a>
-								<a href="{{{ action('HomeController@showResume')}}}"><li class="port-page"><p id="text-resume">Who I Am</p></li></a>
-								<a href="#"><li class="port-page"><p>What I Do</p></li></a>
-								<a href="{{{ action('PostsController@index')}}}"><li class="port-page"><p id="text-blog">My Blog</p></li></a>
+								<a href="{{{ action('HomeController@showPortfolio')}}}"><li class="portpage"><p id="textport">Work I've Done</p></li></a>
+								<a href="{{{ action('HomeController@showResume')}}}"><li class="portpage"><p id="textresume">Who I Am</p></li></a>
+								<a href="#"><li class="portpage"><p>What I Do</p></li></a>
+								<a href="{{{ action('PostsController@index')}}}"><li class="portpage"><p id="textblog">My Blog</p></li></a>
 							</ul>
 						</nav>
 					</div>
@@ -20,11 +20,12 @@
 						<div class=" col-md-12">
 							<h3><a id="menuRecall" href="#">Menu</h3></a>
 						</div>
+			   	  		
 			   	  		<ul class="img-list">
 			   	  			<li>
 					    		<div class="col-md-9 embed-responsive-4by3">
 					    			<img class="img-size col-md-offset-4" src="/images/servesearch.png">
-					    			<span class="no-gutters text-content">
+					    			<span class="no-gutters textcontent">
 					    				<h5>Serve Search</h5><br>
 					    				<p>Feb 21st 2015</p>
 					    			</span>
@@ -42,7 +43,7 @@
 				    		<li>
 					    		<div class=" col-md-9 embed-responsive-4by3">
 					    			<img  class="img-size col-md-offset-4" src="/images/todolist_small.png"> 
-					    			<span class="text-content">
+					    			<span class="textcontent">
 					    				<h5>Todo List</h5><br>
 					    				<p>Dec 10th 2014</p>
 					    			</span>
@@ -60,7 +61,7 @@
 				   	  		<li>
 					   	  		<div class=" col-md-9 embed-responsive-4by3">
 					   	   			<img  class="img-size col-md-offset-4"  src="/images/duckhunt_small.png"> 
-					   	   			<span class="text-content">
+					   	   			<span class="textcontent">
 					   	   				<h5>Duck Hunt</h5><br>
 					   	   				<p>Jan 10th 2015</p>
 					   	   			</span>

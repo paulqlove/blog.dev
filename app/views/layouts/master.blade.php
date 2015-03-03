@@ -9,7 +9,7 @@
 		
 		<link rel="stylesheet" type="text/css" href="/css/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="/css/custom.css">
-		<script src="/js/jquery.min.js"></script>
+		
 
 		  <script>
 		  if (!window.jQuery) {
@@ -27,7 +27,7 @@
 		
 			@yield('content')
 
-			<!-- +++++ No Script Fallback notice +++++ -->
+		
 			<noscript>
 			    <div>
 			      Turn on your JavaScript!
@@ -36,7 +36,7 @@
 
 		<script type="text/javascript" src="/js/my_blog.js"></script>		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    
 	    <script src="/css/bootstrap/js/bootstrap.min.js"></script>
 		
 	</body>

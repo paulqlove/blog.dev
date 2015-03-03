@@ -78,6 +78,7 @@ a:hover {
 	text-decoration: none;
 	color: #50D9FF;
 
+
 }
 h1 {
 	
@@ -98,7 +99,7 @@ li.landingpage {
 	
 	
 }
-li.port-page {
+li.portpage {
 	
 	box-shadow: 1px 2px 1px #888888;
 	background-color: #fff;
@@ -112,7 +113,7 @@ li.port-page {
 	
 }
 
-li.port-page:hover a,
+li.portpage:hover a,
 li:hover,
 li.landingpage:hover a {
 	background-color: #aee3ba;
@@ -142,12 +143,7 @@ ul {
 	display: inline;
 	padding-left: 10px;
 }
-tr:nth-child(even){
-	background-color: #F2F2F2;
-	border-style: solid;
-	border-width: 5px;
-	border-color: #F2F2F2;
-}
+
 .landing-ul {
 
 	text-transform: uppercase;
@@ -156,7 +152,7 @@ tr:nth-child(even){
 	color: #aee3ba;
 
 }
-span.text-content {
+span.textcontent {
   background: #444;
   color: white;
   cursor: pointer;
@@ -172,17 +168,17 @@ span.text-content {
   -o-transition: opacity 800ms;
    transition: opacity 800ms;
 }
-.text-content  {
+.textcontent  {
  
   text-align: center;
 
 }
-.text-content > h5,
-.text-content > p {
+.textcontent > h5,
+.textcontent > p {
 	padding-top: 40px;
 
 }
-ul.img-list li:hover span.text-content {
+ul.img-list li:hover span.textcontent {
   opacity: 0;
 }
 .summary {
@@ -331,12 +327,94 @@ ul.img-list li:hover span.text-content {
 #deletepadding {
 	padding-left: 0px;
 }
-/*black overlay on each project*/
+/*clickable row */
+/*****************************/
+table#clickableRow {
+    border-collapse: collapse;   
+}
+.tableHeader {
+	height: 50px;
+}
+#clickableRow tr {
+    background-color: #eee;
+    border-top: 1px solid #fff;
+}
+#clickableRow tr:hover {
+background-color: #ccc;
+}
+#clickableRow th {
+    background-color: #fff;
+}
+#clickableRow th, 
+#clickableRow td {
+    padding: 3px 5px;
+}
+#clickableRow td:hover {
+    cursor: pointer;
+}
+
+/*****************************/
 /*****************************/
 
-
-/*****************************/
-/*****************************/
+/************PAGER*****************************/
+/*********************************************/
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+.pager li > a,
+.pager li > span {
+  border-radius: 3px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  background: #787E89;
+  color: #fff;
+  margin: 0 5px;
+  width: 95px;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      transition-delay: 0.2s;
+      box-shadow: 0 1px 13px 0 rgba(0, 0, 0, 0.26);
+      border-radius: 5px;
+}
+.pager li {
+  background: inherit;
+}
+.pager .ti {
+  font-size: 80%;
+}
+.text-right.pager {
+  text-align: right;
+}
+.text-left.pager {
+  text-align: left;
+}
+.pager li > a:hover,
+.pager li > a:focus {
+  background-color: #787E89;
+  color: #ffffff;
+  border-color: #4b3f38;
+}
+.pager > .disabled > span,
+.pager > .disabled > span:hover,
+.pager > .disabled > span:focus,
+.pager > .disabled > a,
+.pager > .disabled > a:hover,
+.pager > .disabled > a:focus {
+  color: #eee;
+  background-color: #eee;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+  visibility: hidden;
+}
+/******************************************/
+/******************************************/
 #landingpageBG 	{ 
   background: url('/images/hero.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -368,8 +446,8 @@ ul.img-list li:hover span.text-content {
 	right: 25%;
 }
 #secondsection {
-	position: relative;
-	top: 20px;	
+	
+		
 	text-transform: uppercase;
 	background-color: #fff;
 	margin-right: 0px;

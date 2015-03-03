@@ -16,6 +16,7 @@
 								<li  class="landingpage"><a href="{{{ action('PostsController@index')}}}">My Blog</a></li>
 							    <input name="search" type="text" class="movesearchbar" placeholder="search">
 								<button type="submit" class="movesearchbar ">Submit</button>
+								<li class="landingpage"><a href="{{{ action('PostsController@create')}}}">Home</a></li>
 						 </ul>			
 							</form>
 			</nav><!-- navbar default -->
@@ -23,45 +24,37 @@
 
 		<div class="col-md-12">
 			<h3><a id="menuRecall" href="#">Menu</h3></a>
-					<h1>My Blog</h1>
+					<h1>My Blog</h1><br>
 					<div class="col-md-9">
-						<table class="table table-striped table-hover">
+						<table class="table table-striped table-hover" id="clickableRow">
 							<tr class="tableHeader">
 								<th class="hidden">&nbsp</th> 
 								<th>Title</th>
 								<th>Blog Entry</th>
 								<th>Date</th>
-								<th>Actions</th>
+								
 							</tr>
 								@foreach($posts as $post)
 							
 									<tr>
+										<td class="hidden"> <a  href="{{{ action('PostsController@show', $post->id)}}}"></a></td>
 										<td>{{{ $post->title }}}</td>
 										<td>{{{ $post->body }}}</td>
 										<td>{{{ $post->created_at->setTimezone('America/Chicago')->format('l, F jS Y  h:i:s A') }}}</td>
-										<td>
-											<a class="" href="{{{ action('PostsController@show', $post->id)}}}">Read More</a>
-											<a class="" href="{{{ action('PostsController@edit', $post->id)}}}">Edit</a>
-											
-
-											{{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'delete')) }}
-											{{ Form::submit('Delete Post', array('class' => 'actionButton','class' => 'landingpage')) }}
-											{{ Form::close() }}
-										</td>
+										
 									</tr>
-									
+
 								@endforeach
 							
 						</table>
 					</div>
-				</div>
-				
-				<div class="pagination" >
-					
+				<div class="col-md-offset-4 col-md-8 ">
+					<div class="pager" >
 					{{ $posts->links() }}
-					<a href="{{{ action('PostsController@create')}}}">Home</a>
-
+					</div>
 				</div>
+		</div>
+		
 					
 		<div  id="secondsection" >
 			
@@ -75,11 +68,6 @@
 						
 						{{ Form::close() }}
 				</div>
-			
 			</div>
-		
 		</div><!--Secondsection -->
-
-
-
 @stop

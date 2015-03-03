@@ -1,14 +1,14 @@
 $(document).ready(function(){
 
 
-
-
-$('.text-content').width($('body').width());
-
-$('.text-content').each(function(){
+$('.textcontent').each(function(){
       var parentHeight = $(this).parent().height();
       $(this).height(parentHeight);    
 });
+
+
+$('.textcontent').width($('body').width());
+
 
 $('#menuRecall').click(function(){
 	$('ul#portmenu').animate({left: '+=250'},200);
@@ -16,7 +16,7 @@ $('#menuRecall').click(function(){
 $('#menuRecall').click(function(){
 	$('ul#indexmenu').animate({left: '+=250'},200);
 });
-$('.text-content').hover(function(){
+$('.textcontent').hover(function(){
 	$('.summary').css('color','black');
 });
 //click on project to make the black overlay fade out
@@ -27,27 +27,33 @@ $('.text-content').hover(function(){
 	});
 //*********************//
 //**********MENU HOVER ACTIONS***********//
-$('#text-port').mouseover(function(){
+$('#textport').mouseover(function(){
 	
 	$(this).text('Portfolio');
 });
-$('#text-port').mouseleave(function(){
+$('#textport').mouseleave(function(){
 	
 	$(this).text('Work I\'ve Done');
 });
-$('#text-resume').mouseover(function(){
+$('#textresume').mouseover(function(){
 	$(this).text('Resume');
 });
-$('#text-resume').mouseleave(function(){
+$('#textresume').mouseleave(function(){
 	$(this).text('Who I am');
 });
 
-$('#text-blog').mouseover(function(){
+$('#textblog').mouseover(function(){
 	$(this).text('Blog');
 });
-$('#text-blog').mouseleave(function(){
+$('#textblog').mouseleave(function(){
 	$(this).text('My Blog');
 });
 
-
+// making rows clickable //
+$('#clickableRow tr').click(function() {
+    var href = $(this).find("a").attr("href");
+    if(href) {
+        window.location = href;
+    }
+});
 });

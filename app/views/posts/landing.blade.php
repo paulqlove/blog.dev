@@ -10,10 +10,10 @@
 				<div class="col-md-4">
 					<nav class="col-md-12">
 						<ul class="landing-ul">
-							<li class="landingpage"><a href="{{{ action('HomeController@showPortfolio')}}}"><p id="text-port">Work I've Done</p></li></a>
-							<li class="landingpage"><a href="#"><p id="text-resume">Who I Am</p></li></a>
+							<li class="landingpage"><a href="{{{ action('HomeController@showPortfolio')}}}"><p id="textport">Work I've Done</p></li></a>
+							<li class="landingpage"><a href="#"><p id="textresume">Who I Am</p></li></a>
 							<li class="landingpage"><a href="#"><p>What I Do</p></li></a>
-							<li class="landingpage"><a href="{{{ action('PostsController@index')}}}"><p id="text-blog">My Blog</p></li></a>
+							<li class="landingpage"><a href="{{{ action('PostsController@index')}}}"><p id="textblog">My Blog</p></li></a>
 						</ul>
 					</nav>
 				</div>
