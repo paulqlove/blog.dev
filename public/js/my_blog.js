@@ -45,10 +45,10 @@ $('#textresume').mouseleave(function(){
 
 
 // making rows clickable //
-$('#clickableRow tr').click(function() {
-    var href = $(this).find("a").attr("href");
-    if(href) {
-        window.location = href;
-    }
-});
+	$('#clickableRow tr').click(function() {
+	    var href = $(this).find("a").attr("href");
+	    if(href) {
+	        window.location = href;
+	    }
+	});
 });

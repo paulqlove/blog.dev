@@ -9,16 +9,22 @@
 		
 		<link rel="stylesheet" type="text/css" href="/css/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="/css/custom.css">
-		
+		<script src="/css/bootstrap/js/bootstrap.min.js"></script>
 
 		  <script>
 		  if (!window.jQuery) {
-		    document.write('<script src="/js/jquery.min.js"><\/script>');
+		    document.write('<script src="/bedifferent/theme/assets/js/jquery-1.11.1.min.js"><\/script>');
 		}
 		</script>
+			
 	</head>
 	<body>
 
+			<noscript>
+			    <div>
+			      Turn on your JavaScript!
+			  </div>
+			</noscript>
 				
 			@if(Session::has('errorMessage'))
 				<div class="alert alert-danger">{{{ Session::get('errorMessage')}}}</div>
@@ -28,16 +34,11 @@
 			@yield('content')
 
 		
-			<noscript>
-			    <div>
-			      Turn on your JavaScript!
-			  </div>
-			</noscript>
 
-		<script type="text/javascript" src="/js/my_blog.js"></script>		
+			
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	    
-	    <script src="/css/bootstrap/js/bootstrap.min.js"></script>
+	    <script type="text/javascript" src="/js/my_blog.js"></script>
 		
 	</body>
 </html>
