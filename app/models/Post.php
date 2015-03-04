@@ -10,20 +10,10 @@ class Post extends BaseModel
     	'body' => 'required'
     	);
    
-    public function getCreatedAtAttribute($value)
-	{
-	    $utc = Carbon::createFromFormat($this->getDateFormat(), $value);
-	    return $utc->setTimezone('America/Chicago');
-	}
-
-	public function getupDatedAtAttribute($value)
-	{
-	    $utc = Carbon::createFromFormat($this->getDateFormat(), $value);
-	    return $utc->setTimezone('America/Chicago');
-	}
+  
 	public function setTitleAttribute($value)
 	{
-		$this->attributes['title'] = ucfirst($value);
+		$this->attributes['title'] = ($value);
 	}
 	public function user()
 	{
@@ -31,16 +21,17 @@ class Post extends BaseModel
 	}
 	public function uploadFile($file)
 		{
+			
 
-			if (Input::hasFile('image')) {
+
 				$uploadPath = public_path() . '/uploads';
-				$fileName = $this->id . '-' . Input::file('image')->getClientOriginalName();
+				$fileName = $this->id . '-' . $file->getClientOriginalName();
 				
-				Input::file('image')->move($uploadPath, $fileName);
+				$file->move($uploadPath, $fileName);
 
 				$this->img_url = '/uploads/' . $fileName;
 
 				$this->save();
-			}
+			
 		}
 }

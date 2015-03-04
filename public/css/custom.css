@@ -126,15 +126,7 @@ nav {
 }
 
 
-table {
-	position: relative;
-	left: 260px;
-	top: 55px;
-	height: 400px;
-	color: #a5adb0;
-	padding: 5px;
-	border-spacing: 0px;
-}
+
 td {
 	padding: 5px;
 }
@@ -237,6 +229,7 @@ ul.img-list li:hover span.textcontent {
 	height: 36px;
 	margin-top: 5px;
 	padding: 10px 5px;
+
 	text-align: right;
 	border-radius: 2px;
 	text-transform: uppercase;
@@ -334,6 +327,9 @@ table#clickableRow {
 }
 .tableHeader {
 	height: 50px;
+}
+#buttonPadding {
+	margin-bottom: 100px;
 }
 #clickableRow tr {
     background-color: #eee;
@@ -476,16 +472,16 @@ background-color: #ccc;
 }
 ul#indexmenu {
 	position: fixed;
-	padding-top: 100px;
+	padding-top: 30px;
 	border-right: solid;
 	border-width: 0px;
 	padding-bottom: 50%;
-	background-color: #F2F2F2;
+	background-color: #343d46;
 	text-transform: uppercase;
 	clear: both;
 	width: 250px;
 	left: -250px;
-	box-shadow: 5px 0px 34px #888888;
+	box-shadow: 1px 0px 3px #a7adba;
 	z-index: 1;
 }
 

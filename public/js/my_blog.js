@@ -42,12 +42,7 @@ $('#textresume').mouseleave(function(){
 	$(this).text('Who I am');
 });
 
-$('#textblog').mouseover(function(){
-	$(this).text('Blog');
-});
-$('#textblog').mouseleave(function(){
-	$(this).text('My Blog');
-});
+
 
 // making rows clickable //
 $('#clickableRow tr').click(function() {

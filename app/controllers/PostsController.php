@@ -4,81 +4,66 @@ class PostsController extends \BaseController
 {
 	public function __construct()
 	{
-		parent:: __construct();
+		
 
 		$this->beforeFilter('auth',array('except' => array('index','show')));
 	}
-	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return Response
-	 */
+
 	public function index()
 	{	
-		$query = Post::with('user');
+		
 		
 		if(Input::has('search')){
+			$search = Input::get('search');
 			$query = Post::with('user');
 
-			$search = Input::get('search');
 			$query->where('title', 'like', '%' . $search . '%');
-
-			// $query->orWhere('created_at', 'like', '%' . $search . '%');
-
-			$query->orWhereHas('user', function($q){
-				$search = Input::get('search');
-				$q->where('email', 'like', '%' . $search . '%');
-			});
+			$query->orWhere('body', 'like', '%' . $search . '%' );
+			$query->orderBy('created_at', 'desc');
 			
-			$posts = $query->orderBy('created_at', 'desc')->paginate(2);
+			
+			$posts = $query->paginate(4);
+			return View::make('posts.index')->with('posts', $posts);
+		} else {
+
+			$posts = Post::with('user')->orderBy('created_at', 'desc')->paginate(4);
 			return View::make('posts.index')->with('posts', $posts);
 		}
 
-		$posts = Post::with('user')->paginate(4);
-		// $posts = Post::paginate(4);
-		return View::make('posts.index')->with('posts', $posts);
-
-		// return "Navigating to http://blog.dev/posts should return an index of every blog post";
+		
 	}
 
 
-	/**
-	 * Show the form for creating a new resource.
-	 *
-	 * @return Response
-	 */
 	public function create()
 	{	
 
-		$post = new Post();
-		$post->user_id = Auth::id();
-		return View::make('posts.landing');
+		// $post = new Post();
+		// $post->user_id = Auth::id();
+		return View::make('posts.show');
 		// return "Navigating to http://blog.dev/posts/create should show a form for creating a posts";
 		
 	}
 
 
-	/**
-	 * Store a newly created resource in storage.
-	 *
-	 * @return Response
-	 */
+	
 	public function store()
 	{
 			//create new post		
 			$post = new Post();
 
 			$post->user_id = Auth::id();
+			// $post->title = Input::get('title');
+			// $post->body = Input::get('body');
 			
+			// if(Input::hasFile('image_url')) {
+			// 	$post->uploadImage(Input::file('image_url'));
+			// }
+
+
 			return $this->savePost($post);
-		
+			
 	}
-	/**
-	 * Display the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
+	
 	public function show($id)
 	{
 		// return "should show a specific post that user wants. ";
@@ -88,12 +73,7 @@ class PostsController extends \BaseController
 	}
 
 
-	/**
-	 * Show the form for editing the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
+	
 	public function edit($id)
 	{
 		$posts = Post::findOrFail($id);
@@ -101,27 +81,22 @@ class PostsController extends \BaseController
 	}
 
 
-	/**
-	 * Update the specified resource in storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
+	
 	public function update($id)
 	{
 		
 		$post = Post::findOrFail($id);
+		// $post->title = Input::get('title');
+		// $post->body = Input::get('body');
+		if(Input::hasFile('img_url')) {
+			$post->uploadImage(Input::file('img_url'));
+		}
 		return $this->savePost($post);
 
 	}
 
 
-	/**
-	 * Remove the specified resource from storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
+	
 	public function destroy($id)
 	{
 		try {
@@ -149,16 +124,20 @@ class PostsController extends \BaseController
 			Session::flash('errorMessage', ' Failed to save your post!');
 			return Redirect::back()->withInput()->withErrors($validator);
 		} else {
-			Session::flash('successMessage', 'Filed saved!');
+			
 			//create title and body
+			$post->user_id =Auth::id();
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
-			//save it 
+			
 			$post->save();
 
 			if(Input::hasFile('image')) {
 				$post->uploadFile(Input::file('image'));
+			//save it 
+			$post->save();
 			}
+			Session::flash('successMessage', 'Post successfully saved!');
 			//redirect to the index action of post controller
 			return  Redirect::action('PostsController@index');
 		}

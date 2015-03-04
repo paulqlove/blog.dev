@@ -45,14 +45,26 @@ Route::post('login','HomeController@doLogin');
 Route::get('logout','HomeController@doLogout');
 
 
-// Route::get('search', function(){
-// 	$search = Input::get('search');
 
-// 	$query = Post::with('user');
+Route::get('search', function ()
+{
+	$search = Input::get('search');
+	$query = Post::with('user');
+	$query->where('title', 'like', '%' . $search . '%');
+	$query->orWhere('created_at', 'like', '%' . $search . '%');
+	$query->orWhereHas('user', function($q){
+		$search = Input::get('search');
+		$q->where('email', 'like', '%' . $search . '%');
+	});
+	$posts = $query->orderBy('created_at', 'desc')->paginate(4);
+	foreach ($posts as $post) {
+		echo $post->title;
+	}
+});
 
 
 
 	
-// });
+
 
 

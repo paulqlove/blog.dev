@@ -7,6 +7,9 @@
 
 <div class="post-body">	
 	<p>{{ $posts->body }}</p>
+	
+		<img src="{{{ $posts->img_url }}}">
+	
 	@if (Auth::check())
 		<a  href="{{{ action('PostsController@edit', $posts->id)}}}">Edit</a>
 		

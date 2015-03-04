@@ -8,7 +8,7 @@
 								<a href="{{{ action('HomeController@showPortfolio')}}}"><li class="portpage"><p id="textport">Work I've Done</p></li></a>
 								<a href="{{{ action('HomeController@showResume')}}}"><li class="portpage"><p id="textresume">Who I Am</p></li></a>
 								<a href="#"><li class="portpage"><p>What I Do</p></li></a>
-								<a href="{{{ action('PostsController@index')}}}"><li class="portpage"><p id="textblog">My Blog</p></li></a>
+								<a href="{{{ action('PostsController@index')}}}"><li class="portpage">My Blog</li></a>
 							</ul>
 						</nav>
 					</div>
