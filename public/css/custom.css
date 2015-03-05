@@ -183,7 +183,10 @@ ul.img-list li:hover span.textcontent {
 /*CLASSES BELOW HERE*/
 /*****************************/
 /*****************************/
-
+.blogTitle {
+	text-transform: uppercase;
+	font-weight: 800;
+}
 
 
 
@@ -222,7 +225,11 @@ ul.img-list li:hover span.textcontent {
 	max-width: 717px;
 	
 }
-
+.post-img-size {
+	max-height:250px;
+	 -webkit-box-shadow: none;
+  box-shadow: 2px 3px 2px #888888;
+}
 .movesearchbar {
 	background-color: #fff;
 	width: 235px;
@@ -426,7 +433,7 @@ background-color: #ccc;
 	}
 /*Button for sliding the sidebar back out*/
 #menuRecall {
-	z-index: 2;
+	
 }
 #page {
   clear: both;

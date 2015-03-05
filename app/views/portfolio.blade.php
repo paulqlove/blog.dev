@@ -17,15 +17,22 @@
 
 			   	  	<div class="no-gutters col-md-12">
 						
-						<div class=" col-md-12">
-							<h3><a id="menuRecall" href="#">Menu</h3></a>
+						<div class=" col-md-12 no-gutters">
+							<h3><a class="col-md-11" id="menuRecall" href="#">Menu</h3></a>
+						@if (Auth::guest())
+
+						@else
+							<a class="col-md-1" href="/logout" class="login-toggle header-btn header-btn-xl"> <h5>Logout</h5></a>
+			   	  		@endif
 						</div>
 			   	  		
+			   	  		<div class="col-md-12 no-gutters">
+
 			   	  		<ul class="img-list">
 			   	  			<li>
 					    		<div class="col-md-9 embed-responsive-4by3">
 					    			<img class="img-size col-md-offset-4" src="/images/servesearch.png">
-					    			<span class="no-gutters textcontent">
+					    			<span class="no-gutters textcontent" >
 					    				<h5>Serve Search</h5><br>
 					    				<p>Feb 21st 2015</p>
 					    			</span>
@@ -77,9 +84,10 @@
 					   	  		</div>
 				   	  		</li>
 			   	  		</ul>
+			   	  		</div>
 			   	  	</div>
 			  	
 		</div><!-- End Container-->
-		
+
 @stop
 

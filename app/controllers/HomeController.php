@@ -73,7 +73,7 @@ class HomeController extends BaseController {
 	{
 		Auth::logout();
 		Session::flash('successMessage','So long and thanks for visiting.');
-		return Redirect::action('HomeController@showHome');
+		return Redirect::action('HomeController@showLanding');
 	}
 
 	

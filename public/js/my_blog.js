@@ -1,13 +1,17 @@
 $(document).ready(function(){
 
+$('.textcontent').width($('body').width());
+
+
+
 
 $('.textcontent').each(function(){
       var parentHeight = $(this).parent().height();
       $(this).height(parentHeight);    
+
 });
 
 
-$('.textcontent').width($('body').width());
 
 
 $('#menuRecall').click(function(){
@@ -20,11 +24,7 @@ $('.textcontent').hover(function(){
 	$('.summary').css('color','black');
 });
 //click on project to make the black overlay fade out
-	$('section').click(function() {
-		
-		$(this).css('visibility','hidden');
 	
-	});
 //*********************//
 //**********MENU HOVER ACTIONS***********//
 $('#textport').mouseover(function(){

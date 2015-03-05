@@ -23,32 +23,62 @@
 		</div>
 
 		<div class="col-md-12">
-			<div class="col-md-12">
-				<h3><a id="menuRecall" href="#">Menu</h3></a>
-					<h1>My Blog</h1><br>
-			</div>
+			<div class=" col-md-12">
+						@if (Auth::guest())
+							<h3><a class="col-md-10" id="menuRecall" href="#">Menu</h3></a>
+								<h4 class="col-md-2">My Blog</h4><br>
+						@else
+						<h3><a class="col-md-11" id="menuRecall" href="#">Menu</h3></a>
+							<a class="col-md-1" href="/logout" class="login-toggle header-btn header-btn-xl"> <h5>Logout</h5></a>
+							<a href="{{{ action('PostsController@index') }}}">Go Back</a>
+							
+			   	  		@endif
+						</div>
 					<div class="col-md-offset-2 col-md-8">
-						<table class="table table-striped table-hover " id="clickableRow">
-							<tr class="tableHeader">
-								<th class="hidden">&nbsp</th> 
-								<th>Title</th>
-								<th>Blog Entry</th>
-								<th>Date</th>
-								
-							</tr>
+						
 								@foreach($posts as $post)
 							
-									<tr>
-										<td class="hidden"> <a  href="{{{ action('PostsController@show', $post->id)}}}"></a></td>
-										<td>{{{ $post->title }}}</td>
-										<td>{{{ $post->body }}}</td>
-										<td>{{{ $post->created_at->setTimezone('America/Chicago')->format('l, F jS Y  h:i:s A') }}}</td>
-										
-									</tr>
+								<div class="col-md-12">
+									<div class="col-md-10">
+										<div class="row">
+											<div class="col-md-12">
+												<h2 class="col-md-12 blogTitle">{{ $post->title }}</h2>
+												<h5><em>By:</em> {{{ $post->user->email }}}</h5>
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-md-10">
+										<div class="col-md-8">
+											<div class="col-md-12">	
+												<p>{{ $post->body }}</p>
+											</div>
+										</div>
+										<div class=" col-md-4 embed-responsive-4by3">
+											
+											<img class="post-img-size" src="{{{ $post->img_url }}}">
+										</div>
+									</div>
+									<div class="col-md-2">
+										@if (Auth::guest())
+										@else
+										<div class="col-md-12">
+											<div class="col-md-12">
+												<button><a href="{{{ action('PostsController@edit', $post->id)}}}">Edit</a></button>
+											</div>
+											<div class="col-md-12">
+												{{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'delete')) }}
+												{{ Form::submit('Delete Post', array('class' ,'btn btn-danger')) }}
+												{{ Form::close() }}
+											</div>
+										</div>
+										@endif
+									</div>
 
+								</div>
 								@endforeach
 							
-						</table>
+
 					</div>
 				<div class="col-md-offset-4 col-md-8 ">
 					<div class="pager" >

@@ -2,27 +2,59 @@
 
 @section('content')
 
-		<p>{{ $posts->title }}</p>
-		<h5>by {{{ $posts->user->email }}}</h5>
+<div class="container-fluid no-gutters">
+	<div class="col-md-4">
+		<nav class="col-md-12">
+						<form role="search" action="{{{ action('PostsController@index') }}}" method="get"> 
+					<ul id="indexmenu">
+						    <input name="search" type="text" class="movesearchbar" placeholder="search">
+							<button type="submit" class="movesearchbar " id="buttonPadding">Submit</button>
+							<li  class="landingpage"><a href="{{{action('HomeController@showPortfolio')}}}"><p id="textport">Work I've Done</p></a></li>
+							<li  class="landingpage"><a href="#"><p id="textresume">Who I Am</p></a></li>
+							<li  class="landingpage"><a href="#">What I Do</a></li>
+							<li  class="landingpage"><a href="{{{ action('PostsController@index')}}}">My Blog</a></li>
+							<li class="landingpage"><a href="{{{ action('HomeController@showLanding')}}}">Home</a></li>
+					 </ul>			
+						</form>
+		</nav><!-- navbar default -->
+	</div>
 
-<div class="post-body">	
-	<p>{{ $posts->body }}</p>
-	
-		<img src="{{{ $posts->img_url }}}">
-	
-	@if (Auth::check())
-		<a  href="{{{ action('PostsController@edit', $posts->id)}}}">Edit</a>
+	<div class="col-md-12">
+		<div class="col-md-12">
+			<div class="row">
+				@if (Auth::guest())
+					<h3><a class="col-md-10" id="menuRecall" href="#">Menu</h3></a>
+						<h4 class="col-md-2">My Blog</h4><br>
+				@else
+				<h3><a class="col-md-11" id="menuRecall" href="#">Menu</h3></a>
+					<a class="col-md-1" href="/logout" class="login-toggle header-btn header-btn-xl"> <h5>Logout</h5></a>
+					<a  href="{{{ action('PostsController@edit', $posts->id)}}}">Edit</a>
+						
+						<a href="{{{ action('PostsController@index') }}}">Go Back</a>
+						{{ Form::open(array('action' => array('PostsController@destroy', $posts->id), 'method' => 'delete')) }}
+							{{ Form::submit('Delete Post', array('class' ,'btn btn-danger')) }}
+						{{ Form::close() }}
+	   	  		@endif
+			</div>
+		</div>
 		
-		<a href="{{{ action('PostsController@index') }}}">Go Back</a>
-		{{ Form::open(array('action' => array('PostsController@destroy', $posts->id), 'method' => 'delete')) }}
-			{{ Form::submit('Delete Post', array('class' ,'btn btn-danger')) }}
-		{{ Form::close() }}
-
-	@endif
-	
-	@if (Auth::guest())
-		<h2>Welcome Guest</h2>
-	@endif
+		<div class="col-md-12">
+			<div class="row">
+				<h2 class="col-md-offset-4 blogTitle">{{ $posts->title }}</h2>
+				<h5 class="col-md-offset-4"><em>By:</em> {{{ $posts->user->email }}}</h5>
+			</div>
+		</div>
+			<div class="col-md-12">
+				<div class="col-md-offset-2 col-md-4 post-body">	
+					<p>{{ $posts->body }}</p>
+				</div>
+				<div class=" col-md-4 embed-responsive-4by3">
+					<img class="post-img-size" src="{{{ $posts->img_url }}}">
+				</div>
+			</div>
+				
+		</div>
+	</div>
 </div>
 
 @stop
