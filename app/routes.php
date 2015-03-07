@@ -36,6 +36,8 @@ Route::get('resume/{name}','HomeController@showResume');
 Route::get('portfolio', 'HomeController@showPortfolio');
 
 
+Route::get('whackamole', 'HomeController@showWhackamole');
+
 Route::resource('posts', 'PostsController');
 
 Route::get('login','HomeController@showLogin');

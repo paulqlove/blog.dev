@@ -162,16 +162,21 @@ span.textcontent {
 }
 .textcontent  {
  
-  text-align: center;
-
+  text-align: right;
+  
 }
 .textcontent > h5,
 .textcontent > p {
-	padding-top: 40px;
-
+	padding-top: 30px;
+	padding-right: 10px;
+}
+.textcontent > h5 {
+	font-size: 10em;
+	letter-spacing: .1em;
 }
 ul.img-list li:hover span.textcontent {
   opacity: 0;
+  z-index: -4;
 }
 .summary {
 	
@@ -222,8 +227,8 @@ ul.img-list li:hover span.textcontent {
 
 }
 .img-size {
-	max-width: 717px;
-	
+	width: 717px;
+	height: 399px;
 }
 .post-img-size {
 	max-height:250px;

@@ -1,15 +1,16 @@
 $(document).ready(function(){
 
-$('.textcontent').width($('body').width());
+	$('.textcontent').width($('.container').width());
 
 
 
 
-$('.textcontent').each(function(){
-      var parentHeight = $(this).parent().height();
-      $(this).height(parentHeight);    
+	$('.textcontent').each(function(){
+	      var parentHeight = $(this).parent().height();
+	      $(this).height(parentHeight);    
 
-});
+	});
+
 
 
 

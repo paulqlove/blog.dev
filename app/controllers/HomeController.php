@@ -49,6 +49,10 @@ class HomeController extends BaseController {
 	{
 		return View::make('portfolio');
 	}
+	public function showWhackamole()
+	{
+		return View::make('whackamole');
+	}
 	public function showLogin()
 	{
 		return View::make('login');

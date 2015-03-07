@@ -7,7 +7,7 @@
 			<div class="row">
 
 			
-				<div class="col-md-4">
+				<div class="col-md-3">
 					<nav class="col-md-12">
 						<ul class="landing-ul">
 							<li class="landingpage"><a href="{{{ action('HomeController@showPortfolio')}}}"><p id="textport">Work I've Done</p></li></a>
