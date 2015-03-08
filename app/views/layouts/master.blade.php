@@ -30,7 +30,25 @@
 			@yield('content')
 
 		
+		<footer>
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-12">
+						<h5>Contact</h5>
+					</div>
+					<div class="col-md-12">
+						<ul>
+							<li>linkedin</li>
+							<li>Git</li>
+							<li>email</li>
+							<li>pin</li>
+							
+						</ul>
+					</div>
+				</div>
 
+			</div>
+		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="/css/bootstrap/js/bootstrap.min.js"></script>	
 	    <script type="text/javascript" src="/js/my_blog.js"></script>

@@ -10,8 +10,8 @@
 						    <input name="search" type="text" class="movesearchbar" placeholder="search">
 							<button type="submit" class="movesearchbar " id="buttonPadding">Submit</button>
 							<li  class="landingpage"><a href="{{{action('HomeController@showPortfolio')}}}"><p id="textport">Work I've Done</p></a></li>
-							<li  class="landingpage"><a href="#"><p id="textresume">Who I Am</p></a></li>
-							<li  class="landingpage"><a href="#">What I Do</a></li>
+							<li  class="landingpage"><a href="{{{ action('HomeController@showResume')}}}"><p id="textresume">Who I Am</p></a></li>
+							<li  class="landingpage"><a href="{{{ action('HomeController@showSkills')}}}">What I Do</a></li>
 							<li  class="landingpage"><a href="{{{ action('PostsController@index')}}}">My Blog</a></li>
 							<li class="landingpage"><a href="{{{ action('HomeController@showLanding')}}}">Home</a></li>
 					 </ul>			

@@ -178,6 +178,17 @@ ul.img-list li:hover span.textcontent {
   opacity: 0;
   z-index: -4;
 }
+.style-list li {
+	display: block;
+	margin: 5px;
+	padding: 3px 6px;
+	border-radius: 4px;
+	background: #ddd;
+	float: left;
+	font-size: 1.125em;
+	line-height: 1.500em;
+	list-style: none;
+}
 .summary {
 	
 	color: #fff;
@@ -192,7 +203,11 @@ ul.img-list li:hover span.textcontent {
 	text-transform: uppercase;
 	font-weight: 800;
 }
+.bottem-border {
+	border-bottom-style: solid;
+	border-bottom-width: 4px;
 
+}
 
 
 .centerblock {
@@ -324,8 +339,18 @@ ul.img-list li:hover span.textcontent {
 	background-color: #aee3ba;
 	box-shadow: 2px;
 }
+.portfolioContent {
+	text-align: justify;
+}
+.portfolioProfile {
+	max-width: 250px;
+	margin-bottom: 10px;
 
 
+}
+.title {
+	margin-bottom: 2em;
+}
 /*****************************/
 /*ID'S BELOW HERE*/
 /*****************************/

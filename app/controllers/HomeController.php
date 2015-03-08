@@ -31,9 +31,9 @@ class HomeController extends BaseController {
 	{
 		return "Hello $name! I hear you're $age years old";
 	}
-	public function showResume($name)
+	public function showResume()
 	{
-		return View::make('resume')->with('name', $name);
+		return View::make('resume');
 	}
 	public function rollDice($guess)
 	{
@@ -60,6 +60,10 @@ class HomeController extends BaseController {
 	public function showLanding()
 	{
 		return View::make('posts.landing');
+	}
+	public function showSkills()
+	{
+		return View::make('skills');
 	}
 	public function doLogin()
 	{	

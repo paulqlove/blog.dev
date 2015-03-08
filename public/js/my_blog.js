@@ -11,8 +11,9 @@ $(document).ready(function(){
 
 	});
 
-
-
+$('li.landingpage').load(function(){
+		$('li.landingpage').css('background-color','#aee3ba');
+});
 
 
 $('#menuRecall').click(function(){
@@ -37,7 +38,7 @@ $('#textport').mouseleave(function(){
 	$(this).text('Work I\'ve Done');
 });
 $('#textresume').mouseover(function(){
-	$(this).text('Resume');
+	$(this).text('About Me');
 });
 $('#textresume').mouseleave(function(){
 	$(this).text('Who I am');

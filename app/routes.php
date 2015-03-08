@@ -31,10 +31,11 @@ Route::get('say-hello/{name}/{age}', 'HomeController@showNameAge' );
 
 Route::get('/rolldice/{guess}', 'HomeController@rollDice');
 
-Route::get('resume/{name}','HomeController@showResume');
+Route::get('resume','HomeController@showResume');
 
 Route::get('portfolio', 'HomeController@showPortfolio');
 
+Route::get('skills', 'HomeController@showSkills');
 
 Route::get('whackamole', 'HomeController@showWhackamole');
 
