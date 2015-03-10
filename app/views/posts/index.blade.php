@@ -11,18 +11,20 @@
 							<form role="search" action="{{{ action('PostsController@index') }}}" method="get"> 
 						<ul id="indexmenu">
 							    <input name="search" type="text" class="movesearchbar" placeholder="search">
-								<button type="submit" class="movesearchbar " id="buttonPadding">Submit</button>
+								<button type="submit" class="movesearchbar " id="buttonPadding"><p>Submit</p></button>
 								<li  class="landingpage"><a href="{{{action('HomeController@showPortfolio')}}}"><p id="textport">Work I've Done</p></a></li>
 								<li  class="landingpage"><a href="{{{ action('HomeController@showResume')}}}"><p id="textresume">Who I Am</p></a></li>
-								<li  class="landingpage"><a href="{{{ action('HomeController@showSkills')}}}">What I Do</a></li>
-								<li  class="landingpage"><a href="{{{ action('PostsController@index')}}}">My Blog</a></li>
-								<li class="landingpage"><a href="{{{ action('HomeController@showLanding')}}}">Home</a></li>
+								
+								<li  class="landingpage"><a href="{{{ action('PostsController@index')}}}"><p id="textblog">My Blog</p></a></li>
+								<li class="landingpage"><a href="{{{ action('HomeController@showLanding')}}}"><p>Home</p></a></li>
 						 </ul>			
 							</form>
 			</nav><!-- navbar default -->
 		</div>
 
 		<div class="col-md-12">
+			<div class="row">
+			
 			<div class=" col-md-12">
 						@if (Auth::guest())
 							<h3><a class="col-md-10" id="menuRecall" href="#">Menu</h3></a>
@@ -79,14 +81,15 @@
 								@endforeach
 							
 
-					</div>
+					</div><!-- wraps foreach loop -->
 				<div class="col-md-offset-4 col-md-8 ">
 					<div class="pager" >
 					{{ $posts->links() }}
 					</div>
 				</div>
 		</div>
-		
+		</div> <!-- row -->
+	</div>
 		@if(Auth::guest())	
 
 

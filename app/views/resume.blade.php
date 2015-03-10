@@ -5,10 +5,10 @@
 					<div id="my-panel">
 						<nav>
 							<ul class="mainmenu" id="portmenu">
-								<a href="{{{ action('HomeController@showPortfolio')}}}"><li class="portpage"><p id="textport">Work I've Done</p></li></a>
-								<a href="{{{ action('HomeController@showResume')}}}"><li class="portpage"><p id="textresume">Who I Am</p></li></a>
-								<a href="{{{ action('HomeController@showSkills')}}}"><li class="portpage"><p>What I Do</p></li></a>
-								<a href="{{{ action('PostsController@index')}}}"><li class="portpage">My Blog</li></a>
+								<li class="portpage"><a href="{{{ action('HomeController@showPortfolio')}}}"><p id="textport">Work I've Done</p></li></a>
+								<li class="portpage"><a href="{{{ action('HomeController@showResume')}}}"><p id="textresume">Who I Am</p></li></a>
+								
+								<li class="portpage"><a href="{{{ action('PostsController@index')}}}"><p id="textblog">My Blog</p></li></a>
 							</ul>
 						</nav>
 					</div>
@@ -18,7 +18,7 @@
 			   	  	<div class="no-gutters col-md-12">
 						
 						<div class=" col-md-12 no-gutters">
-							<h3><a class="col-md-1" id="menuRecall" href="#">Menu</a></h3>
+							@include('partials.header')
 						@if (Auth::guest())
 
 						@else
@@ -30,9 +30,9 @@
 			   	  	</div>
 			   	  	<div class="col-md-12">
 			   	  		<div class="row">
-			   	  			<div class="col-md-12 bottem-border">
+			   	  			<div class="col-md-12">
 			   	  				<div class="col-md-8">
-			   	  					<h3>About Paul</h3>
+			   	  				
 			   	  				</div>
 			   	  				<div class="col-md-4 embed-responsive-4by3">
 			   	  					<img src="/images/e_demoday-0015.jpeg"  class="portfolioProfile">
@@ -52,7 +52,7 @@
 			   	  				<div class="col-md-offset-3 col-md-8">
 			   	  					<section>
 			   	  						<h4 class="col-md-6 title">The Analog</h4>
-			   	  						<p class="col-md-10 portfolioContent">Lorem ipsum dolor sit amet, suspendisse quisque minima fusce in orci, massa eu fusce libero quisque nunc, nibh ipsum, cursus id aliquam lobortis, lectus et nisl aptent elit mollis. Ut aliquam erat, aliquam id nunc porttitor. Bibendum ligula dis curae fermentum, aliquet magnis neque pretium sed. Lectus eu dignissim vestibulum donec urna, massa mattis diam nullam cras interdum non, enim nunc nam sodales vivamus eu, lacus at eget odio leo mi, tincidunt amet et. Nunc nonummy, ligula magna, commodo sociosqu.</p>
+			   	  						<p class="col-md-10 portfolioContent">Here’s a little bit about me. I grew up in Chattanooga Tennessee and have always had a thirst to try new experiences.  I’m a self proclaimed tinkerer,  and like to dabble in woodworking and charcuterie.  I love hitting the road and traveling with my wife and two dogs.</p>
 			   	  					</section>
 			   	  				</div>
 			   	  				<div class="col-md-offset-3 col-md-8">

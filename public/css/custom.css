@@ -17,6 +17,14 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
+header {
+	
+	z-index: 100;
+}
+footer {
+	background-color: transparent;
+	text-align: center;
+}
 @media (min-width: 500px) {
   body {
     
@@ -162,12 +170,12 @@ span.textcontent {
 }
 .textcontent  {
  
-  text-align: right;
+  text-align: center;
   
 }
 .textcontent > h5,
 .textcontent > p {
-	padding-top: 30px;
+	padding-top: .1em;
 	padding-right: 10px;
 }
 .textcontent > h5 {
@@ -203,11 +211,7 @@ ul.img-list li:hover span.textcontent {
 	text-transform: uppercase;
 	font-weight: 800;
 }
-.bottem-border {
-	border-bottom-style: solid;
-	border-bottom-width: 4px;
 
-}
 
 
 .centerblock {
@@ -244,6 +248,17 @@ ul.img-list li:hover span.textcontent {
 .img-size {
 	width: 717px;
 	height: 399px;
+}
+.icons,
+ul > .icons {
+	max-height: 30px;
+	
+	display: inline;
+	margin: 1.2em 1.2em 2em 1.2em;
+
+}
+.icons:hover{
+	background-color: #fff;
 }
 .post-img-size {
 	max-height:250px;
@@ -348,8 +363,10 @@ ul.img-list li:hover span.textcontent {
 
 
 }
+
 .title {
 	margin-bottom: 2em;
+
 }
 /*****************************/
 /*ID'S BELOW HERE*/
@@ -521,7 +538,18 @@ ul#indexmenu {
 	box-shadow: 1px 0px 3px #a7adba;
 	z-index: 1;
 }
-
+#whackText{
+	text-align: justify;
+	font-weight: 100;
+	padding-right: .8em;
+	font-size: 1.5em;
+}
+#serveText {
+	text-align: justify;
+	font-size: 1.5em;
+	font-weight: 100;
+	margin-right: .8em;
+}
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 /*Desktop size screen */

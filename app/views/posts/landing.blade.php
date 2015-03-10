@@ -12,7 +12,7 @@
 						<ul class="landing-ul">
 							<li class="landingpage"><a href="{{{ action('HomeController@showPortfolio')}}}"><p id="textport">Work I've Done</p></li></a>
 							<li class="landingpage"><a href="{{{ action('HomeController@showResume')}}}"><p id="textresume">Who I Am</p></li></a>
-							<li class="landingpage"><a href="{{{ action('HomeController@showSkills')}}}"><p>What I Do</p></li></a>
+							
 							<li class="landingpage"><a href="{{{ action('PostsController@index')}}}"><p id="textblog">My Blog</p></li></a>
 						</ul>
 					</nav>
@@ -29,6 +29,7 @@
 			</div>	
 		
 	</div>
+
 </div>
 
 
