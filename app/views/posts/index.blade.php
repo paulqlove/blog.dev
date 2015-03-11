@@ -11,12 +11,11 @@
 							<form role="search" action="{{{ action('PostsController@index') }}}" method="get"> 
 						<ul id="indexmenu">
 							<button id="closeMenu"><img src="/images/blueclose.png" ></button>
-							    <li>
+							   
 							    	<input name="search" type="text" class="movesearchbar" placeholder="search">
-							    </li>
-								<li>
+							    
 									<button type="submit" class="movesearchbar " id="buttonPadding"><p>Submit</p></button>
-								</li>
+								
 								<li  class="landingpage"><a href="{{{action('HomeController@showPortfolio')}}}"><p id="textport">Work I've Done</p></a></li>
 								<li  class="landingpage"><a href="{{{ action('HomeController@showResume')}}}"><p id="textresume">Who I Am</p></a></li>
 								

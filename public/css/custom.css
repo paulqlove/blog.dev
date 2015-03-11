@@ -101,6 +101,7 @@ li.landingpage {
 	list-style: none;
 
 	margin-top: 5px;
+	margin-right: 5px;
 	padding: 10px 5px;
 	text-align: right;
 	border-radius: 2px;
@@ -117,7 +118,7 @@ li.portpage {
 	padding: 10px 5px;
 	text-align: right;
 	border-radius: 2px;
-	
+	margin-right: 5px;
 	
 }
 
@@ -267,7 +268,7 @@ ul > .icons {
 }
 .movesearchbar {
 	background-color: #fff;
-	width: 235px;
+	width: 98%;
 	height: 36px;
 	margin-top: 5px;
 	padding: 10px 5px;
@@ -519,7 +520,7 @@ background-color: #ccc;
 /*****************************/
 #portmenu {
 	position: fixed;
-	padding-top: 100px;
+	padding-top: 20px;
 	left: -250px;
 	border-right: solid;
 	border-width: 0px;
