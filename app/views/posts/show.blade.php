@@ -3,10 +3,10 @@
 @section('content')
 
 <div class="container-fluid no-gutters">
-	<div class="col-md-4">
-		<nav class="col-md-12">
+	<div class="col-xs-12 col-sm-12 col-md-4">
+		<nav class="col-xs-12 col-sm-12 col-md-12">
 						<form role="search" action="{{{ action('PostsController@index') }}}" method="get"> 
-					<ul id="indexmenu">
+					<ul id="col-xs-12 col-sm-12 indexmenu">
 						    <input name="search" type="text" class="movesearchbar" placeholder="search">
 							<button type="submit" class="movesearchbar " id="buttonPadding"><p>Submit</p></button>
 							<li  class="landingpage"><a href="{{{action('HomeController@showPortfolio')}}}"><p id="textport">Work I've Done</p></a></li>

@@ -17,11 +17,26 @@ $('li.landingpage').load(function(){
 
 
 $('#menuRecall').click(function(){
-	$('ul#portmenu').animate({left: '+=250'},200);
+
+	if($(window).width() <= 768){
+
+		$('ul#portmenu').animate({left: '+=100%'},200);
+	} else {
+		$('ul#portmenu').animate({left: '+=250'},200);
+	}
 });
+
 $('#menuRecall').click(function(){
-	$('ul#indexmenu').animate({left: '+=250'},200);
+
+	if($(window).width() <= 768){
+	
+		$('ul#indexmenu').animate({left: '+=100%'},200);
+	} else {
+		$('ul#indexmenu').animate({left: '+=250'},200);
+	}
 });
+
+
 $('.textcontent').hover(function(){
 	$('.summary').css('color','black');
 });

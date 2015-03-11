@@ -521,6 +521,7 @@ background-color: #ccc;
 	text-transform: uppercase;
 	clear: both;
 	width: 250px;
+	height: 100%;
 	box-shadow: 1px 0px 3px #a7adba;
 	z-index: 5;
 }
@@ -534,6 +535,7 @@ ul#indexmenu {
 	text-transform: uppercase;
 	clear: both;
 	width: 250px;
+	height: 100%;
 	left: -250px;
 	box-shadow: 1px 0px 3px #a7adba;
 	z-index: 1;
@@ -572,7 +574,36 @@ ul#indexmenu {
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 
-@media (min-width: 768px){
-	
+@media (max-width: 768px){
+	#portmenu {
+		position: fixed;
+		padding-top: 100px;
+		left: -100%;
+		border-right: solid;
+		border-width: 0px;
+		padding-bottom: 50%;
+		background-color: #343d46;
+		text-transform: uppercase;
+		clear: both;
+		width: 100%;
+		height: 100%;
+		box-shadow: 1px 0px 3px #a7adba;
+		z-index: 5;
+	}
+	ul#indexmenu {
+		position: fixed;
+		padding-top: 30px;
+		left: -100%;
+		border-right: solid;
+		border-width: 0px;
+		padding-bottom: 50%;
+		background-color: #343d46;
+		text-transform: uppercase;
+		clear: both;
+		width: 100%;
+		height: 100%;
+		box-shadow: 1px 0px 3px #a7adba;
+		z-index: 1;
+	}
 
 }
