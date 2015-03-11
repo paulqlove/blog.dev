@@ -468,7 +468,7 @@ background-color: #ccc;
 /******************************************/
 
 #closeMenu {
-	margin-left: 80%;
+	margin-left: 82%;
 	background-color: transparent;
 	border-style: none;
 }
@@ -592,10 +592,15 @@ ul#indexmenu {
 	body {
 		overflow-x: none;
 	}
-	
+	#closeMenu {
+	margin-left: 85%;
+	background-color: transparent;
+	border-style: none;
+}
+
 	#portmenu {
 		position: fixed;
-		padding-top: 100px;
+		padding-top: 20px;
 		left: -100%;
 		border-right: solid;
 		border-width: 0px;
