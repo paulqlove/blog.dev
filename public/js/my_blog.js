@@ -20,9 +20,9 @@ $('#menuRecall').click(function(){
 
 	if($(window).width() <= 768){
 
-		$('ul#portmenu').animate({left: '+=100%'},200);
+		$('ul#portmenu').animate({left: '+=100%'},250);
 	} else {
-		$('ul#portmenu').animate({left: '+=250'},200);
+		$('ul#portmenu').animate({left: '+=250'},250);
 	}
 });
 
@@ -30,9 +30,9 @@ $('#menuRecall').click(function(){
 
 	if($(window).width() <= 768){
 	
-		$('ul#indexmenu').animate({left: '+=100%'},200);
+		$('ul#indexmenu').animate({left: '+=100%'},250);
 	} else {
-		$('ul#indexmenu').animate({left: '+=250'},200);
+		$('ul#indexmenu').animate({left: '+=250'},250);
 	}
 });
 
