@@ -10,8 +10,13 @@
 			<nav class="col-md-12">
 							<form role="search" action="{{{ action('PostsController@index') }}}" method="get"> 
 						<ul id="indexmenu">
-							    <input name="search" type="text" class="movesearchbar" placeholder="search">
-								<button type="submit" class="movesearchbar " id="buttonPadding"><p>Submit</p></button>
+							<button id="closeMenu"><img src="/images/blueclose.png" ></button>
+							    <li>
+							    	<input name="search" type="text" class="movesearchbar" placeholder="search">
+							    </li>
+								<li>
+									<button type="submit" class="movesearchbar " id="buttonPadding"><p>Submit</p></button>
+								</li>
 								<li  class="landingpage"><a href="{{{action('HomeController@showPortfolio')}}}"><p id="textport">Work I've Done</p></a></li>
 								<li  class="landingpage"><a href="{{{ action('HomeController@showResume')}}}"><p id="textresume">Who I Am</p></a></li>
 								
@@ -27,10 +32,10 @@
 			
 			<div class=" col-md-12">
 						@if (Auth::guest())
-							<h3><a class="col-md-10" id="menuRecall" href="#">Menu</h3></a>
+							<h3><a class="col-md-10" id="menuRecall" href="#"><img src="/images/menu37.png"></h3></a>
 								<h4 class="col-md-2">My Blog</h4><br>
 						@else
-						<h3><a class="col-md-11" id="menuRecall" href="#">Menu</h3></a>
+						<h3><a class="col-md-11" id="menuRecall" href="#"><img src="/images/menu37.png"></h3></a>
 							<a class="col-md-1" href="/logout" class="login-toggle header-btn header-btn-xl"> <h5>Logout</h5></a>
 							<a href="{{{ action('PostsController@index') }}}">Go Back</a>
 							

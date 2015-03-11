@@ -5,6 +5,7 @@
 					<div id="my-panel">
 						<nav>
 							<ul class="mainmenu" id="portmenu">
+								<button id="closeMenu"><img src="/images/blueclose.png" ></button>
 								<a href="{{{ action('HomeController@showPortfolio')}}}"><li class="portpage"><p id="textport">Work I've Done</p></li></a>
 								<a href="{{{ action('HomeController@showResume')}}}"><li class="portpage"><p id="textresume">Who I Am</p></li></a>
 								

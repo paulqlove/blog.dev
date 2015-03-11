@@ -36,6 +36,25 @@ $('#menuRecall').click(function(){
 	}
 });
 
+$('#closeMenu').click(function(){
+
+	if($(window).width() <= 768){
+		$('ul#portmenu').animate({left: '-=100%'}, 250);
+	} else {
+		$('ul#portmenu').animate({left: '-=250'},250);
+	}
+
+});
+
+$('#closeMenu').click(function(){
+
+	if($(window).width() <= 768){
+		$('ul#indexmenu').animate({left: '-=100%'}, 250);
+	} else {
+		$('ul#indexmenu').animate({left: '-=250'},250);
+	}
+
+});
 
 $('.textcontent').hover(function(){
 	$('.summary').css('color','black');

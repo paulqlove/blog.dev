@@ -465,6 +465,13 @@ background-color: #ccc;
 }
 /******************************************/
 /******************************************/
+
+#closeMenu {
+	margin-left: 80%;
+	background-color: transparent;
+	border-style: none;
+}
+
 #landingpageBG 	{ 
   background: url('/images/hero.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
