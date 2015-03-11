@@ -33,7 +33,7 @@
 			   	  		<ul class="img-list">
 			   	  			<li>
 					    		<div class="col-md-9 embed-responsive-4by3">
-					    			<a href="http://servesearch.us" target="_blank"><img class="  img-size col-md-offset-4"  src="/images/servesearch.png"></a>
+					    			<a href="http://servesearch.us" target="_blank"><img class="embed-responsive-4by3  img-size col-md-offset-4"  src="/images/servesearch.png"></a>
 					    			<span class="hidden-xs hidden-sm no-gutters textcontent" >
 					    				<h5>Serve Search</h5>
 					    				<p class="col-md-offset-2 col-md-8" id="serveText">Serve Search is a web app that quickly connects people with volunteer events in their area, making giving back to the community easier to navigate. The site was built using, Laravel, PHP, MySQL, JavaScript, jQuery, and Bootstrap; development was done with Vagrant Environment; version control with Git and GitHub. Our site was designed mobile first, is fully responsive and creates a smooth and easy user experience.<p>
@@ -48,7 +48,7 @@
 				    		
 				   	  		<li>
 					   	  		<div class=" col-md-9 embed-responsive-4by3">
-					   	   			<a href="{{{ action('HomeController@showWhackamole')}}}"><img  class=" img-size col-md-offset-4"  src="/images/duckhunt_small.png"></a> 
+					   	   			<a href="{{{ action('HomeController@showWhackamole')}}}"><img  class="embed-responsive-4by3 img-size col-md-offset-4"  src="/images/duckhunt_small.png"></a> 
 					   	   			<span class="hidden-xs hidden-sm textcontent">
 					   	   				<h5>Whackamole</h5>
 					   	   				<p class="col-md-offset-2 col-md-8" id="whackText">A class exercise to build our first game. Built using PHP, JavaScript, jQuery and HTML/ CSS. No Ducks were harmed in the making of this game.</p>
