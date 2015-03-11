@@ -5,7 +5,7 @@
 					<div class="col-md-12">
 						
 					</div>
-					<div class="col-md-12">
+					<div class="col-md-12" id="footerspacing">
 						<ul>
 							<li class="icons" ><a href="https://linkedin.com/in/paulqlove" target="_blank">
 									<img  class="icons" src="/icons/social123.svg"></img>

@@ -9,6 +9,7 @@
 								<li class="portpage"><a href="{{{ action('HomeController@showResume')}}}"><p id="textresume">Who I Am</p></li></a>
 								
 								<li class="portpage"><a href="{{{ action('PostsController@index')}}}"><p id="textblog">My Blog</p></li></a>
+								<li class="portpage"><a href="{{{ action('HomeController@showLanding')}}}"><p>Home</p></li></a>
 							</ul>
 						</nav>
 					</div>
@@ -58,7 +59,8 @@
 			   	  				<div class="col-md-offset-3 col-md-8">
 			   	  					<section>
 			   	  						<h4 class="col-md-12 title">Skills</h4>
-				   	  						<ul class="style-list col-md-10">
+				   	  						<div class="row">
+				   	  						<ul class="style-list col-md-6">
 				   	  							<li>Html</li>
 				   	  							<li>CSS</li>
 				   	  							<li>Javascript</li>
@@ -70,6 +72,7 @@
 				   	  							<li>Adobe Creative Suite</li>
 				   	  							<li>Responsive Design</li>
 				   	  						</ul>
+				   	  						</div>
 			   	  					</section>
 			   	  				</div>
 			   	  			</div>

@@ -186,14 +186,14 @@ ul.img-list li:hover span.textcontent {
   opacity: 0;
   z-index: -4;
 }
-.style-list li {
+.style-list > li {
 	display: block;
 	margin: 5px;
-	padding: 3px 6px;
+	padding: 3px 3px;
 	border-radius: 4px;
 	background: #ddd;
 	float: left;
-	font-size: 1.125em;
+	font-size: 1em;
 	line-height: 1.500em;
 	list-style: none;
 }
@@ -570,11 +570,21 @@ ul#indexmenu {
 
 }
 
-/*Desktop size screen */
+
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 
+
+/*small screen size  */
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+
 @media (max-width: 768px){
+	body {
+		overflow-x: none;
+	}
+	
 	#portmenu {
 		position: fixed;
 		padding-top: 100px;
@@ -604,6 +614,25 @@ ul#indexmenu {
 		height: 100%;
 		box-shadow: 1px 0px 3px #a7adba;
 		z-index: 1;
+	}
+
+	.img-size {
+		/*width: 359px;
+		height: 176px;*/
+	
+}
+	.icons,
+	ul > .icons {
+		max-height: 30px;
+		
+		display: inline;
+		margin: .1em .7em 1em .7em;
+
+	}
+
+	#footerspacing {
+		padding-left: 0;
+		margin-top: 15px;
 	}
 
 }
