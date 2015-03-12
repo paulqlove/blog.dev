@@ -274,6 +274,7 @@ ul > .iconsheader {
 	margin-top: 20px;
 }
 .post-img-size {
+	max-width: 400px;
 	max-height:250px;
 	 -webkit-box-shadow: none;
   box-shadow: 2px 3px 2px #888888;
