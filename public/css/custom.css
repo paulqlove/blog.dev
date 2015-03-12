@@ -11,7 +11,8 @@ body {
   -ms-overflow-style: scrollbar;
 
   /* width of .header-btn-wrapper + 2px */
- 
+ 	font-family: 'Roboto', sans-serif; 
+
   /* height of .header */
   color: #555555;
   font-size: 16px;
@@ -30,13 +31,13 @@ footer {
 @media (min-width: 500px) {
   body {
     
-    /* height of .header at this min-width*/
+   font-family: 'Roboto', sans-serif;
   }
 }
 @media (min-width: 768px) {
   body {
     padding-right: 0;
-  
+  font-family: 'Roboto', sans-serif;
     /* height of .header at this min-width*/
     font-weight: 300;
   }
@@ -378,10 +379,16 @@ ul > .iconsheader {
 }
 .portfolioContent {
 	text-align: justify;
+	font-weight: 100;
 }
 .portfolioProfile {
 	max-width: 250px;
-	margin-bottom: 10px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 4px;
+	border-color: #fff;
 
 
 }
@@ -393,6 +400,11 @@ ul > .iconsheader {
 /*****************************/
 /*ID'S BELOW HERE*/
 /*****************************/
+
+#backImage {
+	background-image: url('/images/prada.png');
+
+}
 #deletepadding {
 	padding-left: 0px;
 }
@@ -631,7 +643,19 @@ ul#indexmenu {
 	background-color: transparent;
 	border-style: none;
 }
+.portfolioProfile {
+	max-width: 250px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 4px;
+	border-color: #fff;
+	
+	margin-left: 10%;
 
+
+}
 	#portmenu {
 		position: fixed;
 		padding-top: 20px;
