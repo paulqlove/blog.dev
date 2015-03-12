@@ -18,9 +18,10 @@ body {
   line-height: 1.6;
 }
 header {
-	
+	height: 70px;	
 	z-index: 100;
 }
+
 footer {
 	background-color: transparent;
 	text-align: center;
@@ -102,12 +103,14 @@ li.landingpage {
 	box-shadow: 1px 2px 1px #888888;
 	background-color: #fff;
 	list-style: none;
+	letter-spacing: .23em;
 	color: #5FDFF4;
 	margin-top: 5px;
 	margin-right: 5px;
 	padding: 10px 5px;
 	text-align: right;
 	border-radius: 2px;
+	font-weight: 500;
 	
 	
 }
@@ -115,7 +118,7 @@ li.portpage {
 	
 	box-shadow: 1px 2px 1px #888888;
 	background-color: #9B9898;
-
+	letter-spacing: .23em;
 	list-style: none;
 	border-style: none;
 	margin-top: 5px;
@@ -123,7 +126,7 @@ li.portpage {
 	text-align: right;
 	border-radius: 2px;
 	margin-right: 5px;
-	
+	font-weight: 500;
 }
 
 li.portpage:hover a,
@@ -268,14 +271,14 @@ ul > .iconsheader {
 	max-height: 35px;
 	
 	display: inline;
-	margin: .1em .23em  .7em;
+	margin:  .23em  ;
 
 }
 .icons:hover{
 	background-color: #fff;
 }
 .placeIcons{
-	margin-top: 20px;
+	
 }
 .post-img-size {
 	max-width: 300px;
@@ -423,6 +426,13 @@ background-color: #ccc;
 #showIcons:hover {
 	cursor: pointer;
 }
+#showIcons,
+h3 > ul,
+.iconsheader {
+
+	margin-bottom: 0px;
+
+}
 /*****************************/
 /*****************************/
 
@@ -511,7 +521,7 @@ background-color: #ccc;
 	}
 /*Button for sliding the sidebar back out*/
 #menuRecall {
-	
+	margin-top: 20px;
 }
 #page {
   clear: both;
@@ -671,7 +681,7 @@ ul#indexmenu {
 		max-height: 35px;
 		
 		display: inline;
-		margin: .1em .11em .1em .11em;
+		margin: .0em .11em .1em .11em;
 
 	}
 	#footerspacing {

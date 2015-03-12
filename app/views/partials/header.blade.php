@@ -9,7 +9,7 @@
 					<div class="col-xs-8 col-md-3">
 						<h3 id="showIcons">CONNECT</h3>
 						<div class="col-md-12 placeIcons" id="hiddenIcons">
-							<ul>
+							<h3><ul>
 								<li class="iconsheader" ><a href="https://linkedin.com/in/paulqlove" target="_blank">
 										<img  class="iconsheader" src="/icons/social123.svg"></img>
 									</a></li>
@@ -19,7 +19,7 @@
 								<li class="iconsheader" ><a href="mailto:paulqlove@gmail.com">
 										<img  class="iconsheader" src="/icons/social113.svg"></img>
 									</a></li>
-							</ul>
+							</ul></h3>
 						</div>
 					</div>			
 				</div>

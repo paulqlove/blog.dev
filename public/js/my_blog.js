@@ -80,8 +80,9 @@ $('#textresume').mouseleave(function(){
 
 //making connect in header fade out
 $('#showIcons').click(function(){
-	$(this).fadeOut("slow");
+	$(this).fadeOut(20);
 	$("div:hidden").show(1700);
+	$(this).css('margin-top', '0px');
 })
 
 // making rows clickable //
