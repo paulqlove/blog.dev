@@ -18,8 +18,9 @@ body {
   line-height: 1.6;
 }
 header {
+	position: static;
 	height: 70px;	
-	z-index: 100;
+	
 }
 
 footer {

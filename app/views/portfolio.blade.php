@@ -48,7 +48,7 @@
 				    		
 				   	  		<li>
 					   	  		<div class=" col-md-9 embed-responsive-4by3">
-					   	   			<a href="{{{ action('HomeController@showWhackamole')}}}"><img  class="embed-responsive-4by3 img-size col-md-offset-4"  src="/images/duckhunt_small.png"></a> 
+					   	   			<a href="{{{ action('HomeController@showWhackamole')}}}"><img  class="embed-responsive-4by3 img-size col-md-offset-4"  src="/images/duckhuntMock.jpg"></a> 
 					   	   			<span class="hidden-xs hidden-sm textcontent">
 					   	   				<h5>Whackamole</h5>
 					   	   				<p class="col-md-offset-2 col-md-8" id="whackText">A class exercise to build our first game. Built using PHP, JavaScript, jQuery and HTML/ CSS. No Ducks were harmed in the making of this game.</p>
