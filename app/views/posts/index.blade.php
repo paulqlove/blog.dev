@@ -16,11 +16,11 @@
 							    
 									<button type="submit" class="movesearchbar " id="buttonPadding"><p>Submit</p></button>
 								
-								<li  class="landingpage"><a href="{{{action('HomeController@showPortfolio')}}}"><p id="textport">Work I've Done</p></a></li>
-								<li  class="landingpage"><a href="{{{ action('HomeController@showResume')}}}"><p id="textresume">Who I Am</p></a></li>
+								<li  class="portpage"><a href="{{{action('HomeController@showPortfolio')}}}"><p id="textport">Work I've Done</p></a></li>
+								<li  class="portpage"><a href="{{{ action('HomeController@showResume')}}}"><p id="textresume">Who I Am</p></a></li>
 								
-								<li  class="landingpage"><a href="{{{ action('PostsController@index')}}}"><p id="textblog">My Blog</p></a></li>
-								<li class="landingpage"><a href="{{{ action('HomeController@showLanding')}}}"><p>Home</p></a></li>
+								<li  class="portpage"><a href="{{{ action('PostsController@index')}}}"><p id="textblog">My Blog</p></a></li>
+								<li class="portpage"><a href="{{{ action('HomeController@showLanding')}}}"><p>Home</p></a></li>
 						 </ul>			
 							</form>
 			</nav><!-- navbar default -->

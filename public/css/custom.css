@@ -84,7 +84,7 @@ html.no-boxshadow:after,
 a,
 a:hover {
 	text-decoration: none;
-	color: #50D9FF;
+	color: #aee3ba;
 
 
 }
@@ -93,13 +93,16 @@ h1 {
 	float: right;
 	right: 5px;
 }
-
+.landingpage > a {
+	color: #5FDFF4;
+	
+}
 li.landingpage {
 	
 	box-shadow: 1px 2px 1px #888888;
 	background-color: #fff;
 	list-style: none;
-
+	color: #5FDFF4;
 	margin-top: 5px;
 	margin-right: 5px;
 	padding: 10px 5px;
@@ -111,9 +114,10 @@ li.landingpage {
 li.portpage {
 	
 	box-shadow: 1px 2px 1px #888888;
-	background-color: #fff;
-	list-style: none;
+	background-color: #9B9898;
 
+	list-style: none;
+	border-style: none;
 	margin-top: 5px;
 	padding: 10px 5px;
 	text-align: right;
@@ -379,7 +383,7 @@ ul > .iconsheader {
 }
 
 .title {
-	margin-bottom: 2em;
+	margin-bottom: 1.2em;
 
 }
 /*****************************/
@@ -416,7 +420,9 @@ background-color: #ccc;
 #clickableRow td:hover {
     cursor: pointer;
 }
-
+#showIcons:hover {
+	cursor: pointer;
+}
 /*****************************/
 /*****************************/
 
@@ -542,7 +548,7 @@ background-color: #ccc;
 	border-right: solid;
 	border-width: 0px;
 	padding-bottom: 50%;
-	background-color: #343d46;
+	background-color: #888585;
 	text-transform: uppercase;
 	clear: both;
 	width: 250px;
@@ -556,7 +562,7 @@ ul#indexmenu {
 	border-right: solid;
 	border-width: 0px;
 	padding-bottom: 50%;
-	background-color: #343d46;
+	background-color: #888585;
 	text-transform: uppercase;
 	clear: both;
 	width: 250px;
@@ -622,7 +628,7 @@ ul#indexmenu {
 		border-right: solid;
 		border-width: 0px;
 		padding-bottom: 50%;
-		background-color: #343d46;
+		background-color: #888585;
 		text-transform: uppercase;
 		clear: both;
 		width: 100%;
@@ -637,7 +643,7 @@ ul#indexmenu {
 		border-right: solid;
 		border-width: 0px;
 		padding-bottom: 50%;
-		background-color: #343d46;
+		background-color: #888585;
 		text-transform: uppercase;
 		clear: both;
 		width: 100%;
