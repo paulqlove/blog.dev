@@ -23,7 +23,7 @@
 			<div clas="col-md-12" id="fixtoBottem">
 				<div class="row">
 					<div class="col-xs-offset-2 col-sm-offset-8 col-xs-6  col-sm-4 col-md-offset-8 col-md-4 embed-responsive-4by3" >
-						<a href="{{{ action('HomeController@showLogin')}}}"><img src="/images/logo2.png"  id="logo"></a>
+						<a href="{{{ action('HomeController@showLogin')}}}"><img src="/images/cclogo.png"  id="logo"></a>
 					</div>
 				</div>
 			</div>	
