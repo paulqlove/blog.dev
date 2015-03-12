@@ -19,9 +19,9 @@
 
 							
 			   	  	<div class="no-gutters col-md-12">
-						@include('partials.header')
 						<div class=" col-md-12 no-gutters">
 						@if (Auth::guest())
+						@include('partials.header')
 
 						@else
 							<a class="col-md-1" href="/logout" class="login-toggle header-btn header-btn-xl"> <h5>Logout</h5></a>

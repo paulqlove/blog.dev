@@ -123,7 +123,8 @@ li.portpage {
 }
 
 li.portpage:hover a,
-li:hover,
+.portpage:hover,
+.landingpage:hover,
 li.landingpage:hover a {
 	background-color: #aee3ba;
 	color: #fff;
@@ -258,8 +259,19 @@ ul > .icons {
 	margin: 1.2em 1.2em 2em 1.2em;
 
 }
+.iconsheader,
+ul > .iconsheader {
+	max-height: 35px;
+	
+	display: inline;
+	margin: .1em .23em  .7em;
+
+}
 .icons:hover{
 	background-color: #fff;
+}
+.placeIcons{
+	margin-top: 20px;
 }
 .post-img-size {
 	max-height:250px;
@@ -469,10 +481,14 @@ background-color: #ccc;
 
 #closeMenu {
 	margin-left: 5%;
+	margin-bottom: 20px;
 	background-color: transparent;
 	border-style: none;
 }
+#hiddenIcons {
+	display: none;
 
+}
 #landingpageBG 	{ 
   background: url('/images/hero.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -530,7 +546,7 @@ background-color: #ccc;
 	clear: both;
 	width: 250px;
 	height: 100%;
-	box-shadow: 1px 0px 3px #a7adba;
+	/*box-shadow: 1px 0px 3px #a7adba;*/
 	z-index: 5;
 }
 ul#indexmenu {
@@ -545,7 +561,7 @@ ul#indexmenu {
 	width: 250px;
 	height: 100%;
 	left: -250px;
-	box-shadow: 1px 0px 3px #a7adba;
+	/*box-shadow: 1px 0px 3px #a7adba;*/
 	z-index: 1;
 }
 #whackText{
@@ -610,7 +626,7 @@ ul#indexmenu {
 		clear: both;
 		width: 100%;
 		height: 100%;
-		box-shadow: 1px 0px 3px #a7adba;
+		
 		z-index: 5;
 	}
 	ul#indexmenu {
@@ -625,7 +641,7 @@ ul#indexmenu {
 		clear: both;
 		width: 100%;
 		height: 100%;
-		box-shadow: 1px 0px 3px #a7adba;
+		
 		z-index: 1;
 	}
 
@@ -637,13 +653,20 @@ ul#indexmenu {
 }
 	.icons,
 	ul > .icons {
-		max-height: 30px;
+		max-height: 35px;
 		
 		display: inline;
 		margin: .1em .7em 1em .7em;
 
 	}
+	.iconsheader,
+	ul > .iconsheader {
+		max-height: 35px;
+		
+		display: inline;
+		margin: .1em .11em .1em .11em;
 
+	}
 	#footerspacing {
 		padding-left: 0;
 		margin-top: 15px;

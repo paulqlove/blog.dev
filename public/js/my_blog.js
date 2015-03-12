@@ -78,7 +78,11 @@ $('#textresume').mouseleave(function(){
 	$(this).text('Who I am');
 });
 
-
+//making connect in header fade out
+$('#showIcons').click(function(){
+	$(this).fadeOut("slow");
+	$("div:hidden").show(1700);
+})
 
 // making rows clickable //
 	$('#clickableRow tr').click(function() {

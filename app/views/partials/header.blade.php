@@ -1,9 +1,28 @@
 <header>
 	
 			<div class="col-md-12">
-				
-					<h3><a class="col-md-1" id="menuRecall" href="#"><img src="/images/menu37.png"></a></h3>
-					<h3 class="col-md-offset-9 col-md-2">CONNECT</h3>
+				<div class="row">
+					<div class="col-xs-4 col-md-9" >
+						<h3><a id="menuRecall" href="#"><img  src="/images/menu37.png"></h3></a>
+					</div>
+					
+					<div class="col-xs-8 col-md-3">
+						<h3 id="showIcons">CONNECT</h3>
+						<div class="col-md-12 placeIcons" id="hiddenIcons">
+							<ul>
+								<li class="iconsheader" ><a href="https://linkedin.com/in/paulqlove" target="_blank">
+										<img  class="iconsheader" src="/icons/social123.svg"></img>
+									</a></li>
+								<li class="iconsheader"  ><a href="https://github.com/paulqlove" target="_blank">
+										<img  class="iconsheader" src="/icons/github7.svg"></img>
+									</a></li>
+								<li class="iconsheader" ><a href="mailto:paulqlove@gmail.com">
+										<img  class="iconsheader" src="/icons/social113.svg"></img>
+									</a></li>
+							</ul>
+						</div>
+					</div>			
+				</div>
 				 
 			</div>
 	
