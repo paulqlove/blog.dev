@@ -92,4 +92,24 @@ $('#showIcons').click(function(){
 	        window.location = href;
 	    }
 	});
+
+//EASTER EGG//
+var targetNumber = 10;
+var clicks = 0;
+		
+function countClicks() {
+
+	if(clicks != 6){
+		clicks++;
+		console.log(clicks);
+	} else if (clicks == 6){
+		$('.portfolioProfile').attr('src','/images/youngme.png');
+	} 
+}
+
+$('.portfolioProfile').click(function(){
+		countClicks();
+});
+
+
 });
