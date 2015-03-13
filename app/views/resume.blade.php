@@ -43,7 +43,7 @@
 			   	  			</div>
 			   	  		</div>
 
-			   	  		<div class="col-md-12">
+			   	  		<div class="col-md-12 no-gutters">
 			   	  			<div class="row">
 			   	  				<div class="col-md-offset-3 col-md-8">
 			   	  					<section>
@@ -57,20 +57,20 @@
 			   	  						<p class="col-md-10 portfolioContent">Here’s a little bit about me. I grew up in Chattanooga Tennessee and have always had a thirst to try new experiences.  I’m a self proclaimed tinkerer,  and like to dabble in woodworking and charcuterie.  I love hitting the road and traveling with my wife and two dogs.</p>
 			   	  					</section>
 			   	  				</div>
-			   	  				<div class="col-md-offset-3 col-md-8">
+			   	  				<div class="col-md-offset-3 col-md-9 noMargin">
 			   	  					<section>
 			   	  						<h2 class="col-md-12 title">Skills</h2>
-				   	  						<div class="row">
-				   	  						<ul class="style-list col-md-6">
+				   	  						<div class="row  noMargin">
+				   	  						<ul class="style-list col-md-6 no-gutters">
 				   	  							<li>Html</li>
 				   	  							<li>CSS</li>
-				   	  							<li>Javascript</li>
-				   	  							<li>JQuery</li>
 				   	  							<li>PHP</li>
 				   	  							<li>MySQL</li>
+				   	  							<li>Adobe Creative Suite</li>
+				   	  							<li>Javascript</li>
+				   	  							<li>JQuery</li>
 				   	  							<li>Linux</li>
 				   	  							<li>Apache</li>
-				   	  							<li>Adobe Creative Suite</li>
 				   	  							<li>Responsive Design</li>
 				   	  						</ul>
 				   	  						</div>
