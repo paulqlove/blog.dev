@@ -54,12 +54,12 @@
 									</div>
 									
 									<div class="col-md-10">
-										<div class="col-md-8">
+										<div class="col-md-7">
 											<div class="col-md-12">	
 												<p>{{ $post->body }}</p>
 											</div>
 										</div>
-										<div class=" col-md-4 embed-responsive-4by3">
+										<div class=" col-md-5 embed-responsive-4by3">
 											
 											<img class="post-img-size" src="{{{ $post->img_url }}}">
 										</div>
