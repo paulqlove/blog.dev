@@ -31,12 +31,14 @@ input {
 footer {
 	background-color: transparent;
 	text-align: center;
+	padding-top: 15px;
 }
 p {
 	margin-bottom: 0;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+
 @media (min-width: 500px) {
   body {
     
@@ -202,9 +204,12 @@ span.textcontent {
 	font-size: 10em;
 	letter-spacing: .1em;
 }
-ul.img-list li:hover span.textcontent {
+ul.img-list li:hover span.textcontent,
+div > h5.summary:hover,
+
+.textcontent:hover {
   opacity: 0;
-  z-index: -4;
+  
 }
 .style-list > li {
 	display: block;
@@ -268,6 +273,7 @@ ul.img-list li:hover span.textcontent {
 .img-size {
 	width: 717px;
 	height: 399px;
+	padding-top: 15px;
 }
 .icons,
 ul > .icons {
@@ -424,6 +430,9 @@ table#clickableRow {
 .tableHeader {
 	height: 50px;
 }
+#bottemSpan {
+	margin-bottom: 15px;
+}
 #buttonPadding {
 	margin-bottom: 40px;
 
@@ -485,12 +494,16 @@ h3 > ul,
 .pager .ti {
   font-size: 80%;
 }
+.portTitleSizing {
+	font-size: .2em;
+}
 .text-right.pager {
   text-align: right;
 }
 .text-left.pager {
   text-align: left;
 }
+
 .pager li > a:hover,
 .pager li > a:focus {
   background-color: #787E89;
@@ -612,13 +625,15 @@ ul#indexmenu {
 	text-align: justify;
 	font-weight: 100;
 	padding-right: .8em;
-	font-size: 1.5em;
+	font-size: 1.25em;
+	margin-top: 10px;
 }
 #serveText {
 	text-align: justify;
-	font-size: 1.5em;
+	font-size: 1.25em;
 	font-weight: 100;
 	margin-right: .8em;
+	
 }
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
@@ -723,9 +738,24 @@ ul#indexmenu {
 		margin: .0em .11em .1em .11em;
 
 	}
+
 	#footerspacing {
 		padding-left: 0;
 		margin-top: 15px;
 	}
 
+}
+
+@media(max-width: 1148px){
+		
+	.textcontent > h5 {
+	font-size: 8em;
+	letter-spacing: .1em;
+	}
+	#whackText{
+		visibility: hidden;
+	}
+	#serveText {
+		visibility: hidden;
+	}
 }

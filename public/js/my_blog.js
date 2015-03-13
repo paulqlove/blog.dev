@@ -111,5 +111,6 @@ $('.portfolioProfile').click(function(){
 		countClicks();
 });
 
+$(window).resize(function(){location.reload();});
 
 });
