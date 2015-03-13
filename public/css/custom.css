@@ -23,10 +23,19 @@ header {
 	height: 70px;	
 	
 }
-
+input {
+	padding-bottom: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+}
 footer {
 	background-color: transparent;
 	text-align: center;
+}
+p {
+	margin-bottom: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 @media (min-width: 500px) {
   body {
@@ -171,7 +180,7 @@ span.textcontent {
   position: absolute;
   top: 0;
   width: 100%;
- 
+ padding-bottom: 20px;
   z-index: 4;
   opacity: 1;
   -webkit-transition: opacity 800ms;
@@ -285,16 +294,15 @@ ul > .iconsheader {
 .post-img-size {
 	max-width: 300px;
 	max-height:250px;
-	 -webkit-box-shadow: none;
-  box-shadow: 2px 3px 2px #888888;
+	margin-right: 5px; 
 }
 .movesearchbar {
 	background-color: #fff;
 	width: 98%;
 	height: 36px;
 	margin-top: 5px;
-	padding: 10px 5px;
-
+	
+	padding: 0px 5px 5px 0px;
 	text-align: right;
 	border-radius: 2px;
 	text-transform: uppercase;
@@ -417,8 +425,10 @@ table#clickableRow {
 	height: 50px;
 }
 #buttonPadding {
-	margin-bottom: 100px;
+	margin-bottom: 70px;
+
 }
+
 #clickableRow tr {
     background-color: #eee;
     border-top: 1px solid #fff;
@@ -442,7 +452,7 @@ background-color: #ccc;
 #showIcons,
 h3 > ul,
 .iconsheader {
-
+	text-align: right;
 	margin-bottom: 0px;
 
 }
@@ -518,6 +528,10 @@ h3 > ul,
 #hiddenIcons {
 	display: none;
 
+}
+#inputPadding {
+	padding-top: 5px;
+	padding-right: 5px;
 }
 #landingpageBG 	{ 
   background: url('/images/hero.jpg') no-repeat center center fixed; 

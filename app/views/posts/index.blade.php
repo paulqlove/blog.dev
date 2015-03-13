@@ -12,7 +12,7 @@
 						<ul id="indexmenu">
 							<button id="closeMenu"><img src="/images/blueclose.png" ></button>
 							   
-							    	<input name="search" type="text" class="movesearchbar" placeholder="search">
+							    	<input name="search" type="text" class="movesearchbar" id="inputPadding" placeholder="search">
 							    
 									<button type="submit" class="movesearchbar " id="buttonPadding"><p>Submit</p></button>
 								
@@ -29,10 +29,9 @@
 		<div class="col-md-12">
 			<div class="row">
 			
-			<div class=" col-md-12">
+			<div class=" col-md-12 no-gutters">
 						@if (Auth::guest())
-							<h3><a class="col-md-10" id="menuRecall" href="#"><img src="/images/menu37.png"></h3></a>
-								<h4 class="col-md-2">My Blog</h4><br>
+							@include('partials.header')
 						@else
 						<h3><a class="col-md-11" id="menuRecall" href="#"><img src="/images/menu37.png"></h3></a>
 							<a class="col-md-1" href="/logout" class="login-toggle header-btn header-btn-xl"> <h5>Logout</h5></a>
@@ -49,7 +48,7 @@
 										<div class="row">
 											<div class="col-md-12">
 												<h2 class="col-md-12 blogTitle">{{ $post->title }}</h2>
-												<h5><em>By:</em> {{{ $post->user->email }}}</h5>
+												
 											</div>
 										</div>
 									</div>

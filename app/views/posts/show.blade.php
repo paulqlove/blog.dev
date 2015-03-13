@@ -8,7 +8,7 @@
 						<form role="search" action="{{{ action('PostsController@index') }}}" method="get"> 
 					<ul id="col-xs-12 col-sm-12 indexmenu">
 							<button><img src="/images/button18.png"></button>
-						    <input name="search" type="text" class="movesearchbar" placeholder="search">
+						    	<input name="search" type="text" class="movesearchbar" id="inputPadding" placeholder="search">
 							<button type="submit" class="movesearchbar " id="buttonPadding"><p>Submit</p></button>
 							<li  class="landingpage"><a href="{{{action('HomeController@showPortfolio')}}}"><p id="textport">Work I've Done</p></a></li>
 							<li  class="landingpage"><a href="{{{ action('HomeController@showResume')}}}"><p id="textresume">Who I Am</p></a></li>
@@ -24,8 +24,7 @@
 		<div class="col-md-12">
 			<div class="row">
 				@if (Auth::guest())
-					<a class="col-md-10" id="menuRecall" href="#"><img src="/images/menu37.png"></a>
-						<h4 class="col-md-2">My Blog</h4><br>
+					@include('partials.header')
 				@else
 				<a class="col-md-11" id="menuRecall" href="#"><img src="/images/menu37.png"></a>
 					<a class="col-md-1" href="/logout" class="login-toggle header-btn header-btn-xl"> <h5>Logout</h5></a>
@@ -42,7 +41,7 @@
 		<div class="col-md-12">
 			<div class="row">
 				<h2 class="col-md-offset-4 blogTitle">{{ $posts->title }}</h2>
-				<h5 class="col-md-offset-4"><em>By:</em> {{{ $posts->user->email }}}</h5>
+				
 			</div>
 		</div>
 			<div class="col-md-12">
