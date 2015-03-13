@@ -39,7 +39,7 @@
 							
 			   	  		@endif
 						</div>
-					<div class="col-md-offset-2 col-md-8">
+					<div class="col-md-offset-2 col-md-8 no-gutters">
 						
 								@foreach($posts as $post)
 							
