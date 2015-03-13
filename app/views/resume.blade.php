@@ -57,7 +57,7 @@
 			   	  						<p class="col-md-10 portfolioContent">Here’s a little bit about me. I grew up in Chattanooga Tennessee and have always had a thirst to try new experiences.  I’m a self proclaimed tinkerer,  and like to dabble in woodworking and charcuterie.  I love hitting the road and traveling with my wife and two dogs.</p>
 			   	  					</section>
 			   	  				</div>
-			   	  				<div class="col-md-offset-3 col-md-9 noMargin">
+			   	  				<div class="col-md-offset-3 col-md-9">
 			   	  					<section>
 			   	  						<h2 class="col-md-12 title">Skills</h2>
 				   	  						<div class="row  noMargin">
