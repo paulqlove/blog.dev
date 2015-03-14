@@ -4,6 +4,9 @@
 		<title>Paul Love - Developer</title>
 		<meta charset="utf-8">
 	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  	<meta name="keywords" content="Paul Love, software developer, blog, Dallas, Texas, Codeup Student, programmer, web developer, programmer, create websites, html css jquery, laravel programmer, pretty code,starting to code, software engineer, resposnive design, mobile first, mobile, responsive">
+	  	<meta name="description" content="This is the portfolio page for Paul Love, a web developer from Dallas Texas." >
+	  	<meta name="author" content="Paul Love">
 		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 		<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,500italic,700,100' rel='stylesheet' type='text/css'>
 		<link rel="icon" type="image/png" href="/images/logoIcon.png">
