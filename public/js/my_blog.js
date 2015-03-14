@@ -3,6 +3,7 @@
 $(document).ready(function(){
 	var targetNumber = 10;
 	var clicks = 0;
+	var width = $(window).width();
 	$('.textcontent').width($('.container').width());
 	$('.textcontent').each(function(){
 	      var parentHeight = $(this).parent().height();
@@ -77,6 +78,8 @@ function countClicks() {
 $('.portfolioProfile').click(function(){
 		countClicks();
 });
-$(document).resize(function(){location.reload();});
+if ((width >= 480)) {
+	$(window).resize(function(){location.reload();});
+} else {};
 
 });
