@@ -1,4 +1,30 @@
+/*---------------------
+	*CSS by Paul LOVe 
+	*PAUL LOVE PORTFOLIO
+	*paullove.info
+	*MARCH 2015
+	*EMAIL at paulqlove@gmail.com
+	*all pictures taken by Paul Love
+-------------------------*/
+
+/*------------TABLE OF CONTENTS --------------------
+	[1. HTML ELEMENTS]
+	[2. PORTFOLIO PAGE CONTENT -152-] 
+	[3. CLASSES -210-]
+	[4. PAGER STYLING -362-]
+	[5. ID'S -450-]
+	[6. SLIDER -560-]
+	[7. MEDIA QUERIES -596-]
+-----------------------------------------------------*/
+
+
+
 /* +++++++++++ [1. body/html base] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+a,
+a:hover {
+	text-decoration: none;
+	color: #aee3ba;
+}
 body,
 html {
   height: 100%;
@@ -7,16 +33,29 @@ html {
 body {
   background-color: #ffffff;
   overflow-x: hidden;
-  /* no worries this is a fluid layout */
   -ms-overflow-style: scrollbar;
-
-  /* width of .header-btn-wrapper + 2px */
- 	font-family: 'Roboto', sans-serif; 
-
-  /* height of .header */
+  font-family: 'Roboto', sans-serif; 
   color: #555555;
   font-size: 16px;
   line-height: 1.6;
+}
+/* border around viewport
+-------------------------------------------------------------------------------------------------------------------------------------*/
+body:before,
+body:after {
+  z-index: 1005;
+  right: 0;
+  position: fixed;
+  left: 0;
+  height: 3px;
+  content: "";
+
+}
+body:before {
+  top: 0;
+}
+body:after {
+  bottom: 0;
 }
 header {
 	position: static;
@@ -38,39 +77,6 @@ p {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-
-@media (min-width: 500px) {
-  body {
-    
-   font-family: 'Roboto', sans-serif;
-  }
-}
-@media (min-width: 768px) {
-  body {
-    padding-right: 0;
-  font-family: 'Roboto', sans-serif;
-    /* height of .header at this min-width*/
-    font-weight: 300;
-  }
-}
-/* border around viewport
--------------------------------------------------------------------------------------------------------------------------------------*/
-body:before,
-body:after {
-  z-index: 1005;
-  right: 0;
-  position: fixed;
-  left: 0;
-  height: 3px;
-  content: "";
-/*  background: #777777;*/
-}
-body:before {
-  top: 0;
-}
-body:after {
-  bottom: 0;
-}
 html:before,
 html:after {
   z-index: 1005;
@@ -79,7 +85,6 @@ html:after {
   bottom: 0;
   width: 3px;
   content: "";
- /* background: #777777;*/
 }
 html:after {
   right: 0;
@@ -89,21 +94,10 @@ html.no-boxshadow:before,
 html.no-boxshadow:after,
 .no-boxshadow body:before,
 .no-boxshadow body:after {
-  display: none;
+ 	display: none;
 }
 
-
-
-
-a,
-a:hover {
-	text-decoration: none;
-	color: #aee3ba;
-
-
-}
 h1 {
-	
 	float: right;
 	right: 5px;
 }
@@ -112,7 +106,6 @@ h1 {
 	
 }
 li.landingpage {
-	
 	box-shadow: 1px 2px 1px #888888;
 	background-color: #fff;
 	list-style: none;
@@ -128,7 +121,6 @@ li.landingpage {
 	
 }
 li.portpage {
-	
 	box-shadow: 1px 2px 1px #888888;
 	background-color: #9B9898;
 	letter-spacing: .23em;
@@ -141,7 +133,6 @@ li.portpage {
 	margin-right: 5px;
 	font-weight: 500;
 }
-
 li.portpage:hover a,
 .portpage:hover,
 .landingpage:hover,
@@ -150,13 +141,9 @@ li.landingpage:hover a {
 	color: #fff;
 	text-decoration: none;
 }
-
 nav {
 	background: transparent;
 }
-
-
-
 td {
 	padding: 5px;
 }
@@ -165,15 +152,7 @@ ul {
 	display: inline;
 	padding-left: 10px;
 }
-
-.landing-ul {
-
-	text-transform: uppercase;
-	list-style: none;
-	display: inline;
-	color: #aee3ba;
-
-}
+/* +++++++++++ [2. Portfolio content] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 span.textcontent {
   background: #444;
   color: white;
@@ -182,7 +161,7 @@ span.textcontent {
   position: absolute;
   top: 0;
   width: 100%;
- padding-bottom: 20px;
+  padding-bottom: 20px;
   z-index: 4;
   opacity: 1;
   -webkit-transition: opacity 800ms;
@@ -191,9 +170,7 @@ span.textcontent {
    transition: opacity 800ms;
 }
 .textcontent  {
- 
   text-align: center;
-  
 }
 .textcontent > h5,
 .textcontent > p {
@@ -206,10 +183,8 @@ span.textcontent {
 }
 ul.img-list li:hover span.textcontent,
 div > h5.summary:hover,
-
 .textcontent:hover {
   opacity: 0;
-  
 }
 .style-list > ul {
 	margin-left: 20px;
@@ -217,53 +192,42 @@ div > h5.summary:hover,
 	margin: 5px;
 }
 .style-list > li {
-	
 	margin: 5px;
 	padding: 3px 3px;
 	border-radius: 4px;
 	background: #ddd;
 	float: left;
-	
 	font-size: 1em;
 	line-height: 1.500em;
 	list-style: none;
 }
 .summary {
-	
 	color: #fff;
 	text-align: justify;
 	padding-top: 25px;
 }
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*****************************/
-/*CLASSES BELOW HERE*/
+/* +++++++++++ [3. Classes] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*****************************/
 /*****************************/
 .blogTitle {
 	text-transform: uppercase;
 	font-weight: 800;
 }
-
-
-
 .centerblock {
 	margin-right: 25%;
 	margin-left: 25%;
 }
 .container {
-	
 	margin: 0px;
-	
   	width: 100%;
-  
 }
-
-
 .form-color {
 	color: #4f5666;
 	border-style: none;
 }
-
-
 .actionButton {
 	background-color: #fff;
 	border-style: none;
@@ -273,9 +237,6 @@ div > h5.summary:hover,
 	font-family: inherit;
 	margin: 5px 0 0 25px;
 }
-.highlight { 
-
-}
 .img-size {
 	width: 717px;
 	height: 399px;
@@ -284,36 +245,33 @@ div > h5.summary:hover,
 .icons,
 ul > .icons {
 	max-height: 30px;
-	
 	display: inline;
 	margin: 1.2em 1.2em 2em 1.2em;
-
 }
 .iconsheader,
 ul > .iconsheader {
 	max-height: 35px;
-	
 	display: inline;
 	margin:  .23em  ;
-
 }
 .icons:hover{
 	background-color: #fff;
 }
-.placeIcons{
-	
+.landing-ul {
+	text-transform: uppercase;
+	list-style: none;
+	display: inline;
+	color: #aee3ba;
 }
 .post-img-size {
 	max-width: 300px;
-	max-height:250px;
-	 
+	max-height:250px;	 
 }
 .movesearchbar {
 	background-color: #fff;
 	width: 98%;
 	height: 36px;
 	margin-top: 5px;
-	
 	padding: 0px 5px 5px 0px;
 	text-align: right;
 	border-radius: 2px;
@@ -333,7 +291,6 @@ ul > .iconsheader {
 	position: relative;
 	display: inline-block;
 	padding-top: 10px;
-	/*margin: 20px 0;*/
 	border-radius: 4px;
 	width: 100%;
 	height: 40px;
@@ -345,13 +302,10 @@ ul > .iconsheader {
 .pagination > li > a,
 .pagination > li > span {
 	position: relative;
-/*	float: left;*/
 	padding:  6px 12px;
 	margin-left: -1px;
-	/*line-height: 1.42867143; */
 	text-decoration: none;
 	background-color: #fff;
-
 }
 .pagination > li:first-child > a,
 .pagination > li:first-child > span {
@@ -378,11 +332,8 @@ ul > .iconsheader {
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
-  
   color: #fff;
-  
   background-color: #50D9FF;
-
 }
 .pagination > .disabled > span,
 .pagination > .disabled > span:hover,
@@ -391,96 +342,12 @@ ul > .iconsheader {
 .pagination > .disabled > a:hover,
 .pagination > .disabled > a:focus {
   color: #50D9FF;
-  
   background-color: #fff;
   border-color: #ddd;
 }
-
-.submitButton:hover {
-	color: #fff;
-	background-color: #aee3ba;
-	box-shadow: 2px;
-}
-.portfolioContent {
-	text-align: justify;
-	font-weight: 100;
-}
-.portfolioProfile {
-	max-width: 250px;
-	margin-bottom: 40px;
-	margin-top: 40px;
-	border-radius: 50%;
-	border-style: solid;
-	border-width: 4px;
-	border-color: #fff;
-
-
-}
-
-.title {
-	margin-bottom: .42em;
-
-}
-/*****************************/
-/*ID'S BELOW HERE*/
+/* +++++++++++ [4. PAGER] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*****************************/
 
-#backImage {
-	background-image: url('/images/prada.png');
-	text-align: center;
-}
-#deletepadding {
-	padding-left: 0px;
-}
-/*clickable row */
-/*****************************/
-table#clickableRow {
-    border-collapse: collapse;   
-}
-.tableHeader {
-	height: 50px;
-}
-#bottemSpan {
-	margin-bottom: 15px;
-}
-#buttonPadding {
-	margin-bottom: 40px;
-
-}
-
-#clickableRow tr {
-    background-color: #eee;
-    border-top: 1px solid #fff;
-}
-#clickableRow tr:hover {
-background-color: #ccc;
-}
-#clickableRow th {
-    background-color: #fff;
-}
-#clickableRow th, 
-#clickableRow td {
-    padding: 3px 5px;
-}
-#clickableRow td:hover {
-    cursor: pointer;
-}
-#showIcons:hover {
-	cursor: pointer;
-}
-#showIcons,
-h3 > ul,
-.iconsheader {
-	text-align: right;
-	margin-bottom: 0px;
-
-}
-/*****************************/
-/*****************************/
-
-/************PAGER*****************************/
-/*********************************************/
-/*-------------------------------------------------------------------------------------------------------------------------------------*/
 .pager li > a,
 .pager li > span {
   border-radius: 3px;
@@ -513,7 +380,6 @@ h3 > ul,
 .text-left.pager {
   text-align: left;
 }
-
 .pager li > a:hover,
 .pager li > a:focus {
   background-color: #787E89;
@@ -539,18 +405,75 @@ h3 > ul,
 .pagination > .disabled > a:focus {
   visibility: hidden;
 }
-/******************************************/
-/******************************************/
+.submitButton:hover {
+	color: #fff;
+	background-color: #aee3ba;
+	box-shadow: 2px;
+}
+.portfolioContent {
+	text-align: justify;
+	font-weight: 100;
+}
+.portfolioProfile {
+	max-width: 250px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 4px;
+	border-color: #fff;
+}
+.tableHeader {
+	height: 50px;
+}
+.title {
+	margin-bottom: .42em;
+}
+/* +++++++++++ [5. ID'S] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*****************************/
+/*****************************/
 
+#backImage {
+	background-image: url('/images/prada.png');
+	text-align: center;
+}
+#bottemSpan {
+	margin-bottom: 15px;
+}
+#buttonPadding {
+	margin-bottom: 40px;
+}
+#clickableRow tr {
+    background-color: #eee;
+    border-top: 1px solid #fff;
+}
+#clickableRow tr:hover {
+background-color: #ccc;
+}
+#clickableRow th {
+    background-color: #fff;
+}
+#clickableRow th, 
+#clickableRow td {
+    padding: 3px 5px;
+}
+#clickableRow td:hover {
+    cursor: pointer;
+}
+table#clickableRow {
+    border-collapse: collapse;   
+}
 #closeMenu {
 	margin-left: 5%;
 	margin-bottom: 20px;
 	background-color: transparent;
 	border-style: none;
 }
+#deletepadding {
+	padding-left: 0px;
+}
 #hiddenIcons {
 	display: none;
-
 }
 #inputPadding {
 	padding-top: 5px;
@@ -576,19 +499,24 @@ h3 > ul,
 #page {
   clear: both;
 }
-
 #pic2 {
 	margin-top: 440px;
 }
-
+#showIcons:hover {
+	cursor: pointer;
+}
+#showIcons,
+h3 > ul,
+.iconsheader {
+	text-align: right;
+	margin-bottom: 0px;
+}
 #screenshots {
 	position: relative;
 	margin-top: 5%;
 	right: 25%;
 }
 #secondsection {
-	
-		
 	text-transform: uppercase;
 	background-color: #fff;
 	margin-right: 0px;
@@ -596,10 +524,22 @@ h3 > ul,
 	width: 100%;
 	padding: 15px;
 	background-color: #F2F2F2;
-	/*position: absolute;*/
-	/*overflow-x: hidden;*/
 }
-/*Menus for the each page go here*/
+#serveText {
+	text-align: justify;
+	font-size: 1.25em;
+	font-weight: 100;
+	margin-right: .8em;
+	
+}
+#whackText{
+	text-align: justify;
+	font-weight: 100;
+	padding-right: .8em;
+	font-size: 1.25em;
+	margin-top: 10px;
+}
+/* +++++++++++ [6. SLIDER MENU'S] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*****************************/
 #portmenu {
 	position: fixed;
@@ -613,7 +553,6 @@ h3 > ul,
 	clear: both;
 	width: 250px;
 	height: 100%;
-	/*box-shadow: 1px 0px 3px #a7adba;*/
 	z-index: 5;
 }
 ul#indexmenu {
@@ -628,61 +567,67 @@ ul#indexmenu {
 	width: 250px;
 	height: 100%;
 	left: -250px;
-	/*box-shadow: 1px 0px 3px #a7adba;*/
 	z-index: 1;
 }
-#whackText{
-	text-align: justify;
-	font-weight: 100;
-	padding-right: .8em;
-	font-size: 1.25em;
-	margin-top: 10px;
-}
-#serveText {
-	text-align: justify;
-	font-size: 1.25em;
-	font-weight: 100;
-	margin-right: .8em;
-	
+/* +++++++++++ [7. MEDIA QUERIES] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 500px) {
+  
+body {
+   font-family: 'Roboto', sans-serif;
+  		}
 }
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------------------------------------------------------*/
-/*Desktop size screen */
-@media  (min-width: 992px){
-
-#fixtoBottem {
-	margin-top: 10%;
+@media (min-width: 768px) {
+ 
+body {
+    padding-right: 0;
+  	font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+  		}
 }
-
-#logo {
-	max-width: 460px;
-	margin-left: auto;
-	margin-right: auto;
-	}
-
-
-}
-
-
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-/*small screen size  */
-/*-------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------------------------------------------------------*/
-
-
 @media (max-width: 768px){
-	body {
-		overflow-x: none;
-	}
-	#closeMenu {
-	margin-left: 5%;
-	background-color: transparent;
-	border-style: none;
-}
 
+body {
+	overflow-x: none;
+	}
+	
+
+
+ul#indexmenu {
+	position: fixed;
+	padding-top: 30px;
+	left: -100%;
+	border-right: solid;
+	border-width: 0px;
+	padding-bottom: 50%;
+	background-color: #888585;
+	text-transform: uppercase;
+	clear: both;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	}
+
+.img-size {
+	width: 100%;
+	max-height: 250px;
+	margin-bottom: 20px;
+	}
+.icons,
+ul > .icons {
+	max-height: 35px;
+	display: inline;
+	margin: .1em .7em 1em .7em;
+	}
+.iconsheader,
+ul > .iconsheader {
+	max-height: 35px;
+	display: inline;
+	margin: .0em .11em .1em .11em;
+	}
 .portfolioProfile {
 	max-width: 250px;
 	margin-bottom: 40px;
@@ -691,83 +636,63 @@ ul#indexmenu {
 	border-style: solid;
 	border-width: 4px;
 	border-color: #fff;
-	
 	margin-left: auto;
 	margin-right: auto;
-
-
 }
-	#portmenu {
-		position: fixed;
-		padding-top: 20px;
-		left: -100%;
-		border-right: solid;
-		border-width: 0px;
-		padding-bottom: 50%;
-		background-color: #888585;
-		text-transform: uppercase;
-		clear: both;
-		width: 100%;
-		height: 100%;
-		
-		z-index: 5;
-	}
-	ul#indexmenu {
-		position: fixed;
-		padding-top: 30px;
-		left: -100%;
-		border-right: solid;
-		border-width: 0px;
-		padding-bottom: 50%;
-		background-color: #888585;
-		text-transform: uppercase;
-		clear: both;
-		width: 100%;
-		height: 100%;
-		
-		z-index: 1;
-	}
-
-	.img-size {
-		width: 100%;
-		max-height: 250px;
-		margin-bottom: 20px;
-	
+#closeMenu {
+	margin-left: 5%;
+	background-color: transparent;
+	border-style: none;
 }
-	.icons,
-	ul > .icons {
-		max-height: 35px;
-		
-		display: inline;
-		margin: .1em .7em 1em .7em;
-
+#footerspacing {
+	padding-left: 0;
+	margin-top: 15px;
 	}
-	.iconsheader,
-	ul > .iconsheader {
-		max-height: 35px;
-		
-		display: inline;
-		margin: .0em .11em .1em .11em;
-
+#portmenu {
+	position: fixed;
+	padding-top: 20px;
+	left: -100%;
+	border-right: solid;
+	border-width: 0px;
+	padding-bottom: 50%;
+	background-color: #888585;
+	text-transform: uppercase;
+	clear: both;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
 	}
-
-	#footerspacing {
-		padding-left: 0;
-		margin-top: 15px;
-	}
-
 }
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+@media  (min-width: 992px){
 
+#fixtoBottem {
+	margin-top: 10%;
+}
+#logo {
+	max-width: 460px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
 @media(max-width: 1148px){
-		
-	.textcontent > h5 {
+.textcontent > h5 {
 	font-size: 8em;
 	letter-spacing: .1em;
 	}
-	#whackText{
-		visibility: hidden;
+#whackText{
+	visibility: hidden;
 	}
-	#serveText {
-		visibility: hidden;
+#serveText {
+	visibility: hidden;
 	}
 }
+
+/*---------------------
+	*CSS by Paul LOVe 
+	*PAUL LOVE PORTFOLIO
+	*paullove.info
+	*MARCH 2015
+	*EMAIL at paulqlove@gmail.com
+-------------------------*/

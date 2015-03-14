@@ -14,11 +14,8 @@
 							</ul>
 						</nav>
 					</div>
-	   
 	   <div class="container no-gutters">
-
 			   	  	<div class="no-gutters col-md-12">
-						
 						<div class=" col-md-12 no-gutters">
 							@include('partials.header')
 						@if (Auth::guest())
@@ -27,22 +24,17 @@
 							<a class="col-md-1" href="/logout" class="login-toggle header-btn header-btn-xl"> <h5>Logout</h5></a>
 			   	  		@endif
 						</div>
-			   	  		
-			   	  		
 			   	  	</div>
 			   	  	<div class="col-md-12">
 			   	  		<div class="row">
 			   	  			<div class="col-md-12" id="backImage">
 			   	  				<div class="col-md-8">
-			   	  				
 			   	  				</div>
 			   	  				<div class="col-md-4 embed-responsive-4by3">
 			   	  					<img src="/images/e_demoday-0015.jpeg"  class="portfolioProfile">
 			   	  				</div>
-
 			   	  			</div>
 			   	  		</div>
-
 			   	  		<div class="col-md-12 no-gutters">
 			   	  			<div class="row">
 			   	  				<div class="col-md-offset-3 col-md-8">

@@ -3,17 +3,12 @@
 	<head>
 		<title>Paul Love - Developer</title>
 		<meta charset="utf-8">
-			
-		  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 		<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,500italic,700,100' rel='stylesheet' type='text/css'>
 		<link rel="icon" type="image/png" href="/images/logoIcon.png">
 		<link rel="stylesheet" type="text/css" href="/css/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="/css/custom.css">
-		
-
-		
-			
+		<link rel="stylesheet" type="text/css" href="/css/custom.css">	
 	</head>
 	<body>
 		

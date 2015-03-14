@@ -11,15 +11,13 @@
 						    	<input name="search" type="text" class="movesearchbar" id="inputPadding" placeholder="search">
 							<button type="submit" class="movesearchbar " id="buttonPadding"><p>Submit</p></button>
 							<li  class="landingpage"><a href="{{{action('HomeController@showPortfolio')}}}"><p id="textport">Work I've Done</p></a></li>
-							<li  class="landingpage"><a href="{{{ action('HomeController@showResume')}}}"><p id="textresume">Who I Am</p></a></li>
-							
+							<li  class="landingpage"><a href="{{{ action('HomeController@showResume')}}}"><p id="textresume">Who I Am</p></a></li>	
 							<li  class="landingpage"><a href="{{{ action('PostsController@index')}}}"><p id="textblog">My Blog</p></a></li>
 							<li class="landingpage"><a href="{{{ action('HomeController@showLanding')}}}"><p>Home</p></a></li>
 					 </ul>			
 						</form>
 		</nav><!-- navbar default -->
 	</div>
-
 	<div class="col-md-12">
 		<div class="col-md-12">
 			<div class="row">
@@ -29,7 +27,6 @@
 				<a class="col-md-11" id="menuRecall" href="#"><img src="/images/menu37.png"></a>
 					<a class="col-md-1" href="/logout" class="login-toggle header-btn header-btn-xl"> <h5>Logout</h5></a>
 					<a  href="{{{ action('PostsController@edit', $posts->id)}}}">Edit</a>
-						
 						<a href="{{{ action('PostsController@index') }}}">Go Back</a>
 						{{ Form::open(array('action' => array('PostsController@destroy', $posts->id), 'method' => 'delete')) }}
 							{{ Form::submit('Delete Post', array('class' ,'btn btn-danger')) }}
@@ -37,11 +34,9 @@
 	   	  		@endif
 			</div>
 		</div>
-		
 		<div class="col-md-12">
 			<div class="row">
-				<h2 class="col-md-offset-4 blogTitle">{{ $posts->title }}</h2>
-				
+				<h2 class="col-md-offset-4 blogTitle">{{ $posts->title }}</h2>	
 			</div>
 		</div>
 			<div class="col-md-12">
@@ -51,8 +46,7 @@
 				<div class=" col-md-4 embed-responsive-4by3">
 					<img class="post-img-size" src="{{{ $posts->img_url }}}">
 				</div>
-			</div>
-				
+			</div>	
 		</div>
 	</div>
 </div>
