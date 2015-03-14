@@ -82,8 +82,8 @@ $('#servelink').click(function(){
 	window.open('http://servesearch.us');
 	
 });
-$('#servelink').click(function(){
-	window.open('http://paullove.info/whackamole');
+$('#bottemSpan').click(function(){
+	window.open('/whackamole');
 	
 });
 if ((width >= 480)) {
