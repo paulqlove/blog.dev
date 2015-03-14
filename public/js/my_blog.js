@@ -77,6 +77,6 @@ function countClicks() {
 $('.portfolioProfile').click(function(){
 		countClicks();
 });
-$(window).resize(function(){location.reload();});
+$(document).resize(function(){location.reload();});
 
 });
