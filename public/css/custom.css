@@ -185,6 +185,7 @@ ul.img-list li:hover span.textcontent,
 div > h5.summary:hover,
 .textcontent:hover {
   opacity: 0;
+ 
 }
 .style-list > ul {
 	margin-left: 20px;

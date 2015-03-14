@@ -78,6 +78,14 @@ function countClicks() {
 $('.portfolioProfile').click(function(){
 		countClicks();
 });
+$('#servelink').click(function(){
+	window.open('http://servesearch.us');
+	
+});
+$('#servelink').click(function(){
+	window.open('http://paullove.info/whackamole');
+	
+});
 if ((width >= 480)) {
 	$(window).resize(function(){location.reload();});
 } else {};

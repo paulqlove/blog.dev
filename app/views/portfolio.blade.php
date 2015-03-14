@@ -27,7 +27,7 @@
 			   	  			<li class="portCovers">
 					    		<div class="col-md-9 embed-responsive-4by3">
 					    			<a href="http://servesearch.us" target="_blank"><img class="embed-responsive-4by3  img-size col-md-offset-4"  src="/images/servesearchMock.jpg"></a>
-					    			<span class="hidden-xs hidden-sm no-gutters textcontent" >
+					    			<span class="hidden-xs hidden-sm no-gutters textcontent" id="servelink">
 					    				<h5 class="portTitleSizing">Serve Search</h5>
 					    				<p class="col-md-offset-2 col-md-8" id="serveText">Serve Search is a web app that quickly connects people with volunteer events in their area, making giving back to the community easier to navigate. The site was built using, Laravel, PHP, MySQL, JavaScript, jQuery, and Bootstrap; development was done with Vagrant Environment; version control with Git and GitHub. Our site was designed mobile first, is fully responsive and creates a smooth and easy user experience.<p>
 					    			</span>
