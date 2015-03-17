@@ -15,10 +15,10 @@ $(document).ready(function(){
 		];
 	
 	function countClicks() {
-		if(clicks != 6){
+		if(clicks != 1){
 			clicks++;
 			console.log(clicks);
-		} else if (clicks == 6){
+		} else if (clicks == 1){
 			$('.portfolioProfile').attr('src','/images/youngme.png');
 		} 
 	}
@@ -126,14 +126,14 @@ $('#changeImage').width($('#serveImages').width()/5);
 if ((width >= 480)) {
 	$(window).resize(function(){location.reload();});
 } else {};
-if ((width <= 800)) {
+
 	$('#serveImages').on("swipeleft",function(){
 		prevImage();
-	})
+	});
 	$('#serveImages').on("swiperight",function(){
 		changeImage();
-	})
-} else{};
+	});
+
 
 });
 

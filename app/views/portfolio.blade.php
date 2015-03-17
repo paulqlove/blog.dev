@@ -27,9 +27,9 @@
 			   	  		<ul class="img-list">
 			   	  			<li class="portCovers">
 					    		<div class="col-md-9 embed-responsive-4by3">
-					    			<div class="hidden-sm hidden-xs col-md-4">
+					    			{{-- <div class="hidden-sm hidden-xs col-md-4">
 					    					<button class="glyphicon glyphicon-chevron-left imageControl" id="prevImage"></button>
-					    			</div>
+					    			</div> --}}
 					    			<div >
 					    				<a href="http://servesearch.us" target="_blank"><img class="embed-responsive-4by3  img-size col-md-offset-4" id="serveImages" src="/images/servesearchMock.jpg"></a>
 					    			</div>
@@ -39,9 +39,9 @@
 					    				<p class="col-md-offset-2 col-md-8" id="serveText">Serve Search is a web app that quickly connects people with volunteer events in their area, making giving back to the community easier to navigate. The site was built using, Laravel, PHP, MySQL, JavaScript, jQuery, and Bootstrap; development was done with Vagrant Environment; version control with Git and GitHub. Our site was designed mobile first, is fully responsive and creates a smooth and easy user experience.<p>
 					    			</span>
 					    		</div>
-					    		<div class="hidden-sm hidden-xs col-md-3">			    			
+					    		{{-- <div class="hidden-sm hidden-xs col-md-3">			    			
 					    					<button  class="glyphicon glyphicon-chevron-right imageControl" id="changeImage"></button>
-					    		</div>
+					    		</div> --}}
 			   	  			</li>	    		
 				   	  		<li class="portCovers">
 					   	  		<div class=" col-md-9 embed-responsive-4by3">
