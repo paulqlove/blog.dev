@@ -184,9 +184,11 @@ span.textcontent {
 ul.img-list li:hover span.textcontent,
 div > h5.summary:hover,
 .textcontent:hover {
-  opacity: 0;
- 
+ opacity: 0;
+
+
 }
+
 .style-list > ul {
 	margin-left: 20px;
 	display: inline;
@@ -213,6 +215,7 @@ div > h5.summary:hover,
 /* +++++++++++ [3. Classes] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*****************************/
 /*****************************/
+
 .blogTitle {
 	text-transform: uppercase;
 	font-weight: 800;
@@ -239,7 +242,7 @@ div > h5.summary:hover,
 	margin: 5px 0 0 25px;
 }
 .img-size {
-	width: 717px;
+	width: 718px;
 	height: 399px;
 	padding-top: 15px;
 }
@@ -257,6 +260,12 @@ ul > .iconsheader {
 }
 .icons:hover{
 	background-color: #fff;
+}
+.imageControl button {
+	padding: 0px;
+	border-style: none;
+	height: 50px;
+
 }
 .landing-ul {
 	text-transform: uppercase;
@@ -444,6 +453,12 @@ ul > .iconsheader {
 #buttonPadding {
 	margin-bottom: 40px;
 }
+#changeImage {
+	margin-top: 50%;
+	border-style: none;
+	z-index: 3;
+	background-color: #fff;
+}
 #clickableRow tr {
     background-color: #eee;
     border-top: 1px solid #fff;
@@ -502,6 +517,15 @@ table#clickableRow {
 }
 #pic2 {
 	margin-top: 440px;
+}
+#prevImage {
+	position: absolute;
+	right: 15px;
+	margin-top: 50%;
+	z-index: 3;
+	border-style: none;
+	background-color: #fff;
+
 }
 #showIcons:hover {
 	cursor: pointer;

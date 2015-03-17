@@ -4,6 +4,41 @@ $(document).ready(function(){
 	var targetNumber = 10;
 	var clicks = 0;
 	var width = $(window).width();
+
+	
+		var i = 0, mocks = [
+		 '/images/tablethand.png',
+		 '/images/TABLET_EVENTS.png',
+		 '/images/serve_phone_area.png',
+		'/images/ladyhands.png',
+		'/images/servesearchMock.jpg'
+		];
+	
+	function countClicks() {
+		if(clicks != 6){
+			clicks++;
+			console.log(clicks);
+		} else if (clicks == 6){
+			$('.portfolioProfile').attr('src','/images/youngme.png');
+		} 
+	}
+	function changeImage() {
+			if(i >= mocks.length) return;
+				$('#serveImages').attr('src',mocks[i++]);
+				console.log(mocks[i]);
+	}
+	function prevImage() {
+			if(i < 0) return;
+				$('#serveImages').attr('src',mocks[i--]);
+
+	}
+	$('#changeImage').click(function(){
+		changeImage();
+	});
+	$('#prevImage').click(function(){
+		prevImage();
+	});
+
 	$('.textcontent').width($('.container').width());
 	$('.textcontent').each(function(){
 	      var parentHeight = $(this).parent().height();
@@ -67,14 +102,7 @@ $('#showIcons').click(function(){
 	$("div:hidden").show(1700);
 	$(this).css('margin-top', '0px');
 });		
-function countClicks() {
-	if(clicks != 6){
-		clicks++;
-		console.log(clicks);
-	} else if (clicks == 6){
-		$('.portfolioProfile').attr('src','/images/youngme.png');
-	} 
-}
+
 $('.portfolioProfile').click(function(){
 		countClicks();
 });
@@ -84,10 +112,30 @@ $('#servelink').click(function(){
 });
 $('#bottemSpan').click(function(){
 	window.open('/whackamole');
-	
 });
+$('#servelink').mouseover(function(){
+		$('#servelink').toggle();
+
+});
+$('#bottemSpan').mouseover(function(){
+		$('#servelink').css('display','inherit');
+});	
+$('#prevImage').width($('#serveImages').width()/5);
+$('#changeImage').width($('#serveImages').width()/5);
+
 if ((width >= 480)) {
 	$(window).resize(function(){location.reload();});
 } else {};
+if ((width <= 800)) {
+	$('#serveImages').on("swipeleft",function(){
+		prevImage();
+	})
+	$('#serveImages').on("swiperight",function(){
+		changeImage();
+	})
+} else{};
 
 });
+
+
+
