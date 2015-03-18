@@ -126,8 +126,9 @@ li.landingpage {
 	
 }
 li.portpage {
-	box-shadow: 1px 2px 1px #888888;
-	background-color: #9B9898;
+	/*box-shadow: 1px 2px 1px #888888;*/
+	color: #737373;
+	background-color: #eee;
 	letter-spacing: .23em;
 	list-style: none;
 	border-style: none;
@@ -145,6 +146,7 @@ li.landingpage:hover a {
 	background-color: #aee3ba;
 	color: #fff;
 	text-decoration: none;
+	box-shadow: 1px 2px 1px #888888;
 }
 nav {
 	background: transparent;
@@ -247,10 +249,12 @@ div > h5.summary:hover,
 	margin: 5px 0 0 25px;
 }
 .img-size {
+	
 	width: 718px;
 	height: 399px;
 	padding-top: 15px;
-
+	border: solid 4px transparent
+  	
 }
 .icons,
 ul > .icons {
@@ -607,7 +611,7 @@ h3 > ul,
 	border-right: solid;
 	border-width: 0px;
 	padding-bottom: 50%;
-	background-color: #888585;
+	background-color: #eee;
 	text-transform: uppercase;
 	clear: both;
 	width: 250px;
@@ -620,13 +624,13 @@ ul#indexmenu {
 	border-right: solid;
 	border-width: 0px;
 	padding-bottom: 50%;
-	background-color: #888585;
+	background-color: #eee;
 	text-transform: uppercase;
 	clear: both;
 	width: 250px;
 	height: 100%;
 	left: -250px;
-	z-index: 1;
+	z-index: 105;
 }
 /* +++++++++++ [7. MEDIA QUERIES] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
@@ -662,12 +666,12 @@ ul#indexmenu {
 	border-right: solid;
 	border-width: 0px;
 	padding-bottom: 50%;
-	background-color: #888585;
+	background-color: #eee;
 	text-transform: uppercase;
 	clear: both;
 	width: 100%;
 	height: 100%;
-	z-index: 1;
+	z-index: 105;
 	}
 
 .img-size {
@@ -715,7 +719,7 @@ ul > .iconsheader {
 	border-right: solid;
 	border-width: 0px;
 	padding-bottom: 50%;
-	background-color: #888585;
+	background-color: #eee;
 	text-transform: uppercase;
 	clear: both;
 	width: 100%;

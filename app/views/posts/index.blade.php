@@ -12,10 +12,10 @@
 							<button id="closeMenu"><img src="/images/blueclose.png" ></button>
 							    	<input name="search" type="text" class="movesearchbar" id="inputPadding" placeholder="search">
 									<button type="submit" class="movesearchbar " id="buttonPadding"><p>Submit</p></button>
-								<li  class="portpage"><a href="{{{action('HomeController@showPortfolio')}}}"><p id="textport">Work I've Done</p></a></li>
-								<li  class="portpage"><a href="{{{ action('HomeController@showResume')}}}"><p id="textresume">Who I Am</p></a></li>
-								<li  class="portpage"><a href="{{{ action('PostsController@index')}}}"><p id="textblog">My Blog</p></a></li>
-								<li class="portpage"><a href="{{{ action('HomeController@showLanding')}}}"><p>Home</p></a></li>
+								<a href="{{{action('HomeController@showPortfolio')}}}"><li  class="portpage"><p id="textport">Work I've Done</p></li></a>
+							<a href="{{{ action('HomeController@showResume')}}}"><li  class="portpage"><p id="textresume">Who I Am</p></li></a>	
+							<a href="{{{ action('PostsController@index')}}}"><li  class="portpage"><p id="textblog">My Blog</p></li></a>
+							<a href="{{{ action('HomeController@showLanding')}}}"><li class="portpage"><p>Home</p></li></a>
 						 </ul>			
 							</form>
 			</nav><!-- navbar default -->
