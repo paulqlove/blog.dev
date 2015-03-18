@@ -8,7 +8,7 @@
 	  	<meta name="description" content="This is the portfolio page for Paul Love, a web developer from Dallas Texas." >
 	  	<meta name="author" content="Paul Love">
 		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-		
+
 		<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,500italic,700,100' rel='stylesheet' type='text/css'>
 		<link rel="icon" type="image/png" href="/images/logoIcon.png">
 		<link rel="stylesheet" type="text/css" href="/css/bootstrap/css/bootstrap.min.css">
@@ -26,7 +26,7 @@
 				<div class="alert alert-danger">{{{ Session::get('errorMessage')}}}</div>
 
 			@endif
-		
+			
 			@yield('content')
 
 			@include('partials.footer')

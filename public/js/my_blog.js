@@ -117,7 +117,10 @@ $('#deleteMargin').hover(function(){
 		$('#servelink').toggle();
 
 });
-
+$(".img-size").mouseover(function(){
+		$(this).text('Click');
+		$(this).css('z-index','0');
+});
 $('#prevImage').width($('#serveImages').width()/5);
 $('#changeImage').width($('#serveImages').width()/5);
 

@@ -2,12 +2,14 @@
 	
 			<div class="col-md-12">
 				<div class="row">
-					<div class="col-xs-5 col-md-9" >
+					<div class="col-xs-5 col-md-9">
 						<h3><a id="menuRecall" href="#"><img  src="/images/menu37.png"></h3></a>
 					</div>
 					
 					<div class="col-xs-7 col-md-3">
-						<h3 id="showIcons">CONNECT</h3>
+						<div class="col-md-12 ">
+							<h3 id="showIcons">CONNECT</h3>
+						</div>
 						<div class="col-md-12 placeIcons" id="hiddenIcons">
 							<h3><ul>
 								<li class="iconsheader" ><a href="https://linkedin.com/in/paulqlove" target="_blank">

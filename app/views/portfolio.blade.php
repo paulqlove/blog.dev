@@ -13,8 +13,6 @@
 							</ul>
 						</nav>
 					</div>
-	   <div class="container no-gutters">	
-			   	  	<div class="no-gutters col-md-12">
 						<div class=" col-md-12 no-gutters">
 							@if (Auth::guest())
 								@include('partials.header')
@@ -22,6 +20,8 @@
 								<a class="col-md-1" href="/logout" class="login-toggle header-btn header-btn-xl"> <h5>Logout</h5></a>
 				   	  		@endif
 						</div>
+	   <div class="container no-gutters">	
+			   	  	
 						
 			   	  		<div class="col-md-12 no-gutters">
 			   	  		<ul class="img-list no-gutters">
@@ -40,7 +40,7 @@
 						    			</div>
 						    				
 						    			<span class="hidden-xs hidden-sm no-gutters textcontent" id="servelink">
-						    				<h5 class="portTitleSizing">Serve Search</h5>
+						    				<h5 class="portTitleSizing" id="headerfixport">Serve Search</h5>
 						    				<p class="col-md-offset-2 col-md-8" id="serveText">Serve Search is a web app that quickly connects people with volunteer events in their area, making giving back to the community easier to navigate. The site was built using, Laravel, PHP, MySQL, JavaScript, jQuery, and Bootstrap; development was done with Vagrant Environment; version control with Git and GitHub. Our site was designed mobile first, is fully responsive and creates a smooth and easy user experience.<p>
 						    			</span>
 						    		</div>
@@ -66,7 +66,7 @@
 				   	  		</li>
 			   	  		</ul>
 			   	  		</div>
-			   	  	</div>
+			   	  	
 		</div><!-- End Container-->
 
 @stop
