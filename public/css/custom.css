@@ -501,6 +501,9 @@ table#clickableRow {
 #deleteMargin {
 	margin: 0px;
 }
+#headerfixblog {
+	margin-top: 4em;
+}
 #headerfixport {
 	margin-top: .5em;
 }

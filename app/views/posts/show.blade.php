@@ -34,7 +34,7 @@
 	   	  		@endif
 			</div>
 		</div>
-		<div class="col-md-12">
+		<div class="col-md-12" id="headerfixblog">
 			<div class="row">
 				<h2 class="col-md-offset-4 blogTitle">{{ $posts->title }}</h2>	
 			</div>

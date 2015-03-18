@@ -31,7 +31,7 @@
 							<a href="{{{ action('PostsController@index') }}}">Go Back</a>
 			   	  		@endif
 						</div>
-					<div class="col-md-offset-2 col-md-8 no-gutters">
+					<div class="col-md-offset-2 col-md-8 no-gutters" id="headerfixblog">
 								@foreach($posts as $post)
 								<div class="col-md-12">
 									<div class="col-md-10">
