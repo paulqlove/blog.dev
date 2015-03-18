@@ -113,13 +113,11 @@ $('#servelink').click(function(){
 $('#bottemSpan').click(function(){
 	window.open('/whackamole');
 });
-$('#servelink').mouseover(function(){
+$('#deleteMargin').hover(function(){
 		$('#servelink').toggle();
 
 });
-$('#bottemSpan').mouseover(function(){
-		$('#servelink').css('display','inherit');
-});	
+
 $('#prevImage').width($('#serveImages').width()/5);
 $('#changeImage').width($('#serveImages').width()/5);
 
