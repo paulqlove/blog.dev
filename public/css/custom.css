@@ -63,7 +63,7 @@ header {
 	width: 100%;
 	z-index: 100;
 	background-color: #fff;
-	opacity: .9;
+	opacity: .98;
 
 	
 }
@@ -544,18 +544,17 @@ table#clickableRow {
 	position: absolute;
 	right: 0px;
 	border-style: none;
-	
 	z-index: 3;
 	background-color: transparent;
-	
+	padding-top: 4em;
 }
 #prevImage {
 	position: absolute;
 	left: 0px;
 	z-index: 3;
 	border-style: none;
-	
 	background-color: transparent;
+	padding-top: 4em;
 
 }
 #showIcons:hover {
