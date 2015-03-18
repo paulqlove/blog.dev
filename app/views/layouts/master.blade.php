@@ -8,7 +8,7 @@
 	  	<meta name="description" content="This is the portfolio page for Paul Love, a web developer from Dallas Texas." >
 	  	<meta name="author" content="Paul Love">
 		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-
+		
 		<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,500italic,700,100' rel='stylesheet' type='text/css'>
 		<link rel="icon" type="image/png" href="/images/logoIcon.png">
 		<link rel="stylesheet" type="text/css" href="/css/bootstrap/css/bootstrap.min.css">
@@ -30,7 +30,6 @@
 			@yield('content')
 
 			@include('partials.footer')
-			
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="/css/bootstrap/js/bootstrap.min.js"></script>	
 	    <script type="text/javascript" src="/js/my_blog.js"></script>

@@ -7,10 +7,10 @@ $(document).ready(function(){
 
 	
 		var i = 0, mocks = [
-		 '/images/tablethand.png',
-		 '/images/TABLET_EVENTS.png',
-		 '/images/serve_phone_area.png',
-		'/images/ladyhands.png',
+		 '/images/tabletevent.jpg',
+		 '/images/tablettable.jpg',
+		 '/images/comp.jpg',
+		'/images/tablet.jpg',
 		'/images/servesearchMock.jpg'
 		];
 	
@@ -123,16 +123,15 @@ $('#bottemSpan').mouseover(function(){
 $('#prevImage').width($('#serveImages').width()/5);
 $('#changeImage').width($('#serveImages').width()/5);
 
+$('#prevImage ').height($('.img-size').height());
+$('#changeImage ').height($('.img-size').height());
+
 if ((width >= 480)) {
 	$(window).resize(function(){location.reload();});
 } else {};
 
-	$('#serveImages').on("swipeleft",function(){
-		prevImage();
-	});
-	$('#serveImages').on("swiperight",function(){
-		changeImage();
-	});
+		
+	
 
 
 });

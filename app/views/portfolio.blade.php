@@ -24,36 +24,44 @@
 						</div>
 						
 			   	  		<div class="col-md-12 no-gutters">
-			   	  		<ul class="img-list">
-			   	  			<li class="portCovers">
-					    		<div class="col-md-9 embed-responsive-4by3">
-					    			{{-- <div class="hidden-sm hidden-xs col-md-4">
-					    					<button class="glyphicon glyphicon-chevron-left imageControl" id="prevImage"></button>
-					    			</div> --}}
-					    			<div >
-					    				<a href="http://servesearch.us" target="_blank"><img class="embed-responsive-4by3  img-size col-md-offset-4" id="serveImages" src="/images/servesearchMock.jpg"></a>
-					    			</div>
-					    				
-					    			<span class="hidden-xs hidden-sm no-gutters textcontent" id="servelink">
-					    				<h5 class="portTitleSizing">Serve Search</h5>
-					    				<p class="col-md-offset-2 col-md-8" id="serveText">Serve Search is a web app that quickly connects people with volunteer events in their area, making giving back to the community easier to navigate. The site was built using, Laravel, PHP, MySQL, JavaScript, jQuery, and Bootstrap; development was done with Vagrant Environment; version control with Git and GitHub. Our site was designed mobile first, is fully responsive and creates a smooth and easy user experience.<p>
-					    			</span>
-					    		</div>
-					    		{{-- <div class="hidden-sm hidden-xs col-md-3">			    			
-					    					<button  class="glyphicon glyphicon-chevron-right imageControl" id="changeImage"></button>
-					    		</div> --}}
-			   	  			</li>	    		
+			   	  		<ul class="img-list no-gutters">
+			   	  			<div class="col-md-12 no-gutters">
+			   	  				<div class="row" id="deleteMargin">
+				   	  			<li class="col-md-12 portCovers no-gutters">
+						    		<div class="col-md-10">
+						    			<div class="hidden-sm hidden-xs col-md-2">
+						    					
+						    			</div>
+			   	  							<button class="glyphicon glyphicon-chevron-left imageControl" id="prevImage"></button>
+						    			<div class="col-md-10 no-gutters">
+						    				<a href="http://servesearch.us" target="_blank">
+						    					<img class="embed-responsive-4by3 col-sm-offset-1 col-md-offset-2 img-size " id="serveImages" src="/images/servesearchMock.jpg">
+						    				</a>
+						    			</div>
+						    				
+						    			<span class="hidden-xs hidden-sm no-gutters textcontent" id="servelink">
+						    				<h5 class="portTitleSizing">Serve Search</h5>
+						    				<p class="col-md-offset-2 col-md-8" id="serveText">Serve Search is a web app that quickly connects people with volunteer events in their area, making giving back to the community easier to navigate. The site was built using, Laravel, PHP, MySQL, JavaScript, jQuery, and Bootstrap; development was done with Vagrant Environment; version control with Git and GitHub. Our site was designed mobile first, is fully responsive and creates a smooth and easy user experience.<p>
+						    			</span>
+						    		</div>
+						    		<div class="hidden-sm hidden-xs col-md-2">			    			
+						    					
+						    		</div>
+				   	  			</li>	    		
+			   	  					<button  class="glyphicon glyphicon-chevron-right imageControl" id="changeImage"></button>
+			   	  				</div>
+			   	  			</div>
 				   	  		<li class="portCovers">
 					   	  		<div class=" col-md-9 embed-responsive-4by3">
-					   	   			<a href="{{{ action('HomeController@showWhackamole')}}}"><img  class="embed-responsive-4by3 img-size col-md-offset-4"  src="/images/duckhuntMock.jpg"></a> 
+					   	   			<a href="{{{ action('HomeController@showWhackamole')}}}"><img  class="embed-responsive-4by3 img-size col-sm-offset-1 col-md-offset-4"  src="/images/duckhuntMock.jpg"></a> 
 					   	   			<span class="hidden-xs hidden-sm textcontent" id="bottemSpan">
 					   	   				<h5 class="col-md-12 portTitleSizing" >Whackamole</h5>
 					   	   				<p class="col-md-offset-2 col-md-8" id="whackText">A class exercise to build our first game. Built using PHP, JavaScript, jQuery and HTML/ CSS. No Ducks were harmed in the making of this game.</p>
 					   	   			</span>
 					   	  		</div>
 					   	  		<div class="col-md-3 portCovers" >
-					   	  			<p ></p>
-					   	  			<h5 class="summary">Click the picture to play!</h5>
+					   	  			
+					   	  			
 					   	  		</div>
 				   	  		</li>
 			   	  		</ul>

@@ -264,7 +264,7 @@ ul > .iconsheader {
 .imageControl button {
 	padding: 0px;
 	border-style: none;
-	height: 50px;
+	height: 50px;  
 
 }
 .landing-ul {
@@ -355,6 +355,13 @@ ul > .iconsheader {
   background-color: #fff;
   border-color: #ddd;
 }
+.glyphicon {
+  outline: none;
+  border: none; !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
 /* +++++++++++ [4. PAGER] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*****************************/
 
@@ -433,6 +440,7 @@ ul > .iconsheader {
 	border-width: 4px;
 	border-color: #fff;
 }
+
 .tableHeader {
 	height: 50px;
 }
@@ -453,12 +461,7 @@ ul > .iconsheader {
 #buttonPadding {
 	margin-bottom: 40px;
 }
-#changeImage {
-	margin-top: 50%;
-	border-style: none;
-	z-index: 3;
-	background-color: #fff;
-}
+
 #clickableRow tr {
     background-color: #eee;
     border-top: 1px solid #fff;
@@ -487,6 +490,9 @@ table#clickableRow {
 }
 #deletepadding {
 	padding-left: 0px;
+}
+#deleteMargin {
+	margin: 0px;
 }
 #hiddenIcons {
 	display: none;
@@ -518,13 +524,22 @@ table#clickableRow {
 #pic2 {
 	margin-top: 440px;
 }
+#changeImage {
+	position: absolute;
+	right: 0px;
+	border-style: none;
+	
+	z-index: 3;
+	background-color: transparent;
+	
+}
 #prevImage {
 	position: absolute;
-	right: 15px;
-	margin-top: 50%;
+	left: 0px;
 	z-index: 3;
 	border-style: none;
-	background-color: #fff;
+	
+	background-color: transparent;
 
 }
 #showIcons:hover {
@@ -640,6 +655,7 @@ ul#indexmenu {
 	width: 100%;
 	max-height: 250px;
 	margin-bottom: 20px;
+	padding: 0px;
 	}
 .icons,
 ul > .icons {
