@@ -10,10 +10,10 @@
 							<button><img src="/images/button18.png"></button>
 						    	<input name="search" type="text" class="movesearchbar" id="inputPadding" placeholder="search">
 							<button type="submit" class="movesearchbar " id="buttonPadding"><p>Submit</p></button>
-							<a href="{{{action('HomeController@showPortfolio')}}}"><li  class="portpage"><p id="textport">Work I've Done</p></li></a>
-							<a href="{{{ action('HomeController@showResume')}}}"><li  class="portpage"><p id="textresume">Who I Am</p></li></a>	
-							<a href="{{{ action('PostsController@index')}}}"><li  class="portpage"><p id="textblog">My Blog</p></li></a>
-							<a href="{{{ action('HomeController@showLanding')}}}"><li class="portpage"><p>Home</p></li></a>
+							<a href="{{{action('HomeController@showPortfolio')}}}"><li  class="portpage ripple"><p id="textport">Work I've Done</p></li></a>
+							<a href="{{{ action('HomeController@showResume')}}}"><li  class="portpage ripple"><p id="textresume">Who I Am</p></li></a>	
+							<a href="{{{ action('PostsController@index')}}}"><li  class="portpage ripple"><p id="textblog">My Blog</p></li></a>
+							<a href="{{{ action('HomeController@showLanding')}}}"><li class="portpage ripple"><p>Home</p></li></a>
 					 </ul>			
 						</form>
 		</nav><!-- navbar default -->
