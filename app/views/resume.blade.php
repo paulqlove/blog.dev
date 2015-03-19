@@ -40,7 +40,7 @@
 			   	  				<div class="col-md-offset-3 col-md-8">
 			   	  					<section>
 			   	  						<h2 class="col-md-6 title"> The Digital</h2>
-			   	  						<p class="col-md-10 portfolioContent">My enthusiasm for technology and creating led me to pursue a career in development. Having completed General Assembly’s Web Design Circuit course, I am armed with core strategic skills in design, layout, user experience, HTML and CSS. My over 800 hours spent in Code Up’s Full-Stack Immersive Bootcamp, honing my back-end craft, has made me proficient in PHP, JavaScript, Laravel, jquery and bootstrap (among others). I’m a triple-threat in my unique ability and passion for blending thoughtful strategy, imaginative design and seamless execution in development.</p>
+			   	  						<p class="col-md-10 portfolioContent">My enthusiasm for technology and creating led me to pursue a career in development. Having completed General Assembly’s Web Design Circuit course, I am armed with core strategic skills in design, layout, user experience, HTML and CSS. My over 800 hours spent in Code Up’s Full-Stack Immersive Bootcamp, honing my back-end craft, has made me proficient in PHP, JavaScript, Laravel, jquery and MySQL. I’m a triple-threat in my unique ability and passion for blending thoughtful strategy, imaginative design and seamless execution in development.</p>
 			   	  					</section>
 			   	  				</div>
 			   	  				<div class="col-md-offset-3 col-md-8">
