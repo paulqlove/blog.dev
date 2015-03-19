@@ -510,6 +510,8 @@ table#clickableRow {
 }
 #headerfixport {
 	margin-top: .5em;
+	color: #D4C70A;
+	
 }
 #headerfix {
 	margin-top: 4em;
@@ -601,6 +603,10 @@ h3 > ul,
 	padding-right: .8em;
 	font-size: 1.25em;
 	margin-top: 10px;
+}
+#whackTitle {
+	color: #D4289B;
+	
 }
 /* +++++++++++ [6. SLIDER MENU'S] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*****************************/
