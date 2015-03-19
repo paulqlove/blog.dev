@@ -114,7 +114,7 @@ $('#bottemSpan').click(function(){
 	window.open('/whackamole');
 });
 $('#deleteMargin').hover(function(){
-		$('#servelink').slideToggle(800)
+		$('#servelink').fadeToggle({duration: 450, easeMethod: 'easeInCubic'});
 
 });
 $(".img-size").mouseover(function(){
@@ -131,7 +131,11 @@ if ((width >= 480)) {
 	$(window).resize(function(){location.reload();});
 } else {};
 
-		
+$(function(){
+
+  $('.ripple').materialripple();
+
+});		
 	
 
 

@@ -6,11 +6,11 @@
 						<nav>
 							<ul class="mainmenu" id="portmenu">
 								<button id="closeMenu"><img src="/images/blueclose.png" ></button>
-								<a href="{{{ action('HomeController@showPortfolio')}}}"><li class="portpage"><p id="textport">Work I've Done</p></li></a>
-								<a href="{{{ action('HomeController@showResume')}}}"><li class="portpage"><p id="textresume">Who I Am</p></li></a>
+								<a href="{{{ action('HomeController@showPortfolio')}}}"><li class="portpage ripple"><p id="textport">Work I've Done</p></li></a>
+								<a href="{{{ action('HomeController@showResume')}}}"><li class="portpage ripple"><p id="textresume">Who I Am</p></li></a>
 								
-								<a href="{{{ action('PostsController@index')}}}"><li class="portpage"><p id="textblog">My Blog</p></li></a>
-								<a href="{{{ action('HomeController@showLanding')}}}"><li class="portpage"><p>Home</p></li></a>
+								<a href="{{{ action('PostsController@index')}}}"><li class="portpage ripple"><p id="textblog">My Blog</p></li></a>
+								<a href="{{{ action('HomeController@showLanding')}}}"><li class="portpage ripple"><p>Home</p></li></a>
 							</ul>
 						</nav>
 					</div>
