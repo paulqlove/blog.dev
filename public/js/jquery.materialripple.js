@@ -3,7 +3,7 @@
 
 $.fn.materialripple = function(options) {
 	var defaults = {
-		rippleClass: 'ripple-wrapper'
+		rippleClass: "ripple-wrapper"
 	}
 	$.extend(defaults, options);
 

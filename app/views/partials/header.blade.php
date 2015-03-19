@@ -3,7 +3,7 @@
 			<div class="col-md-12">
 				<div class="row">
 					<div class="col-xs-5 col-md-9">
-						<h3><a id="menuRecall" href="#"><img  src="/images/menu37.png"></h3></a>
+						<h3><a  id="menuRecall" href="#"><img  src="/images/menu37.png"></h3></a>
 					</div>
 					
 					<div class="col-xs-7 col-md-3">
