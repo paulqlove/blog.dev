@@ -133,7 +133,7 @@ if ((width >= 480)) {
 
 $(function(){
 
-  $(".ripple, .rippleHeader").materialripple();
+  $(".ripple").materialripple();
   
 });		
 	
