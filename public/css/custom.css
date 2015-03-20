@@ -783,6 +783,7 @@ li.landingpage:hover a {
 	visibility: hidden;
 	}
 }
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
 @media(min-width: 768px) and (max-width: 800px){
 	.img-size {
 		width: 100%;
@@ -792,15 +793,21 @@ li.landingpage:hover a {
 
 		}
 	}
-}
-@media(min-width: 1000px) and (orientation: landscape){
-	#whackText{
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+@media handheld and (orientation: landscape) {
+	.textcontent{
 		visibility: hidden;
 		}
-	#serveText {
+
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+@media (max-device-width: 1280px) and (orientation: landscape) { 
+	.textcontent{
 		visibility: hidden;
 		}
 }
+	
+
 /*---------------------
 	*CSS by Paul LOVe 
 	*PAUL LOVE PORTFOLIO
