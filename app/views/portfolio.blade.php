@@ -35,7 +35,7 @@
 			   	  							<button class="glyphicon glyphicon-chevron-left imageControl" id="prevImage"></button>
 						    			<div class="col-md-10 no-gutters">
 						    				<a href="http://servesearch.us" target="_blank">
-						    					<img class="embed-responsive-4by3 col-sm-offset-1 col-md-offset-2 img-size " id="serveImages" src="/images/servesearchMock.jpg">
+						    					<img class="embed-responsive-4by3 col-sm-offset-0 col-md-offset-2 img-size" id="serveImages" src="/images/servesearchMock.jpg">
 						    				</a>
 						    			</div>
 						    				
@@ -53,7 +53,7 @@
 			   	  			</div>
 				   	  		<li class="portCovers">
 					   	  		<div class=" col-md-9 embed-responsive-4by3">
-					   	   			<a href="{{{ action('HomeController@showWhackamole')}}}"><img  class="embed-responsive-4by3 img-size col-sm-offset-1 col-md-offset-4"  src="/images/duckhuntMock.jpg"></a> 
+					   	   			<a href="{{{ action('HomeController@showWhackamole')}}}"><img  class="embed-responsive-4by3 img-size col-sm-offset-0 col-md-offset-4"  src="/images/duckhuntMock.jpg"></a> 
 					   	   			<span class="hidden-xs hidden-sm textcontent" id="bottemSpan">
 					   	   				<h5 class="col-md-12 portTitleSizing" id="whackTitle">Duck Hunt</h5>
 					   	   				<p class="col-md-offset-2 col-md-8" id="whackText">A class exercise to build our first game. Built using PHP, JavaScript, jQuery and HTML/ CSS. No Ducks were harmed in the making of this game.</p>

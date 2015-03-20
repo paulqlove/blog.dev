@@ -684,9 +684,10 @@ ul#indexmenu {
 
 .img-size {
 	width: 100%;
-	max-height: 250px;
+	max-height: auto;
 	margin-bottom: 20px;
 	padding: 0px;
+
 	}
 .icons,
 ul > .icons {
@@ -761,6 +762,14 @@ li.landingpage:hover a {
 		-transition: all  400ms cubic-bezier(0.96, 0.12, 0.81, 1.27);
 	}
 }
+@media(max-width: 525px){
+	.img-size {
+		width: 100%;
+		max-height: 250px;
+		margin-bottom: 20px;
+		padding: 0px;
+		}
+}
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 @media(max-width: 1148px){
 .textcontent > h5 {
@@ -774,7 +783,24 @@ li.landingpage:hover a {
 	visibility: hidden;
 	}
 }
+@media(min-width: 768px) and (max-width: 800px){
+	.img-size {
+		width: 100%;
+		max-height: 390px;
+		margin-bottom: 20px;
+		padding: 0px;
 
+		}
+	}
+}
+@media(min-width: 1000px) and (orientation: landscape){
+	#whackText{
+		visibility: hidden;
+		}
+	#serveText {
+		visibility: hidden;
+		}
+}
 /*---------------------
 	*CSS by Paul LOVe 
 	*PAUL LOVE PORTFOLIO
