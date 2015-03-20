@@ -127,15 +127,13 @@ $('#changeImage').width($('#serveImages').width()/5);
 $('#prevImage ').height($('.img-size').height());
 $('#changeImage ').height($('.img-size').height());
 
+$(function(){
+  $(".ripple").materialripple();
+});		
 if ((width >= 480)) {
 	$(window).resize(function(){location.reload();});
 } else {};
 
-$(function(){
-
-  $(".ripple").materialripple();
-  
-});		
 	
 
 
