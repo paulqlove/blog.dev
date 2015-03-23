@@ -171,7 +171,7 @@ span.textcontent {
   width: 100%;
   padding-bottom: 20px;
   z-index: 4;
-  opacity: .9;
+  opacity: .985;
   -webkit-transition: opacity 800ms;
   -moz-transition: opacity 800ms;
   -o-transition: opacity 800ms;
@@ -386,6 +386,7 @@ ul > .iconsheader {
 	word-spacing: .25em;
 	padding: .25em;
 	opacity: .76;
+	
 
 
 }

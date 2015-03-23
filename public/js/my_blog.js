@@ -131,25 +131,17 @@ $('#changeImage ').height($('.img-size').height());
 $(function(){
   $(".ripple").materialripple();
 });		
-// if ((width >= 480)) {
-// 	$(window).resize(function(){location.reload();});
-// } else {};
-$('.serveInfo').hide();
-$('.duckInfo').hide();	
-$('#serveImages').mouseover(function(){
- if ((width < 980)) {
- 	$('.serveInfo').hide();
- } else {
-	$('.serveInfo').show();
- };
-});
-$('#duckImages').mouseover(function(){
- if ((width < 980)) {
- 	$('.duckInfo').hide();
- } else {
+
 	$('.duckInfo').show();
- }
-});		
+
+
+
+if ((width >= 580)) {
+	$(window).resize(function(){location.reload();});
+} else {
+
+	$('.serveInfo').hide();
+};
 
 });
 
