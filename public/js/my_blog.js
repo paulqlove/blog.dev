@@ -137,7 +137,7 @@ $(function(){
 
 
 if ((width >= 580)) {
-	$(window).resize(function(){location.reload();});
+	// $(window).resize(function(){location.reload();});
 } else {
 
 	$('.serveInfo').hide();
