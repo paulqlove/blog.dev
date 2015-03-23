@@ -171,7 +171,7 @@ span.textcontent {
   width: 100%;
   padding-bottom: 20px;
   z-index: 4;
-  opacity: 1;
+  opacity: .9;
   -webkit-transition: opacity 800ms;
   -moz-transition: opacity 800ms;
   -o-transition: opacity 800ms;
@@ -186,10 +186,10 @@ span.textcontent {
 	padding-right: 10px;
 }
 .textcontent > h5 {
-	font-size: 10em;
-	letter-spacing: .1em;
+	/*font-size: 12em;
+	letter-spacing: .1em;*/
 }
-ul.img-list li:hover span.textcontent,
+ul.img-list li:hover s.textcontent,
 div > h5.summary:hover,
 .textcontent:hover {
  opacity: 0;
@@ -254,7 +254,7 @@ div > h5.summary:hover,
 	width: 718px;
 	height: 399px;
 	padding-top: 15px;
-	border: solid 4px transparent
+	/*border: solid 4px transparent*/
   	
 }
 .icons,
@@ -373,6 +373,36 @@ ul > .iconsheader {
   -moz-box-shadow: none !important;
   box-shadow: none !important;
 }
+.ServeWrapper {
+	position: relative;
+}
+.serveInfo {
+	position: absolute;
+	bottom: 1px;
+	color: #eee;
+	background-color: #555555;
+	font-size: .84em;
+	text-align: justify;
+	word-spacing: .25em;
+	padding: .25em;
+	opacity: .76;
+
+
+}
+.duckWrapper {
+	position: relative;
+}
+.duckInfo {
+	position: absolute;
+	bottom: 1px;
+	color: #eee;
+	background-color: #555555;
+	font-size: .84em;
+	text-align: justify;
+	word-spacing: .25em;
+	padding: .25em;
+	opacity: .76;
+}
 /* +++++++++++ [4. PAGER] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*****************************/
 
@@ -400,7 +430,7 @@ ul > .iconsheader {
   font-size: 80%;
 }
 .portTitleSizing {
-	font-size: .2em;
+	/*font-size: 5em;*/
 
 }
 .text-right.pager {
@@ -512,10 +542,13 @@ table#clickableRow {
 #headerfixport {
 	margin-top: .5em;
 	color: #D4C70A;
+	font-size: 11em;
+	letter-spacing: .05em;
 	
 }
 #headerfix {
 	margin-top: 4em;
+
 }
 #hiddenIcons {
 	display: none;
@@ -608,7 +641,8 @@ h3 > ul,
 }
 #whackTitle {
 	color: #D4289B;
-	
+	font-size: 12em;
+	letter-spacing: .17em;
 }
 /* +++++++++++ [6. SLIDER MENU'S] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*****************************/
