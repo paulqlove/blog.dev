@@ -32,6 +32,17 @@ $(document).ready(function(){
 				$('#serveImages').attr('src',mocks[i--]);
 
 	}
+
+if(jQuery.browser.mobile)
+{
+   console.log('You are using a mobile device!');
+	$('.serveInfo').hide();
+}
+else
+{
+	$(window).resize(function(){location.reload();});
+   console.log('You are not using a mobile device!');
+}
 	$('#changeImage').click(function(){
 		changeImage();
 	});
@@ -132,17 +143,9 @@ $(function(){
   $(".ripple").materialripple();
 });		
 
-	$('.duckInfo').show();
+	
 
 
-
-if ((width >= 580)) {
-	// $(window).resize(function(){location.reload();});
-} else {
-
-	$('.serveInfo').hide();
-};
 
 });
-
 
