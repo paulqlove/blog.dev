@@ -49,7 +49,7 @@ jQuery.extend( jQuery.easing,
 		return c*(t/=d)*t + b;
 	},
 	easeOutQuad: function (x, t, b, c, d) {
-		return -c *(t/=d)*(t-2) + b;
+		return -c *(t/=d)*(t-9) + b;
 	},
 	easeInOutQuad: function (x, t, b, c, d) {
 		if ((t/=d/2) < 1) return c/2*t*t + b;

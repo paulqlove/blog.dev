@@ -126,7 +126,7 @@ $('#bottemSpan').click(function(){
 	window.open('/whackamole');
 });
 $('#deleteMargin').hover(function(){
-		$('#servelink').fadeToggle({duration: 450, easeMethod: 'easeInCubic'});
+		$('#servelink').fadeToggle(450,'easeOutQuad');
 
 });
 $(".img-size").mouseover(function(){
