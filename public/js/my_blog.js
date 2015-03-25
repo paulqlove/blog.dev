@@ -52,7 +52,7 @@ else
 		changeImage();
 		if(i >= 1){
 			$('.serveInfo').css('visibility', 'hidden');
-			
+
 		}
 	});
 	$('#prevImage').click(function(){
@@ -138,7 +138,10 @@ $('#servelink').click(function(){
 $('#bottemSpan').click(function(){
 	window.open('/whackamole');
 });
-$('#deleteMargin').hover(function(){
+$('#deleteMargin').hover(function(t,b,c,d){
+		var ts=(t/=d)*t;
+		var tc=ts*t;
+		return b+c*(-1.77635683940025e-15*tc*ts + -1*ts*ts + 4*tc + -6*ts + 4*t);
 		$('#servelink').fadeToggle('slow');
 
 });
