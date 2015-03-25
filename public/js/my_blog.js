@@ -1,18 +1,22 @@
 // All code written by Paul Love
 //March 2015
-$(document).ready(function(){
+(function ( $ ) {
 	var targetNumber = 10;
 	var clicks = 0;
 	var width = $(window).width();
 
 	
 		var i = 0, mocks = [
+		'/images/servesearchMock.jpg',
 		 '/images/tabletevent.jpg',
 		 '/images/tablettable.jpg',
 		 '/images/comp.jpg',
-		'/images/tablet.jpg',
-		'/images/servesearchMock.jpg'
+		'/images/tablet.jpg'
 		];
+	
+	$('#serveImages').attr('src',mocks[i]);
+	
+	
 	
 	function countClicks() {
 		if(clicks != 1){
@@ -24,14 +28,15 @@ $(document).ready(function(){
 	}
 	function changeImage() {
 			if(i >= mocks.length) return;
-				$('#serveImages').attr('src',mocks[i++]);
+				$('#serveImages').attr('src',mocks[++i]);
 				console.log(mocks[i]);
 	}
 	function prevImage() {
 			if(i < 0) return;
-				$('#serveImages').attr('src',mocks[i--]);
+				$('#serveImages').attr('src',mocks[--i]);
 
 	}
+	
 
 if(jQuery.browser.mobile)
 {
@@ -45,9 +50,17 @@ else
 }
 	$('#changeImage').click(function(){
 		changeImage();
+		if(i >= 1){
+			$('.serveInfo').css('visibility', 'hidden');
+			
+		}
 	});
 	$('#prevImage').click(function(){
 		prevImage();
+		if(i < 1){
+			$('.serveInfo').css('visibility', 'visible');
+		} else {}
+		
 	});
 	$('.duckInfo').width($('#duckImages').width()/1.01);
 	$('.serveInfo').width($('#serveImages').width()/1.01);
@@ -126,7 +139,7 @@ $('#bottemSpan').click(function(){
 	window.open('/whackamole');
 });
 $('#deleteMargin').hover(function(){
-		$('#servelink').fadeToggle(450,'paulsFade');
+		$('#servelink').fadeToggle('slow');
 
 });
 $(".img-size").mouseover(function(){
@@ -143,9 +156,8 @@ $(function(){
   $(".ripple").materialripple();
 });		
 
-	
 
 
 
-});
+}( jQuery ));
 

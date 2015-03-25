@@ -389,6 +389,7 @@ ul > .iconsheader {
 
 
 
+
 }
 .duckWrapper {
 	position: relative;
@@ -596,7 +597,7 @@ table#clickableRow {
 	border-style: none;
 	background-color: transparent;
 	padding-top: 4em;
-
+	
 }
 
 #showIcons:hover {
