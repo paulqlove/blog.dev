@@ -36,7 +36,7 @@
 						    			<div class="col-md-10 no-gutters ServeWrapper">
 						    				<a href="http://servesearch.us" target="_blank">
 						    					<img class="embed-responsive-4by3 col-sm-offset-1 col-md-offset-2 img-size " id="serveImages" src=" ">
-						    					<div class="col-sm-offset-1 col-md-offset-2 serveInfo">Serve Search is a web app that quickly connects people with volunteer events in their area, making giving back to the community easier to navigate. The site was built using, Laravel, PHP, MySQL, JavaScript, jQuery, and Bootstrap; development was done with Vagrant Environment; version control with Git and GitHub. Our site was designed mobile first, is fully responsive and creates a smooth and easy user experience. -Click on the Image</div>
+						    					<div class="col-sm-offset-1 col-md-offset-2 serveInfo">Serve Search is a web app that quickly connects people with volunteer events in their area, making giving back to the community easier to navigate. The site was built using, Laravel, PHP, MySQL, JavaScript, jQuery, and Bootstrap; development was done with Vagrant Environment; version control with Git and GitHub. Our site was designed mobile first, is fully responsive and creates a smooth and easy user experience. -Click image to visit</div>
 						    				</a>
 						    			</div>
 						    				
