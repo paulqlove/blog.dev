@@ -9,19 +9,19 @@ if(isset($_POST['Player'])){
 <html>
 <head>
 	<title>Duck Hunt</title>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/mole.css">
-	<script src="/js/jquery.min.js"></script>
+	
 </head>
 <body>
-	<h1></h1>
-	<div id="container">
+		<div id="container">
 		<p class="timer"><p>
 		
 		<!-- divs for keeping the duck inside dom-->
 		<!-- **************** -->
 		<!--  **********************-->
 		<div id="left"></div>
-			<div id="bird"></div>
+		<div id="bird"></div>
 		<div id="right"></div>	
 	
 		<!-- the welcome box when page loads -->
@@ -29,7 +29,7 @@ if(isset($_POST['Player'])){
 		<!--  **********************-->
 		<div id="welcomeBox">
 
-		<section id="animate">
+		<section class="col-md-12" id="animate">
 			<h1>Destroyer of Ducks</h1>
 			<form method="POST" action="index.php">
 
@@ -89,6 +89,9 @@ if(isset($_POST['Player'])){
 				<p class="gameTime"></p>
 		</div>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="/js/jquery.min.js"></script>
+	<script src="/css/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/js/mole.js"></script>
 
 </body>

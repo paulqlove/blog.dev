@@ -79,13 +79,17 @@ $(document).ready(function(){
 		//make the bird  appear in the appropriate div and fly right or left
 		if (numberGenerator >= 5) {
 			
-			$(replacebirdID).animate({top: '-=350', left: '-=350'},2200);
+			$(replacebirdID).animate({top: '-=350', left: '-=350'},2200,function(){
+				$(this).css({top: '0', left: '0' , visibility: 'hidden'});
+			});
 		
 			
 		} else {
 			console.log('fly right');
 			$(replacebirdID).css({'visibility':'visible','transform':'scaleX(1)'});
-			$(replacebirdID).animate({top: '-=350', left: '+=350'},1200);
+			$(replacebirdID).animate({top: '-=350', left: '+=350'},1200,function(){
+				$(this).css({top: '0', left: '0' , visibility: 'hidden'});
+			});
 		}
 		return replacebirdID;
 	}
@@ -158,7 +162,7 @@ $(document).ready(function(){
 		countHits();
 		birdStartPoint();
 
-	    $(this).css({top: '0', left: '0' , visibility: 'hidden'});
+	    
 
 		//removes html after the first click
 		$('.timer').text(" ");

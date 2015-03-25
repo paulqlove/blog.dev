@@ -55,10 +55,10 @@
 				   	  		<li class="col-md-12 portCovers no-gutters">
 					   	  		<div class=" col-md-9">
 					   	   			<div class="no-gutters duckWrapper">
-						   	   			<a href="{{{ action('HomeController@showWhackamole')}}}">
+						   	   			
 						   	   				<img  class="embed-responsive-4by3  col-sm-offset-1 col-md-offset-4 img-size" id="duckImages" src="/images/duckhuntMock.jpg">
-						   	   				<div class="col-sm-offset-1 col-md-offset-4 duckInfo">A class exercise to build our first game. Built using PHP, JavaScript, jQuery and HTML/ CSS. No Ducks were harmed in the making of this game. Click on the image to Play!</div>
-						   	   			</a> 
+						   	   				<div class="col-sm-offset-1 col-md-offset-4 duckInfo">A class exercise to build our first game. Built using PHP, JavaScript, jQuery and HTML/ CSS. No Ducks were harmed in the making of this game. </div>
+						   	   			
 					   	   			</div>
 					   	   			<span class="hidden-xs hidden-sm textcontent" id="bottemSpan">
 					   	   				<h5 class="col-md-12 portTitleSizing" id="whackTitle">DUCK HUNT</h5>

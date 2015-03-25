@@ -386,10 +386,6 @@ ul > .iconsheader {
 	word-spacing: .25em;
 	padding: .25em;
 	opacity: .76;
-
-
-
-
 }
 .duckWrapper {
 	position: relative;
@@ -589,6 +585,13 @@ table#clickableRow {
 	z-index: 3;
 	background-color: transparent;
 	padding-top: 4em;
+}
+#closeMenu:hover {
+	-webkit-transform: rotate(-25deg);
+	-moz-transform: rotate(-25deg);
+	-ms-transform: rotate(-25deg);
+	-0-transform: rotate(-25deg);
+	transfrom: rotate(-25deg);
 }
 #prevImage {
 	position: absolute;
