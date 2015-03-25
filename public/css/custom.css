@@ -597,7 +597,7 @@ table#clickableRow {
 	border-style: none;
 	background-color: transparent;
 	padding-top: 4em;
-	
+
 }
 
 #showIcons:hover {
@@ -826,8 +826,33 @@ li.landingpage:hover a {
 		max-height: 390px;
 		margin-bottom: 20px;
 		padding: 0px;
+		margin-left: 0px;
 
 		}
+	.serveInfo {
+		position: absolute;
+		bottom: 1px;
+		color: #eee;
+		background-color: #555555;
+		font-size: .84em;
+		text-align: justify;
+		word-spacing: .25em;
+		padding: .25em;
+		opacity: .76;
+		margin-left: 0px;
+	}
+	.duckInfo {
+		position: absolute;
+		bottom: 1px;
+		color: #eee;
+		background-color: #555555;
+		font-size: .84em;
+		text-align: justify;
+		word-spacing: .25em;
+		padding: .25em;
+		opacity: .76;
+		margin-left: 0px;
+	}
 	}
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 @media handheld and (orientation: landscape) {
