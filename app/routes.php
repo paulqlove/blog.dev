@@ -47,7 +47,7 @@ Route::post('/login','HomeController@doLogin');
 
 Route::get('logout','HomeController@doLogout');
 
-
+Route::get('googlea4855ffadb5a8f9a','HomeController@showGoogle');
 
 Route::get('search', function ()
 {

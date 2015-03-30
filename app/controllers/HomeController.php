@@ -83,7 +83,10 @@ class HomeController extends BaseController {
 		Session::flash('successMessage','So long and thanks for visiting.');
 		return Redirect::action('HomeController@showLanding');
 	}
-
+	public function showGoogle()
+	{
+		return View::make('googlea4855ffadb5a8f9a');
+	}
 	
 }
 
