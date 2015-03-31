@@ -38,22 +38,22 @@
 			   	  		<div class="col-md-12 no-gutters">
 			   	  			<div class="row">
 			   	  				<div class="col-md-offset-3 col-md-8">
-			   	  					<section>
-			   	  						<h2 class="col-md-6 title"> The Digital</h2>
-			   	  						<p class="col-md-10 portfolioContent">My enthusiasm for technology and creating led me to pursue a career in development. Having completed General Assembly’s Web Design Circuit course, I am armed with core strategic skills in design, layout, user experience, HTML and CSS. My over 800 hours spent in Code Up’s Full-Stack Immersive Bootcamp, honing my back-end craft, has made me proficient in PHP, JavaScript, Laravel, jquery and MySQL. I’m a triple-threat in my unique ability and passion for blending thoughtful strategy, imaginative design and seamless execution in development.</p>
+			   	  					<section itemscope itemtype="http://schema.org/Article">
+			   	  						<h2 itemprop="articleSection" class="col-md-6 title"> The Digital</h2>
+			   	  						<p itemprop="articleBody" class="col-md-10 portfolioContent">My enthusiasm for technology and creating led me to pursue a career in development. Having completed General Assembly’s Web Design Circuit course, I am armed with core strategic skills in design, layout, user experience, HTML and CSS. My over 800 hours spent in Code Up’s Full-Stack Immersive Bootcamp, honing my back-end craft, has made me proficient in PHP, JavaScript, Laravel, jquery and MySQL. I’m a triple-threat in my unique ability and passion for blending thoughtful strategy, imaginative design and seamless execution in development.</p>
 			   	  					</section>
 			   	  				</div>
 			   	  				<div class="col-md-offset-3 col-md-8">
-			   	  					<section>
-			   	  						<h2 class="col-md-6 title">The Analog</h2>
-			   	  						<p class="col-md-10 portfolioContent">Here’s a little bit about me. I grew up in Chattanooga Tennessee and have always had a thirst to try new experiences.  I’m a self proclaimed tinkerer,  and like to dabble in woodworking and charcuterie.  I love hitting the road and traveling with my wife and two dogs.</p>
+			   	  					<section itemscope itemtype="http://schema.org/Article">
+			   	  						<h2 itemprop="articleSection" class="col-md-6 title">The Analog</h2>
+			   	  						<p itemprop="articleBody" class="col-md-10 portfolioContent">Here’s a little bit about me. I grew up in Chattanooga Tennessee and have always had a thirst to try new experiences.  I’m a self proclaimed tinkerer,  and like to dabble in woodworking and charcuterie.  I love hitting the road and traveling with my wife and two dogs.</p>
 			   	  					</section>
 			   	  				</div>
 			   	  				<div class="col-md-offset-3 col-md-9">
-			   	  					<section>
-			   	  						<h2 class="col-md-12 title">Skills</h2>
+			   	  					<section itemscope itemtype="http://schema.org/Article">
+			   	  						<h2 itemprop="articleSection" class="col-md-12 title">Skills</h2>
 				   	  						<div class="row  noMargin">
-				   	  						<ul class="style-list col-md-6 no-gutters">
+				   	  						<ul itemprop="articleBody" class="style-list col-md-6 no-gutters">
 				   	  							<li>Html</li>
 				   	  							<li>CSS</li>
 				   	  							<li>PHP</li>
