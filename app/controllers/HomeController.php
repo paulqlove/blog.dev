@@ -87,6 +87,10 @@ class HomeController extends BaseController {
 	{
 		return View::make('googlea4855ffadb5a8f9a');
 	}
+	public function showSiteMap()
+	{
+		return View::make('sitemap');
+	}
 	
 }
 

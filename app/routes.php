@@ -49,6 +49,8 @@ Route::get('logout','HomeController@doLogout');
 
 Route::get('googlea4855ffadb5a8f9a','HomeController@showGoogle');
 
+Route::get('sitemap','HomeController@showSiteMap');
+
 Route::get('search', function ()
 {
 	$search = Input::get('search');
