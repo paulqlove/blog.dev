@@ -64,6 +64,7 @@
 				   	  							<li>Linux</li>
 				   	  							<li>Apache</li>
 				   	  							<li>Responsive Design</li>
+				   	  							<li>Wireframing</li>
 				   	  							<li>Omnigraffle</li>
 				   	  						</ul>
 				   	  						</div>
