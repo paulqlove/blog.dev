@@ -584,7 +584,8 @@ table#clickableRow {
 	border-style: none;
 	z-index: 3;
 	background-color: transparent;
-	padding-top: 4em;
+	padding-top: 2em;
+	font-size: 2em;
 }
 #closeMenu:hover {
 	-webkit-transform: rotate(-25deg);
@@ -599,7 +600,8 @@ table#clickableRow {
 	z-index: 3;
 	border-style: none;
 	background-color: transparent;
-	padding-top: 4em;
+	padding-top: 2em;
+	font-size: 2em;
 
 }
 
