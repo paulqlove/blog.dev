@@ -135,9 +135,7 @@ $('#servelink').click(function(){
 	window.open('http://servesearch.us');
 	
 });
-$('#bottemSpan').click(function(){
-	window.open('/whackamole');
-});
+
 $('#deleteMargin').hover(function(){
 		$('#servelink').fadeToggle(260,"swing");
 

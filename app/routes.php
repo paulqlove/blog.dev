@@ -37,7 +37,7 @@ Route::get('portfolio', 'HomeController@showPortfolio');
 
 Route::get('skills', 'HomeController@showSkills');
 
-Route::get('whackamole', 'HomeController@showWhackamole');
+// Route::get('whackamole', 'HomeController@showWhackamole');
 
 Route::resource('posts', 'PostsController');
 
