@@ -27,29 +27,29 @@
 			   	  		<ul class="img-list no-gutters">
 			   	  			<div class="col-md-12 no-gutters">
 			   	  				<div class="row" id="deleteMargin">
-				   	  			<li class="col-md-12 portCovers no-gutters">
-						    		<div class="col-md-10">
-						    			<div class="hidden-sm hidden-xs col-md-2">
-						    					
-						    			</div>
-			   	  							<button class="glyphicon glyphicon-chevron-left imageControl" id="prevImage"></button>
-						    			<div class="col-md-10 no-gutters ServeWrapper">
-						    				<a href="http://servesearch.us" target="_blank">
-						    					<img class="embed-responsive-4by3 col-sm-offset-1 col-md-offset-2 img-size " id="serveImages" src=" ">
-						    					<div class="col-sm-offset-1 col-md-offset-2 serveInfo">Serve Search is a web app that quickly connects people with volunteer events in their area, making giving back to the community easier to navigate. The site was built using, Laravel, PHP, MySQL, JavaScript, jQuery, and Bootstrap; development was done with Vagrant Environment; version control with Git and GitHub. Our site was designed mobile first, is fully responsive and creates a smooth and easy user experience. -Click image to visit</div>
-						    				</a>
-						    			</div>
-						    				
-						    			<span class="hidden-xs hidden-sm no-gutters textcontent" id="servelink">
-						    				<h5 class="portTitleSizing" id="headerfixport">SERVE SEARCH</h5>
-						    			</span>
-						    				
-						    		</div>
-						    		<div class="hidden-sm hidden-xs col-md-2">			    			
-						    					
-						    		</div>
-				   	  			</li>	    		
-			   	  					<button  class="glyphicon glyphicon-chevron-right imageControl" id="changeImage"></button>
+					   	  			<li class="col-md-12 portCovers no-gutters">
+							    		<div class="col-md-10">
+							    			<div class="hidden-sm hidden-xs col-md-2 ">
+							    					
+							    			</div>
+				   	  							<button class="glyphicon glyphicon-chevron-left imageControl" id="prevImage"></button>
+							    			<div class="col-md-10 no-gutters ServeWrapper">
+							    				<a href="http://servesearch.us" target="_blank">
+							    					<img class="embed-responsive-4by3 col-sm-offset-1 col-md-offset-2 img-size " id="serveImages" src=" ">
+							    					<div class="col-sm-offset-1 col-md-offset-2 serveInfo">Serve Search is a web app that quickly connects people with volunteer events in their area, making giving back to the community easier to navigate. The site was built using, Laravel, PHP, MySQL, JavaScript, jQuery, and Bootstrap; development was done with Vagrant Environment; version control with Git and GitHub. Our site was designed mobile first, is fully responsive and creates a smooth and easy user experience. -Click image to visit</div>
+							    				</a>
+							    			</div>
+							    				
+							    			<span class="hidden-xs hidden-sm no-gutters textcontent" id="servelink">
+							    				<h5 class="portTitleSizing" id="headerfixport">SERVE SEARCH</h5>
+							    			</span>
+							    				
+							    		</div>
+							    		<div class="hidden-sm hidden-xs col-md-2">			    			
+							    					
+							    		</div>
+					   	  			</li>	    		
+			   	  								<button class="glyphicon glyphicon-chevron-right imageControl" id="changeImage"></button>
 			   	  				</div>
 			   	  			</div>
 				   	  		<li class="col-md-12 portCovers no-gutters">
@@ -71,6 +71,31 @@
 					   	  			
 					   	  		</div>
 				   	  		</li>
+				   	  		<div class="col-md-12 no-gutters">
+				   	  			<div class="row" id="deleteMargin">
+					   	  			<li class="col-md-12 portCovers no-gutters">
+					   	  				<div class=" col-md-10">
+					   	  					<div class="hidden-sm hidden-xs col-md-2">
+					   	  							
+					   	  					</div>
+					   	  					<button class="glyphicon glyphicon-chevron-left imageControl" id="prevImageFaso"></button>
+					   	  					<div class="col-md-10 no-gutters ServeWrapper">
+					   	  						<a href="http://faso.com" target="_blank">
+						   	  						<img class="embed-responsive-4by3 col-sm-offset-1 col-md-offset-2 img-size " id="fasoImages" src=" ">
+						   	  						<div class="col-sm-offset-1 col-md-offset-2 fasoInfo">This is a template built for a company that focuses on marketing and hosting sites for artist.  </div>
+					   	  						</a>
+					   	  					</div>
+					   	  				</div>
+					   	  				<span class="hidden-xs hidden-sm no-gutters textcontent" id="faso">
+					   	  					<h5 class="portTitleSizing" id="headerfixport">FASO</h5>
+					   	  				</span>
+					   	  			</li>
+					   	  			<div class="hidden-sm hidden-xs col-md-2">			    			
+					   	  						
+					   	  			</div>
+					   	  					<button class="col-md-2 glyphicon glyphicon-chevron-right imageControl" id="changeImageFaso"></button>
+					   	  		</div>
+				   	  		</div>
 			   	  		</ul>
 			   	  		</div>
 			   	  	

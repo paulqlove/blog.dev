@@ -24,6 +24,7 @@ a,
 a:hover {
 	text-decoration: none;
 	color: #aee3ba;
+	z-index: 5;
 }
 body,
 html {
@@ -236,6 +237,19 @@ div > h5.summary:hover,
 	margin: 0px;
   	width: 100%;
 }
+.fasoInfo {
+	position: absolute;
+	bottom: 1px;
+	color: #eee;
+	background-color: #555555;
+	font-size: .84em;
+	text-align: justify;
+	word-spacing: .25em;
+	padding: .25em;
+	opacity: .76;
+	z-index: 4;
+	text-align: center;
+}
 .form-color {
 	color: #4f5666;
 	border-style: none;
@@ -307,6 +321,9 @@ ul > .iconsheader {
 .noMargin {
 	margin-left: 10px;
 	padding-right: 0px;
+}
+.opacity {
+	opacity: 0;
 }
 .pagination {
 	position: relative;
@@ -587,12 +604,25 @@ table#clickableRow {
 	padding-top: 2em;
 	font-size: 2em;
 }
+#changeImageFaso {
+	position: absolute;
+	right: 0px;
+	border-style: none;
+	z-index: 4;
+	background-color: transparent;
+	padding-top: 2em;
+	font-size: 2em;
+	opacity: .985;
+}
 #closeMenu:hover {
 	-webkit-transform: rotate(-25deg);
 	-moz-transform: rotate(-25deg);
 	-ms-transform: rotate(-25deg);
 	-0-transform: rotate(-25deg);
 	transfrom: rotate(-25deg);
+}
+#fasoImages {
+	margin-top: 10px;
 }
 #prevImage {
 	position: absolute;
@@ -604,7 +634,17 @@ table#clickableRow {
 	font-size: 2em;
 
 }
+#prevImageFaso {
+	position: absolute;
+	left: 0px;
+	z-index: 4;
+	border-style: none;
+	background-color: transparent;
+	padding-top: 2em;
+	font-size: 2em;
+	opacity: .985;
 
+}
 #showIcons:hover {
 	cursor: pointer;
 }
@@ -776,6 +816,27 @@ ul > .iconsheader {
 	height: 100%;
 	z-index: 105;
 	}
+	#prevImageFaso {
+		position: absolute;
+		left: 0px;
+		z-index: 4;
+		border-style: none;
+		background-color: transparent;
+		padding-top: .5em;
+		font-size: 2em;
+		opacity: .985;
+
+	}
+	#changeImageFaso {
+		position: absolute;
+		right: 0px;
+		border-style: none;
+		z-index: 4;
+		background-color: transparent;
+		padding-top: .5em;
+		font-size: 2em;
+		opacity: .985;
+	}
 }
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 @media  (min-width: 992px){
@@ -858,6 +919,20 @@ li.landingpage:hover a {
 		opacity: .76;
 		margin-left: 0px;
 	}
+	.fasoInfo {
+	position: absolute;
+	bottom: 1px;
+	color: #eee;
+	background-color: #555555;
+	font-size: .84em;
+	text-align: justify;
+	word-spacing: .25em;
+	padding: .25em;
+	opacity: .76;
+	z-index: 4;
+	text-align: center;
+	margin-left: 0px;
+}
 	}
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 @media handheld and (orientation: landscape) {

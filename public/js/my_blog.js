@@ -6,6 +6,12 @@
 	var width = $(window).width();
 
 	
+		var f = 0, fasomocks = [
+		'/images/faso_landing_mock.png',
+		'/images/faso_blog_mock.png',
+		'/images/faso_single_mock.png',
+		'/images/faso_collections_mock.png'
+		];
 		var i = 0, mocks = [
 		'/images/servesearchMock.jpg',
 		 '/images/tabletevent.jpg',
@@ -13,8 +19,8 @@
 		 '/images/comp.jpg',
 		'/images/tablet.jpg'
 		];
-	
 	$('#serveImages').attr('src',mocks[i]);
+	$('#fasoImages').attr('src',fasomocks[f]);
 	
 	
 	
@@ -31,12 +37,28 @@
 				$('#serveImages').attr('src',mocks[++i]);
 				console.log(mocks[i]);
 	}
+	function changeImageFaso() {
+			if(f >= fasomocks.length) return;
+				$('#fasoImages').attr('src',fasomocks[++f]);
+				console.log(mocks[f]);
+	}
 	function prevImage() {
 			if(i < 0) return;
 				$('#serveImages').attr('src',mocks[--i]);
 
 	}
-	
+	function prevImageFaso() {
+			if(f < 0) return;
+				$('#fasoImages').attr('src',fasomocks[--f]);
+
+	}
+	function toggleFaso(){
+		if($('#faso').hasClass('hidden'))
+		{
+			$("#faso").removeClass("hidden");
+			console.log('hello');
+		} 
+	}
 
 if(jQuery.browser.mobile)
 {
@@ -54,21 +76,47 @@ else
 			$('.serveInfo').css('visibility', 'hidden');
 
 		}
-	});
+	})
+	$('#changeImageFaso').click(function(){
+		changeImageFaso();
+		
+	})
 	$('#prevImage').click(function(){
 		prevImage();
 		if(i < 1){
 			$('.serveInfo').css('visibility', 'visible');
-		} else {}
+		} 
+		
+	})
+	$('#prevImageFaso').click(function(){
+		prevImageFaso();
 		
 	});
 	$('.duckInfo').width($('#duckImages').width()/1.01);
 	$('.serveInfo').width($('#serveImages').width()/1.01);
+	$('.fasoInfo').width($('#serveImages').width()/1.01);
 	$('.textcontent').width($('.container').width());
 	$('.textcontent').each(function(){
 	      var parentHeight = $(this).parent().height();
 	      $(this).height(parentHeight);    
 	});
+
+	$('#changeImageFaso').hover(function(){
+		$("#faso").addClass("hidden");
+		
+		
+		
+	})
+	$('#prevImageFaso').hover(function(){
+		$("#faso").addClass("hidden");
+
+		
+		
+	})
+	$('span').mouseover(function(){
+		toggleFaso();
+	})
+	
 $('li.landingpage').load(function(){
 		$('li.landingpage').css('background-color','#aee3ba');
 });
@@ -138,7 +186,8 @@ $('#servelink').click(function(){
 
 $('#deleteMargin').hover(function(){
 		$('#servelink').fadeToggle(260,"swing");
-
+		//FIX THIS SOON ..DO WHAT YOU DID FOR THE FASO SITE
+		// $('#faso').fadeToggle(260,"swing");
 });
 $(".img-size").mouseover(function(){
 		$(this).text('Click');
@@ -146,9 +195,13 @@ $(".img-size").mouseover(function(){
 });
 $('#prevImage').width($('#serveImages').width()/5);
 $('#changeImage').width($('#serveImages').width()/5);
+$('#prevImageFaso').width($('#fasoImages').width()/5);
+$('#changeImageFaso').width($('#fasoImages').width()/5);
 
 $('#prevImage ').height($('.img-size').height());
 $('#changeImage ').height($('.img-size').height());
+$('#prevImageFaso ').height($('.img-size').height());
+$('#changeImageFaso ').height($('.img-size').height());
 
 $(function(){
   $(".ripple").materialripple();
