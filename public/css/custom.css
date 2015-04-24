@@ -580,11 +580,18 @@ table#clickableRow {
 	margin-top: 4em;
 }
 #headerfixport {
-	margin-top: .5em;
+	margin-top: .9em;
 	color: #D4C70A;
 	font-size: 11em;
 	letter-spacing: .05em;
 	
+}
+#headerfixport1 {
+	margin-top: .9em;
+	color: #19AFEB;
+	font-size: 11em;
+	letter-spacing: .05em;
+
 }
 #headerfix {
 	margin-top: 4em;
@@ -648,8 +655,11 @@ table#clickableRow {
 	-0-transform: rotate(-25deg);
 	transfrom: rotate(-25deg);
 }
+#duckImages {
+	margin-top: 30px;
+}
 #fasoImages {
-	margin-top: 10px;
+	margin-top: 70px;
 }
 #prevImage {
 	position: absolute;
@@ -696,7 +706,7 @@ h3 > ul,
 	background-color: #F2F2F2;
 }
 #serveImages {
-	margin-top: 70px;
+	margin-top: 10px;
 }
 #serveText {
 	text-align: justify;
@@ -717,6 +727,7 @@ h3 > ul,
 	color: #D4289B;
 	font-size: 12em;
 	letter-spacing: .17em;
+	margin-top: .9em;
 }
 /* +++++++++++ [6. SLIDER MENU'S] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*****************************/

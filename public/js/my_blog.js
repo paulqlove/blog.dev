@@ -144,7 +144,10 @@ else
 		$("button").removeClass("hidden");
 		toggleServeSearch();
 	})
-	
+	$('.serve_btn').mouseover(function(){
+		// $("button").removeClass("hidden");
+		$("#faso").removeClass("hidden");
+	})
 $('li.landingpage').load(function(){
 		$('li.landingpage').css('background-color','#aee3ba');
 });

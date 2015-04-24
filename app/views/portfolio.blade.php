@@ -25,9 +25,28 @@
 						<div class="row no-gutters">
 						
 			   	  		<div class="col-md-12 no-gutters">
+			   	  			<div class="row no-gutters" id="deleteMargin">
+				   	  			<div class="col-md-12 no-gutters">
+			   	  					<button class="col-md-2 glyphicon glyphicon-chevron-left imageControl hidden" id="prevImageFaso"></button>
+					   	  					<div class="col-md-12 no-gutters ServeWrapper">
+					   	  						<div class="img_margin ">
+						   	  						<a href="http://faso.com" target="_blank">
+							   	  						<img class="embed-responsive-4by3 img-size " id="fasoImages" src=" ">
+							   	  						<div class="hidden-xs fasoInfo">This is a template built for a company that focuses on marketing and hosting sites for artist. 
+							   	  						</div>
+						   	  						</a>
+					   	  						</div>
+					   	  					</div> {{-- /serveWrapper --}}
+					   	  				<span class="hidden-xs hidden-sm no-gutters textcontent" id="faso">
+					   	  					<h5 class="" id="headerfixport1">FASO</h5>
+					   	  				</span>
+					   	  			
+			   	  					<button class="col-md-2 glyphicon glyphicon-chevron-right imageControl hidden " id="changeImageFaso"></button>
+					   	  		</div>
+				   	  		</div> {{-- /deletemargin --}}
 		   	  				<div class="row no-gutters">
 			   	  				<div class="col-md-12 no-gutters">
-	   	  							<button class="col-md-2 glyphicon glyphicon-chevron-left imageControl hidden" id="prevImage"></button>
+	   	  							<button class="col-md-2 glyphicon glyphicon-chevron-left imageControl hidden serve_btn" id="prevImage"></button>
 							    		<div class="col-md-12 no-gutters ServeWrapper">
 							    			
 							    			<div class="img_margin ">
@@ -41,7 +60,7 @@
 							    				<h5 class="" id="headerfixport">SERVE SEARCH</h5>
 							    			</span>
 							    		</div>
-   	  								<button class="col-md-2 glyphicon glyphicon-chevron-right imageControl hidden " id="changeImage"></button>
+   	  								<button class="col-md-2 glyphicon glyphicon-chevron-right imageControl hidden serve_btn" id="changeImage"></button>
 			   	  				</div>
 			   	  			</div>
 			   	  			<div class=" row no-gutters">
@@ -62,25 +81,7 @@
 					   	  		{{-- <div class="col-md-2 portCovers" >
 					   	  		</div> --}}
 				   	  		</div> {{-- /row --}}
-			   	  			<div class="row no-gutters" id="deleteMargin">
-				   	  			<div class="col-md-12 no-gutters">
-			   	  					<button class="col-md-2 glyphicon glyphicon-chevron-left imageControl hidden" id="prevImageFaso"></button>
-					   	  					<div class="col-md-12 no-gutters ServeWrapper">
-					   	  						<div class="img_margin ">
-						   	  						<a href="http://faso.com" target="_blank">
-							   	  						<img class="embed-responsive-4by3 img-size " id="fasoImages" src=" ">
-							   	  						<div class="hidden-xs fasoInfo">This is a template built for a company that focuses on marketing and hosting sites for artist. 
-							   	  						</div>
-						   	  						</a>
-					   	  						</div>
-					   	  					</div> {{-- /serveWrapper --}}
-					   	  				<span class="hidden-xs hidden-sm no-gutters textcontent" id="faso">
-					   	  					<h5 class="" id="headerfixport">FASO</h5>
-					   	  				</span>
-					   	  			
-			   	  					<button class="col-md-2 glyphicon glyphicon-chevron-right imageControl hidden " id="changeImageFaso"></button>
-					   	  		</div>
-				   	  		</div> {{-- /deletemargin --}}
+			   	  			
 			   	  		
 			   	  		</div>
 			   	  	</div> {{-- /row --}}
