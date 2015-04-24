@@ -24,7 +24,7 @@ a,
 a:hover {
 	text-decoration: none;
 	color: #aee3ba;
-	z-index: 5;
+	z-index: 3;
 }
 body,
 html {
@@ -58,6 +58,12 @@ body:before {
 body:after {
   bottom: 0;
 }
+button {
+	z-index: 3;
+}
+/*button:hover {
+	z-index: 10;
+}*/
 header {
 	position: fixed;
 	height: 70px;	
@@ -163,7 +169,7 @@ ul {
 }
 /* +++++++++++ [2. Portfolio content] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 span.textcontent {
-  background: #444;
+  background: #555;
   color: white;
   cursor: pointer;
   left: 0;
@@ -171,7 +177,7 @@ span.textcontent {
   top: 0;
   width: 100%;
   padding-bottom: 20px;
-  z-index: 4;
+  z-index: 3;
   opacity: .985;
   -webkit-transition: opacity 800ms;
   -moz-transition: opacity 800ms;
@@ -190,7 +196,7 @@ span.textcontent {
 	/*font-size: 12em;
 	letter-spacing: .1em;*/
 }
-ul.img-list li:hover s.textcontent,
+ul.img-list li:hover span.textcontent,
 div > h5.summary:hover,
 .textcontent:hover {
  opacity: 0;
@@ -229,6 +235,7 @@ div > h5.summary:hover,
 	text-transform: uppercase;
 	font-weight: 800;
 }
+
 .centerblock {
 	margin-right: 25%;
 	margin-left: 25%;
@@ -238,8 +245,9 @@ div > h5.summary:hover,
   	width: 100%;
 }
 .fasoInfo {
-	position: absolute;
-	bottom: 1px;
+	/*position: relative;*/
+	/*bottom: 1px;
+	left: 0px;*/
 	color: #eee;
 	background-color: #555555;
 	font-size: .84em;
@@ -248,7 +256,9 @@ div > h5.summary:hover,
 	padding: .25em;
 	opacity: .76;
 	z-index: 4;
-	text-align: center;
+	/*text-align: center;*/
+	margin-left: auto;
+	margin-right: auto;
 }
 .form-color {
 	color: #4f5666;
@@ -289,9 +299,21 @@ ul > .iconsheader {
 .imageControl button {
 	padding: 0px;
 	border-style: none;
-	height: 50px;  
+	/*height: 50px; */ 
 
 }
+
+.img_margin{
+	position: relative;
+	text-align: center;
+
+}
+/*.img_margin .fasoInfo span,
+.fasoInfo {
+	text-align: center;
+	
+
+}*/
 .landing-ul {
 	text-transform: uppercase;
 	list-style: none;
@@ -316,7 +338,8 @@ ul > .iconsheader {
 	color: #444;
 }
 .no-gutters {
-	padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 .noMargin {
 	margin-left: 10px;
@@ -394,7 +417,7 @@ ul > .iconsheader {
 	position: relative;
 }
 .serveInfo {
-	position: absolute;
+	/*position: absolute;*/
 	bottom: 1px;
 	color: #eee;
 	background-color: #555555;
@@ -403,12 +426,14 @@ ul > .iconsheader {
 	word-spacing: .25em;
 	padding: .25em;
 	opacity: .76;
+	margin-left: auto;
+	margin-right: auto;
 }
 .duckWrapper {
 	position: relative;
 }
 .duckInfo {
-	position: absolute;
+	/*position: absolute;*/
 	bottom: 1px;
 	color: #eee;
 	background-color: #555555;
@@ -417,6 +442,8 @@ ul > .iconsheader {
 	word-spacing: .25em;
 	padding: .25em;
 	opacity: .76;
+	margin-left: auto;
+	margin-right: auto;
 }
 /* +++++++++++ [4. PAGER] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*****************************/
@@ -444,10 +471,7 @@ ul > .iconsheader {
 .pager .ti {
   font-size: 80%;
 }
-.portTitleSizing {
-	/*font-size: 5em;*/
 
-}
 .text-right.pager {
   text-align: right;
 }
@@ -504,6 +528,7 @@ ul > .iconsheader {
 .title {
 	margin-bottom: .42em;
 }
+
 /* +++++++++++ [5. ID'S] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*****************************/
 /*****************************/
@@ -548,9 +573,9 @@ table#clickableRow {
 #deletepadding {
 	padding-left: 0px;
 }
-#deleteMargin {
+/*#deleteMargin {
 	margin: 0px;
-}
+}*/
 #headerfixblog {
 	margin-top: 4em;
 }
@@ -597,18 +622,20 @@ table#clickableRow {
 }
 #changeImage {
 	position: absolute;
-	right: 0px;
 	border-style: none;
-	z-index: 3;
+	right: 0px;
+	/*z-index: 6;*/
 	background-color: transparent;
-	padding-top: 2em;
+	padding-top: 2.59em;
 	font-size: 2em;
+	opacity: .985;
 }
+
 #changeImageFaso {
 	position: absolute;
-	right: 0px;
 	border-style: none;
-	z-index: 4;
+	right: 0px;
+	/*z-index: 6;*/
 	background-color: transparent;
 	padding-top: 2em;
 	font-size: 2em;
@@ -627,17 +654,17 @@ table#clickableRow {
 #prevImage {
 	position: absolute;
 	left: 0px;
-	z-index: 3;
+	/*z-index: 4;*/
 	border-style: none;
 	background-color: transparent;
-	padding-top: 2em;
+	padding-top: 2.59em;
 	font-size: 2em;
-
+	opacity: .985;
 }
 #prevImageFaso {
 	position: absolute;
 	left: 0px;
-	z-index: 4;
+	/*z-index: 4;*/
 	border-style: none;
 	background-color: transparent;
 	padding-top: 2em;
@@ -819,10 +846,10 @@ ul > .iconsheader {
 	#prevImageFaso {
 		position: absolute;
 		left: 0px;
-		z-index: 4;
+		/*z-index: 4;*/
 		border-style: none;
 		background-color: transparent;
-		padding-top: .5em;
+		padding-top: 2em;
 		font-size: 2em;
 		opacity: .985;
 
@@ -831,9 +858,9 @@ ul > .iconsheader {
 		position: absolute;
 		right: 0px;
 		border-style: none;
-		z-index: 4;
+		/*z-index: 4;*/
 		background-color: transparent;
-		padding-top: .5em;
+		padding-top: 2em;
 		font-size: 2em;
 		opacity: .985;
 	}
@@ -905,7 +932,7 @@ li.landingpage:hover a {
 		word-spacing: .25em;
 		padding: .25em;
 		opacity: .76;
-		margin-left: 0px;
+		
 	}
 	.duckInfo {
 		position: absolute;
@@ -917,7 +944,7 @@ li.landingpage:hover a {
 		word-spacing: .25em;
 		padding: .25em;
 		opacity: .76;
-		margin-left: 0px;
+		
 	}
 	.fasoInfo {
 	position: absolute;
@@ -931,7 +958,7 @@ li.landingpage:hover a {
 	opacity: .76;
 	z-index: 4;
 	text-align: center;
-	margin-left: 0px;
+	
 }
 	}
 /*-------------------------------------------------------------------------------------------------------------------------------------*/

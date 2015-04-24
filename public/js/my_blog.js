@@ -56,8 +56,17 @@
 		if($('#faso').hasClass('hidden'))
 		{
 			$("#faso").removeClass("hidden");
+			
 			console.log('hello');
 		} 
+	}
+	function toggleServeSearch(){
+		if($('#servelink').hasClass('hidden'))
+		{
+			$("#servelink").removeClass("hidden");
+			
+			console.log('hello serve');
+		}
 	}
 
 if(jQuery.browser.mobile)
@@ -94,7 +103,7 @@ else
 	});
 	$('.duckInfo').width($('#duckImages').width()/1.01);
 	$('.serveInfo').width($('#serveImages').width()/1.01);
-	$('.fasoInfo').width($('#serveImages').width()/1.01);
+	$('.fasoInfo').width($('#fasoImages').width()/1.01);
 	$('.textcontent').width($('.container').width());
 	$('.textcontent').each(function(){
 	      var parentHeight = $(this).parent().height();
@@ -102,19 +111,36 @@ else
 	});
 
 	$('#changeImageFaso').hover(function(){
-		$("#faso").addClass("hidden");
-		
-		
+		$("#faso").addClass("hidden");	
 		
 	})
 	$('#prevImageFaso').hover(function(){
 		$("#faso").addClass("hidden");
+	})
+	$('span').mouseover(function(){
+		$("button ").removeClass("hidden");
+		toggleFaso();
+	})
+	// $('span #servelink').mouseleave(function(){
+	// 	$("button ").addClass("hidden");
+		
+		
+	// })
+	$('#changeImage').hover(function(){
+		$("#servelink").addClass("hidden");
+		
+		
+	})
+	$('#prevImage').hover(function(){
+		$("#servelink").addClass("hidden");
+		
 
 		
 		
 	})
 	$('span').mouseover(function(){
-		toggleFaso();
+		$("button").removeClass("hidden");
+		toggleServeSearch();
 	})
 	
 $('li.landingpage').load(function(){
@@ -185,13 +211,13 @@ $('#servelink').click(function(){
 });
 
 $('#deleteMargin').hover(function(){
-		$('#servelink').fadeToggle(260,"swing");
+		// $('#servelink').fadeToggle(260,"swing");
 		//FIX THIS SOON ..DO WHAT YOU DID FOR THE FASO SITE
 		// $('#faso').fadeToggle(260,"swing");
 });
 $(".img-size").mouseover(function(){
 		$(this).text('Click');
-		$(this).css('z-index','0');
+		// $(this).css('z-index','0');
 });
 $('#prevImage').width($('#serveImages').width()/5);
 $('#changeImage').width($('#serveImages').width()/5);
