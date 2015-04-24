@@ -50,7 +50,7 @@
 						   	   			
 						   	   				<div class="img_margin ">
 							   	   				<img  class="embed-responsive-4by3 img-size" id="duckImages" src="/images/duckhuntMock.jpg">
-							   	   				<div class="duckInfo">A class exercise to build our first game. Built using PHP, JavaScript, jQuery and HTML/ CSS. No Ducks were harmed in the making of this game. </div>
+							   	   				<div class="hidden-xs duckInfo">A class exercise to build our first game. Built using PHP, JavaScript, jQuery and HTML/ CSS. No Ducks were harmed in the making of this game. </div>
 						   	   				</div>
 						   	   			
 					   	   			</div>
@@ -69,7 +69,7 @@
 					   	  						<div class="img_margin ">
 						   	  						<a href="http://faso.com" target="_blank">
 							   	  						<img class="embed-responsive-4by3 img-size " id="fasoImages" src=" ">
-							   	  						<div class="fasoInfo">This is a template built for a company that focuses on marketing and hosting sites for artist. 
+							   	  						<div class="hidden-xs fasoInfo">This is a template built for a company that focuses on marketing and hosting sites for artist. 
 							   	  						</div>
 						   	  						</a>
 					   	  						</div>
