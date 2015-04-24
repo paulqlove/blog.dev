@@ -849,7 +849,7 @@ ul > .iconsheader {
 		/*z-index: 4;*/
 		border-style: none;
 		background-color: transparent;
-		padding-top: 2em;
+		padding-top: .5em;
 		font-size: 2em;
 		opacity: .985;
 
@@ -860,7 +860,7 @@ ul > .iconsheader {
 		border-style: none;
 		/*z-index: 4;*/
 		background-color: transparent;
-		padding-top: 2em;
+		padding-top: .5em;
 		font-size: 2em;
 		opacity: .985;
 	}

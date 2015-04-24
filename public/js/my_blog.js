@@ -73,6 +73,7 @@ if(jQuery.browser.mobile)
 {
    console.log('You are using a mobile device!');
 	$('.serveInfo').hide();
+	$("button").removeClass("hidden");
 }
 else
 {
@@ -118,6 +119,7 @@ else
 		$("#faso").addClass("hidden");
 	})
 	$('span').mouseover(function(){
+
 		$("button ").removeClass("hidden");
 		toggleFaso();
 	})
