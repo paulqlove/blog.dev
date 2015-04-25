@@ -589,7 +589,7 @@ table#clickableRow {
 #headerfixport1 {
 	margin-top: .9em;
 	color: #19AFEB;
-	font-size: 11em;
+	font-size: 10em;
 	letter-spacing: .05em;
 
 }
@@ -725,7 +725,7 @@ h3 > ul,
 }
 #whackTitle {
 	color: #D4289B;
-	font-size: 12em;
+	font-size: 10em;
 	letter-spacing: .17em;
 	margin-top: .9em;
 }
