@@ -56,7 +56,7 @@
 										@else
 										<div class="col-md-12">
 											<div class="col-md-12">
-												<button><a href="{{{ action('PostsController@edit', $post->id)}}}">Edit</a></button>
+												<button><a href="{{{ action('PostsController@edit', $post->id)}}}#disqus_thread">Edit</a></button>
 											</div>
 											<div class="col-md-12">
 												{{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'delete')) }}
@@ -67,7 +67,21 @@
 										@endif
 									</div>
 								</div>
-								@endforeach			
+								
+								@endforeach		
+								<div class="col-lg-10" id="disqus_thread"></div>
+								<script type="text/javascript">
+								    /* * * CONFIGURATION VARIABLES * * */
+								    var disqus_shortname = 'paullove';
+								    
+								    /* * * DON'T EDIT BELOW THIS LINE * * */
+								    (function() {
+								        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+								        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+								        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+								    })();
+								</script>
+								<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>	
 					</div><!-- wraps foreach loop -->
 				<div class="col-md-offset-4 col-md-8 ">
 					<div class="pager" >
