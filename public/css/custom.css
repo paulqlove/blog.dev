@@ -645,7 +645,7 @@ table#clickableRow {
 	right: 0px;
 	/*z-index: 6;*/
 	background-color: transparent;
-	padding-top: 5%;
+	padding-top: 10%;
 	font-size: 2em;
 	opacity: .985;
 }
@@ -683,7 +683,7 @@ div#footerspacing.col-md-12 {
 	/*z-index: 4;*/
 	border-style: none;
 	background-color: transparent;
-	padding-top: 5%;
+	padding-top: 10%;
 	font-size: 2em;
 	opacity: .985;
 
@@ -861,10 +861,10 @@ ul > .iconsheader {
 	height: 100%;
 	z-index: 105;
 	}
-	#prevImageFaso {
+	/*#prevImageFaso {
 		position: absolute;
 		left: 0px;
-		/*z-index: 4;*/
+		
 		border-style: none;
 		background-color: transparent;
 		padding-top: .5em;
@@ -876,12 +876,14 @@ ul > .iconsheader {
 		position: absolute;
 		right: 0px;
 		border-style: none;
-		/*z-index: 4;*/
+		
 		background-color: transparent;
 		padding-top: .5em;
 		font-size: 2em;
 		opacity: .985;
-	}
+
+		
+	}*/
 }
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 @media  (min-width: 992px){
