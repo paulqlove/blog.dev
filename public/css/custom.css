@@ -634,7 +634,7 @@ table#clickableRow {
 	right: 0px;
 	/*z-index: 6;*/
 	background-color: transparent;
-	padding-top: 2.59em;
+	padding-top: 5%;
 	font-size: 2em;
 	opacity: .985;
 }
@@ -645,7 +645,7 @@ table#clickableRow {
 	right: 0px;
 	/*z-index: 6;*/
 	background-color: transparent;
-	padding-top: 2em;
+	padding-top: 5%;
 	font-size: 2em;
 	opacity: .985;
 }
@@ -673,7 +673,7 @@ div#footerspacing.col-md-12 {
 	/*z-index: 4;*/
 	border-style: none;
 	background-color: transparent;
-	padding-top: 2.59em;
+	padding-top: 5%;
 	font-size: 2em;
 	opacity: .985;
 }
@@ -683,7 +683,7 @@ div#footerspacing.col-md-12 {
 	/*z-index: 4;*/
 	border-style: none;
 	background-color: transparent;
-	padding-top: 2em;
+	padding-top: 5%;
 	font-size: 2em;
 	opacity: .985;
 
