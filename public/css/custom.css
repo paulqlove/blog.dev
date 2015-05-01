@@ -662,6 +662,11 @@ table#clickableRow {
 #fasoImages {
 	margin-top: 70px;
 }
+div#footerspacing.col-md-12 {
+	padding-left: 0;
+	margin-top: 15px;
+	
+		}
 #prevImage {
 	position: absolute;
 	left: 0px;
@@ -840,7 +845,8 @@ ul > .iconsheader {
 #footerspacing {
 	padding-left: 0;
 	margin-top: 15px;
-	}
+	
+		}
 #portmenu {
 	position: fixed;
 	padding-top: 20px;
