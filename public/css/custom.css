@@ -61,9 +61,11 @@ body:after {
 button {
 	z-index: 3;
 }
-/*button:hover {
-	z-index: 10;
-}*/
+button:hover {
+	-webkit-animation-duration: 3s;
+	-webkit-animation-delay: 2s;
+	--webkit-animation-iteration-count: infinite;
+}
 header {
 	position: fixed;
 	height: 70px;	
@@ -73,6 +75,11 @@ header {
 	opacity: .98;
 
 	
+}
+img {
+	-webkit-animation-duration: .8s;
+	 -webkit-animation-delay: 0s;
+	 -webkit-animation-iteration-count: 1;
 }
 input {
 	padding-bottom: 5px;
@@ -243,6 +250,7 @@ div > h5.summary:hover,
 .container {
 	margin: 0px;
   	width: 100%;
+  	
 }
 .fasoInfo {
 	/*position: relative;*/
@@ -537,6 +545,9 @@ ul > .iconsheader {
 #backImage {
 	background-image: url('/images/prada.png');
 	text-align: center;
+	-webkit-animation-duration: .4s;
+	 -webkit-animation-delay: 0s;
+	 -webkit-animation-iteration-count: 1;
 }
 #bottemSpan {
 	margin-bottom: 15px;

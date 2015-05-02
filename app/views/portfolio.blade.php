@@ -27,7 +27,7 @@
 			   	  		<div class="col-md-12 no-gutters">
 			   	  			<div class="row no-gutters" id="deleteMargin">
 				   	  			<div class="col-md-12 no-gutters">
-			   	  					<button class="col-md-2 glyphicon glyphicon-chevron-left imageControl hidden" id="prevImageFaso"></button>
+			   	  					<button class="col-md-2 glyphicon glyphicon-chevron-left imageControl hidden animate infinite bounce" id="prevImageFaso"></button>
 					   	  					<div class="col-md-12 no-gutters ServeWrapper">
 					   	  						<div class="img_margin ">
 						   	  						<a href="http://faso.com" target="_blank">
@@ -41,12 +41,12 @@
 					   	  					<h5 class="" id="headerfixport1">FASO</h5>
 					   	  				</span>
 					   	  			
-			   	  					<button class="col-md-2 glyphicon glyphicon-chevron-right imageControl hidden " id="changeImageFaso"></button>
+			   	  					<button class="col-md-2 glyphicon glyphicon-chevron-right imageControl hidden  animate infinite bounce" id="changeImageFaso"></button>
 					   	  		</div>
 				   	  		</div> {{-- /deletemargin --}}
 		   	  				<div class="row no-gutters">
 			   	  				<div class="col-md-12 no-gutters">
-	   	  							<button class="col-md-2 glyphicon glyphicon-chevron-left imageControl hidden serve_btn" id="prevImage"></button>
+	   	  							<button class="col-md-2 glyphicon glyphicon-chevron-left imageControl hidden serve_btn animate infinite bounce" id="prevImage"></button>
 							    		<div class="col-md-12 no-gutters ServeWrapper">
 							    			
 							    			<div class="img_margin ">
@@ -60,7 +60,7 @@
 							    				<h5 class="" id="headerfixport">SERVE SEARCH</h5>
 							    			</span>
 							    		</div>
-   	  								<button class="col-md-2 glyphicon glyphicon-chevron-right imageControl hidden serve_btn" id="changeImage"></button>
+   	  								<button class="col-md-2 glyphicon glyphicon-chevron-right imageControl hidden serve_btn animate infinite bounce" id="changeImage"></button>
 			   	  				</div>
 			   	  			</div>
 			   	  			<div class=" row no-gutters">

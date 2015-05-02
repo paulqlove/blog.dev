@@ -69,6 +69,8 @@
 		}
 	}
 
+// $('#main').smoothState();
+
 if(jQuery.browser.mobile)
 {
    console.log('You are using a mobile device!');
@@ -140,11 +142,13 @@ else
 		
 		
 	})
+	
 	$('span').mouseover(function(){
 		$("button").removeClass("hidden");
 		toggleServeSearch();
 	})
 	$('.serve_btn').mouseover(function(){
+
 		// $("button").removeClass("hidden");
 		$("#faso").removeClass("hidden");
 	})
