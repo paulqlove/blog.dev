@@ -61,11 +61,7 @@ body:after {
 button {
 	z-index: 3;
 }
-button:hover {
-	-webkit-animation-duration: 3s;
-	-webkit-animation-delay: 2s;
-	--webkit-animation-iteration-count: infinite;
-}
+
 header {
 	position: fixed;
 	height: 70px;	
