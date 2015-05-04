@@ -1,5 +1,10 @@
 // All code written by Paul Love
 //March 2015
+$(window).load(function() {
+		
+		$(".pre-load").fadeOut("slow");;
+	});
+
 (function ( $ ) {
 	var targetNumber = 10;
 	var clicks = 0;

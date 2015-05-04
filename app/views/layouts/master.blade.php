@@ -14,7 +14,8 @@
 		<link rel="icon" type="image/png" href="/images/logoIcon.png">
 		<link rel="stylesheet" type="text/css" href="/css/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="/css/jquery.materialripple.css">
-		<link rel="stylesheet" type="text/css" href="/css/custom.css">	
+		<link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/style.css">	
 		<link rel="stylesheet" type="text/css" href="/css/animate.css">
 	</head>
 	<body>

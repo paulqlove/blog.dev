@@ -134,6 +134,7 @@ li.landingpage {
 	font-weight: 500;
 	
 	
+	
 }
 li.portpage {
 	/*box-shadow: 1px 2px 1px #888888;*/
@@ -246,7 +247,7 @@ div > h5.summary:hover,
 .container {
 	margin: 0px;
   	width: 100%;
-  	
+
 }
 .fasoInfo {
 	/*position: relative;*/
@@ -410,6 +411,22 @@ ul > .iconsheader {
   color: #50D9FF;
   background-color: #fff;
   border-color: #ddd;
+}
+.pre-load {
+	background-color: #FFF;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	
+
+}
+.pre-load > i {
+	position: fixed;
+	margin-left: 48%;
+	top: 25%;
 }
 .glyphicon {
   outline: none;

@@ -6,11 +6,11 @@
 		<div class="col-md-12">
 			<div class="row">
 				<div class="col-md-3">
-					<nav class="col-md-12">
-						<ul class="landing-ul">
-							<li class="landingpage ripple"><a itemprop="url" href="{{{ action('HomeController@showPortfolio')}}}"><p id="textport">Work I've Done</p></li></a>
-							<li class="landingpage ripple"><a itemprop="url" href="{{{ action('HomeController@showResume')}}}"><p id="textresume">Who I Am</p></li></a>
-							<li class="landingpage ripple"><a itemprop="url" href="{{{ action('PostsController@index')}}}"><p id="textblog">My Blog</p></li></a>
+					<nav class="col-md-12 ">
+						<ul class="landing-ul ">
+							<li class="landingpage ripple "><a itemprop="url" href="{{{ action('HomeController@showPortfolio')}}}"><p id="textport">Work I've Done</p></li></a>
+							<li class="landingpage ripple "><a itemprop="url" href="{{{ action('HomeController@showResume')}}}"><p id="textresume">Who I Am</p></li></a>
+							<li class="landingpage ripple "><a itemprop="url" href="{{{ action('PostsController@index')}}}"><p id="textblog">My Blog</p></li></a>
 						</ul>
 					</nav>
 				</div>

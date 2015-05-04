@@ -14,6 +14,7 @@
 							</ul>
 						</nav>
 					</div>
+		<div class="pre-load"><i class="fa fa-refresh fa-5x fa-spin "></i></div>
 	   <div class="container no-gutters animate fadeInLeft">
 			   	  	<div class="no-gutters col-md-12">
 						<div class=" col-md-12 no-gutters">
