@@ -19,6 +19,7 @@
 		<link rel="stylesheet" type="text/css" href="/css/animate.css">
 	</head>
 	<body>
+		<div class="pre-load"><i class="fa fa-refresh fa-5x fa-spin "></i></div>
 			<noscript>
 			    <div>
 			      Turn on your JavaScript!
