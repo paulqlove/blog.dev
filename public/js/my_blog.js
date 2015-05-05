@@ -210,11 +210,11 @@ $('#textresume').mouseover(function(){
 $('#textresume').mouseleave(function(){
 	$(this).text('Who I am');
 });
-// $('#showIcons').click(function(){
-// 	$(this).fadeOut(20);
-// 	$("div:hidden").show(1700);
-// 	$(this).css('margin-top', '0px');
-// });		
+$('#showIcons').click(function(){
+	$(this).fadeOut(20);
+	$("div:placeIcons").show(1700);
+	$(this).css('margin-top', '0px');
+});		
 
 $('.portfolioProfile').click(function(){
 		countClicks();

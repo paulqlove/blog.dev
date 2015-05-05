@@ -7,7 +7,7 @@
 					</div>
 					
 					<div class="col-xs-7 col-md-3">
-						<div class="col-md-12 ">
+					{{-- 	<div class="col-md-12 ">
 							<h3 id="showIcons">CONNECT</h3>
 						</div>
 						<div class="col-md-12 placeIcons" id="hiddenIcons">
@@ -22,7 +22,7 @@
 										<img  class="iconsheader" src="/icons/social113.svg"></img>
 									</a></li>
 							</ul></h3>
-						</div>
+						</div> --}}
 					</div>			
 				</div>
 				 
