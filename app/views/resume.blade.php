@@ -54,19 +54,55 @@
 			   	  					<section itemscope itemtype="http://schema.org/Article">
 			   	  						<h2 itemprop="articleSection" class="col-md-12 title">Skills</h2>
 				   	  						<div class="row  noMargin">
-				   	  						<ul itemprop="articleBody" class="style-list col-md-6 no-gutters">
-				   	  							<li>Html</li>
-				   	  							<li>CSS</li>
-				   	  							<li>PHP</li>
-				   	  							<li>MySQL</li>
-				   	  							<li>Adobe Creative Suite</li>
-				   	  							<li>Javascript</li>
-				   	  							<li>JQuery</li>
-				   	  							<li>Linux</li>
-				   	  							<li>Apache</li>
-				   	  							<li>Responsive Design</li>
-				   	  							<li>Wireframing</li>
-				   	  							<li>Omnigraffle</li>
+				   	  						<ul itemprop="articleBody" class="style-list col-md-6 no-gutters" id="skills_list">
+				   	  							<div>
+				   	  								<li value="8">Html</li>
+				   	  								<div class="skill_background animate"></div>
+				   	  							</div>
+				   	  							<div>
+				   	  								<li value="8">CSS</li>
+				   	  								<div class="skill_background animate"></div>
+				   	  							</div>
+				   	  							<div>
+				   	  								<li value="6.5">PHP</li>
+				   	  								<div class="skill_background animate"></div>
+				   	  							</div>
+				   	  							<div>
+				   	  								<li value="6">MySQL</li>
+				   	  								<div class="skill_background animate"></div>
+				   	  							</div>
+				   	  							<div>
+				   	  								<li value="5">Adobe Creative Suite</li>
+				   	  								<div class="skill_background animate"></div>
+				   	  							</div>
+				   	  							<div>
+				   	  								<li value="6">Javascript</li>
+				   	  								<div class="skill_background animate"></div>
+				   	  							</div>
+				   	  							<div>
+				   	  								<li value="6">JQuery</li>
+				   	  								<div class="skill_background animate"></div>
+				   	  							</div>
+				   	  							<div>
+				   	  								<li value="6">Linux</li>
+				   	  								<div class="skill_background animate"></div>
+				   	  							</div>
+				   	  							<div>
+				   	  								<li value="6">Apache</li>
+				   	  								<div class="skill_background animate"></div>
+				   	  							</div>
+				   	  							<div>
+				   	  								<li value="8.5">Responsive Design</li>
+				   	  								<div class="skill_background animate"></div>
+				   	  							</div>
+				   	  							<div>
+				   	  								<li value="6">Wireframing</li>
+				   	  								<div class="skill_background animate"></div>
+				   	  							</div>
+				   	  							<div>
+				   	  								<li value="4">Omnigraffle</li>
+				   	  								<div class="skill_background animate"></div>
+				   	  							</div>
 				   	  						</ul>
 				   	  						</div>
 			   	  					</section>

@@ -249,6 +249,48 @@ $(function(){
 
 
 
+	// var skill_rank = $('#skills_list li').val();
+	// console.log(skill_rank);
+	
+$('#skills_list li').hover(function(){
+	
+
+	var skill_rank = $(this).attr('value');
+	
+console.log(skill_rank + "skill rank");
+
+	var skill_width = $(this).width()
+	
+console.log(skill_width + "skill width");
+
+	var multiple = skill_rank/10;
+	console.log(multiple + "mul sub");
+	
+	
+	
+	var w_rank = multiple * skill_width + "px";
+	console.log(w_rank + ' is the width of my ranking');
+
+	var skill_coord = $(this).position();
+
+	var skill_top = skill_coord.top + "px";
+
+	var skill_left = skill_coord.left + "px";
+
+
+
+	$('.skill_background').css({'left': skill_left, 'top': skill_top , 'width': w_rank});
+	
+	console.log(skill_left);
+	console.log(skill_top + 'from the top');
+
+	
+
+})
+
+
+
+
 
 }( jQuery ));
 

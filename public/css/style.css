@@ -213,7 +213,10 @@ div > h5.summary:hover,
 	display: inline;
 	margin: 5px;
 }
-.style-list > li {
+.style-list  {
+	position: relative;
+}
+.style-list > div li {
 	margin: 5px;
 	padding: 3px 3px;
 	border-radius: 4px;
@@ -222,6 +225,20 @@ div > h5.summary:hover,
 	font-size: 1em;
 	line-height: 1.500em;
 	list-style: none;
+}
+
+.skill_background {
+	position: absolute;
+	opacity: .1;
+	width: 1px;
+	height: 30px;
+	border-radius: 4px;
+	margin: 5px;
+	z-index: 5;
+	background-color: #aee3ba;
+	transition:  1.69s ease-in-out;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
 }
 .summary {
 	color: #fff;
