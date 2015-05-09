@@ -52,7 +52,7 @@
 			   	  				</div>
 			   	  				<div class="col-md-offset-3 col-md-9">
 			   	  					<section itemscope itemtype="http://schema.org/Article">
-			   	  						<h2 itemprop="articleSection" class="col-md-12 title">Skills</h2>
+			   	  						<h2 itemprop="articleSection" class="col-md-12 title" id="skill_level">Skills</h2>
 				   	  						<div class="row  noMargin">
 				   	  						<ul itemprop="articleBody" class="style-list col-md-6 no-gutters" id="skills_list">
 				   	  							<div>
@@ -60,7 +60,7 @@
 				   	  								<div class="skill_background animate"></div>
 				   	  							</div>
 				   	  							<div>
-				   	  								<li value="8">CSS</li>
+				   	  								<li value="9">CSS</li>
 				   	  								<div class="skill_background animate"></div>
 				   	  							</div>
 				   	  							<div>
@@ -100,7 +100,7 @@
 				   	  								<div class="skill_background animate"></div>
 				   	  							</div>
 				   	  							<div>
-				   	  								<li value="4">Omnigraffle</li>
+				   	  								<li value="6.5">Omnigraffle</li>
 				   	  								<div class="skill_background animate"></div>
 				   	  							</div>
 				   	  						</ul>

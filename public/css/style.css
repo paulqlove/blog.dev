@@ -228,6 +228,7 @@ div > h5.summary:hover,
 }
 
 .skill_background {
+
 	position: absolute;
 	opacity: .1;
 	width: 1px;
@@ -236,7 +237,7 @@ div > h5.summary:hover,
 	margin: 5px;
 	z-index: 5;
 	background-color: #aee3ba;
-	transition:  1.69s ease-in-out;
+	transition:  .69s ease-in-out;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 
 }
